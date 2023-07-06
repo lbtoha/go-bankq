@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-container {
+    @apply max-w-[1296px] mx-auto;
+  }
+}
+
+:root {
+  --primary-color-1: #055f5b;
+  --primary-color-2: #ffd584;
+  --primary-text-1: #191b1a;
+  --primary-text-2: #6f7278;
+}
