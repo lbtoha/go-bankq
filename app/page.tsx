@@ -1,5 +1,5 @@
 import { Banner } from "@/components/home/banner/Banner";
-import { Lone } from "@/components/home/lone/Lone";
+import { Loan } from "@/components/home/loan/Loan";
 import { Navbar } from "@/components/home/navbar/Navbar";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Banner />
-      <Lone />
+      <Loan />
     </main>
   );
 }

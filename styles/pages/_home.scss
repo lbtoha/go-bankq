@@ -1,0 +1,63 @@
+// ======= Navbar Section Styles Start ============
+.navbar {
+  &::after {
+    content: "";
+    top: 100%;
+    position: absolute;
+    border-bottom: 1px solid rgba(233, 248, 247, 0.1254901961);
+    width: 96%;
+    left: 2%;
+    z-index: 1;
+  }
+}
+// ======= Navbar Section Styles End ============
+
+// ======= Banner Section Styles Start ============
+.card {
+  margin-top: 70px;
+
+  &__left {
+    left: 23%;
+    transform-origin: left bottom;
+    bottom: -20%;
+    transform: rotateZ(340deg);
+    position: absolute;
+    transition: 1s;
+    z-index: -1;
+  }
+
+  &__right {
+    right: 22%;
+    transform-origin: left bottom;
+    bottom: 0%;
+    transform: rotateZ(-340deg);
+    position: absolute;
+    transition: 1s;
+    z-index: -1;
+  }
+}
+
+.banner-objects {
+  &__left {
+    top: 20%;
+  }
+
+  &__right {
+    right: 20%;
+    top: 40%;
+  }
+}
+
+// ======= Banner Section Styles End ============
+.loan-section {
+  &__sub-heading {
+    &::after {
+      content: "";
+      border-bottom: 1px solid #000;
+      width: 71px;
+    }
+  }
+}
+// ======= Loan Section Styles Start ============
+
+// ======= Loan Section Styles End ============
