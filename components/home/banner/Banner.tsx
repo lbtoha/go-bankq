@@ -6,7 +6,6 @@ import mobile from "@/public/images/banner/mobile.png";
 import leftArrow from "@/public/images/banner/arrow.png";
 import rightArrow from "@/public/images/banner/stars.png";
 
-
 export const Banner = () => {
   return (
     <section
@@ -14,27 +13,43 @@ export const Banner = () => {
     >
       <div className="my-container">
         <h1
-          className={`${titleFont.className} text-white text-7xl text-center font-bold leading-[120%]`}
+          className={`${titleFont.className} main-heading text-white text-4xl md:text-5xl lg:text-7xl text-center font-bold `}
         >
-          All <span className="text-[#E0F300] custom">Banking</span> Solution <br /> In
-          One Place
+          All <span className="text-[#E0F300] custom">Banking</span> Solution{" "}
+          <br /> In One Place
         </h1>
         <div className="card flex items-end justify-center relative z-50 ">
-          <div className="card__left ">
-            <Image src={LeftCard} alt="Image left" className="rounded-xl z-50"></Image>
+          <div className="card__left md:w-[250px]">
+            <Image
+              src={LeftCard}
+              alt="Image left"
+              className="rounded-xl z-50"
+            ></Image>
           </div>
-          <Image src={mobile} alt="mobile"></Image>
-          <div className="card__right ">
-            <Image className="rounded-xl" src={RightCard} alt="Image left" ></Image>
+          <Image
+            className="md:w-[300px] card__mobile "
+            src={mobile}
+            alt="mobile"
+          ></Image>
+          <div className="card__right md:w-[250px]">
+            <Image
+              className="rounded-xl"
+              src={RightCard}
+              alt="Image left"
+            ></Image>
           </div>
         </div>
         <div className="banner-objects">
-        <div className="banner-objects__left absolute">
-          <Image src={leftArrow} alt="Left Arrow"  />
-        </div>
-        <div className="banner-objects__right absolute">
-          <Image src={rightArrow} alt="Left Arrow"  />
-        </div>
+          <div className="banner-objects__left absolute left-[15%] ">
+            <Image
+              className="w-[25%] lg:w-[18%]"
+              src={leftArrow}
+              alt="Left Arrow"
+            />
+          </div>
+          <div className="banner-objects__right absolute top-[28%] right-[7%]">
+            <Image src={rightArrow} alt="right Arrow" />
+          </div>
         </div>
       </div>
     </section>

@@ -10,9 +10,14 @@
     z-index: 1;
   }
 }
+
 // ======= Navbar Section Styles End ============
 
 // ======= Banner Section Styles Start ============
+.main-heading {
+  line-height: 120%;
+}
+
 .card {
   margin-top: 70px;
 
@@ -35,11 +40,43 @@
     transition: 1s;
     z-index: -1;
   }
+
+  @media only screen and (max-width: 1023px) {
+    &__left {
+      left: 17%;
+      bottom: -25%;
+      width: 250px;
+    }
+
+    &__right {
+      right: 15%;
+      bottom: 0%;
+      width: 250px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    &__left {
+      left: 17%;
+      bottom: -25%;
+      width: 200px;
+    }
+    &__mobile {
+      width: 250px;
+    }
+
+    &__right {
+      right: 15%;
+      bottom: 0%;
+      width: 200px;
+    }
+  }
 }
 
 .banner-objects {
   &__left {
     top: 20%;
+    width: 75%;
   }
 
   &__right {
@@ -61,3 +98,33 @@
 // ======= Loan Section Styles Start ============
 
 // ======= Loan Section Styles End ============
+
+@media only screen and (max-width: 1023px) {
+  .banner-objects {
+    &__right {
+      right: 10%;
+      top: 29%;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-objects {
+    &__right {
+      right: 10%;
+      top: 29%;
+    }
+  }
+}
+@media only screen and (max-width: 639px) {
+  .banner-objects {
+    &__right {
+      right: 10%;
+      top: 29%;
+    }
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-items: center;
+}
