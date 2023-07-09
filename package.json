@@ -22,6 +22,7 @@
     "next": "13.4.8",
     "postcss": "8.4.24",
     "react": "18.2.0",
+    "react-animate-height": "^3.1.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "sass": "^1.63.6",

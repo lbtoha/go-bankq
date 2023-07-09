@@ -1,3 +1,7 @@
+:root {
+  --primary-color-2: #ffd584;
+}
+
 // ======= Navbar Section Styles Start ============
 .navbar {
   &::after {
@@ -128,3 +132,75 @@
   display: flex;
   justify-items: center;
 }
+
+// standOut section title
+.standOut-section-title {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    background-color: #fff;
+    height: 1px;
+  }
+}
+
+// countdown section
+.countdown-section {
+  background-image: url("../../public/images/countdown_bg.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+// credit card
+.card-section::after {
+  content: "";
+  position: absolute;
+  background-color: #ffd584;
+  width: 40%;
+  height: 50%;
+  border-radius: 50px 0 0 50px;
+  right: 0;
+  top: 25%;
+  z-index: -2;
+}
+
+.card-arrow {
+  &__left:hover::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color-2);
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: -15px;
+    z-index: -1;
+    border-radius: 100%;
+  }
+  &__right:hover:after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color-2);
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: -15px;
+    z-index: -1;
+    border-radius: 100%;
+  }
+}
+
+// open account
+.open-account-section {
+  background-image: url("../../public/images/call-to-action-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// latest feature article
+.latest-article-section {
+  background-image: url("../../public/images/feature_dot.png");
+  background-color: #191b1a;
+}
+
+// our client say section

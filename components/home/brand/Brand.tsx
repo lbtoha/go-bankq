@@ -15,7 +15,7 @@ export const Brand = () => {
   return (
     <Swiper
       spaceBetween={50}
-      slidesPerView={5}
+      slidesPerView={6}
       loop={true}
       autoplay={{
         delay: 2500,
@@ -24,7 +24,7 @@ export const Brand = () => {
       modules={[Autoplay]}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
-      className={`py-[120px] bg-[url("/images/sponsor-slider.png")] flex gap-[223px] mx-auto  w-full justify-center items-center`}
+      className={` bg-[url("/images/sponsor-slider.png")] flex gap-[223px] mx-auto  w-full justify-center items-center py-[120px]`}
     >
       <SwiperSlide>
         <Image src={sponsor1} alt="Brand Image" />
