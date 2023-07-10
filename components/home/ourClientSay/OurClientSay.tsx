@@ -20,7 +20,7 @@ export const OurClientSay = () => {
             <Image
               src={star}
               alt="Star"
-              className="absolute top-0 left-[-10%] -z-10 animate-spin "
+              className="absolute top-0 left-[-10%] -z-10 "
             />
           </div>
           <div className="">

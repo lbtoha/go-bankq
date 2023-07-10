@@ -1,3 +1,4 @@
+import { AccountForm } from "@/components/home/accountForm/AccountForm";
 import { Banner } from "@/components/home/banner/Banner";
 import { Brand } from "@/components/home/brand/Brand";
 import { CreditCard } from "@/components/home/creditCard/CreditCard";
@@ -10,6 +11,7 @@ import { OpenAccount } from "@/components/home/openAccount/OpenAccount";
 import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
 import { Services } from "@/components/home/services/Services";
 import { StandOut } from "@/components/home/standOut/StandOut";
+import { Footer } from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
       <FrequentlyAsk />
       <LatestArticle />
       <OurClientSay />
+      <AccountForm />
+      <Footer />
     </main>
   );
 }

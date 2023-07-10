@@ -17,8 +17,8 @@ module.exports = {
         "primary-color-2": "var(--primary-color-2)",
         "primary-text-1": "var(--primary-text-1)",
         "primary-text-2": "var(--primary-text-2)",
+        "sub-title-color": "var(--sub-title-color)",
       },
-      
     },
   },
   plugins: [],

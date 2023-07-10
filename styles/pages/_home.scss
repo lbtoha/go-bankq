@@ -203,4 +203,99 @@
   background-color: #191b1a;
 }
 
-// our client say section
+// account
+.account-section {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #055f5b;
+    right: 0px;
+    bottom: 0px;
+    width: 35%;
+    height: 100%;
+    z-index: -2;
+    background-size: contain;
+  }
+
+  .visa-card_bg {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 450px;
+    height: 300px;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+
+  &__card-container {
+    .card-content {
+      position: relative;
+      overflow: clip;
+      padding: 33px 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: self-start;
+    }
+    .card-left {
+      background-color: rgba(0, 102, 255, 0.06);
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../public/images/earth.png");
+        z-index: 122;
+        right: -17%;
+        bottom: -24%;
+        width: 169px;
+        height: 169px;
+        background-size: contain;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../public/images/visa.png");
+        z-index: 122;
+        right: -21%;
+        bottom: -64%;
+        width: 169px;
+        height: 169px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .card-right {
+      background-color: #ffd584;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../public/images/asset.png");
+        z-index: 122;
+        right: 2%;
+        bottom: -5%;
+        width: 169px;
+        height: 169px;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+// Footer section
+.footer-section {
+  background: url("../../public//images/feature_dot.png");
+  background-color: #191b1a;
+
+  &::after {
+    content: "";
+    background: url("../../public//images/footer_bg.png") repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    animation: previewShapeY 25s linear infinite;
+    z-index: -1;
+  }
+}

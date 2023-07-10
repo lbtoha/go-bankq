@@ -1,12 +1,12 @@
 import { textFont } from "@/utils/fonts";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import "../styles/main.scss";
+import "../globals.css";
+import "../../styles/main.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Home | GOBANKQ-Banking & Finance",
+  title: "About | GOBANKQ-Banking & Finance",
   description: "NextJs Template",
 };
 
