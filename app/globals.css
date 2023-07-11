@@ -6,6 +6,9 @@
   .my-container {
     @apply lg:max-w-[1296px] mx-auto;
   }
+  .grid-2-center {
+    @apply grid grid-cols-2 items-center justify-between;
+  }
 }
 
 :root {

@@ -1,6 +1,6 @@
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import React from "react";
-import { Form } from "../openAccount/Form";
+import { Form } from "./Form";
 import Image from "next/image";
 import visaCard from "@/public/images/visa_bg.png";
 

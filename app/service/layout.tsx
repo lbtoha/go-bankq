@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About | GOBANKQ-Banking & Finance",
+  title: "Service | GOBANKQ-Banking & Finance",
   description: "NextJs Template",
 };
 

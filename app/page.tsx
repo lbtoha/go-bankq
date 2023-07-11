@@ -16,7 +16,6 @@ import { Footer } from "@/components/shared/Footer";
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Banner />
       <Loan />
       <Brand />
@@ -29,7 +28,6 @@ export default function Home() {
       <LatestArticle />
       <OurClientSay />
       <AccountForm />
-      <Footer />
     </main>
   );
 }

@@ -6,12 +6,14 @@ import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import { FiTwitter } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
+import footerImage from "@/public/images/footer_newsletter.png";
 
 export const Footer = () => {
   return (
     <footer className="footer-section relative z-0">
       <div className="my-container pt-[120px]">
-        <div className="flex bg-primary-color-2 py-[80px] ps-[81px] ">
+        <div className="flex bg-primary-color-2 py-[80px] ps-[81px] relative">
           <div className="w-[334px]">
             <SectionHeading title="Subscribe Our Newsletter" />
           </div>
@@ -34,6 +36,9 @@ export const Footer = () => {
               </button>
             </div>
           </form>
+          <div className="absolute right-0 top-0">
+            <Image src={footerImage} alt="Footer Image" />
+          </div>
         </div>
         <div className="flex mt-[124px] justify-between border-b pb-[60px]">
           <div className="flex items-center">
@@ -94,7 +99,7 @@ export const Footer = () => {
             <p className="text-[#A0A2A7]">deanna.curtis@example.com</p>
           </div>
         </div>
-        <div className="flex my-[30px] text-white justify-between">
+        <div className="flex py-[30px] text-white justify-between">
           <p>
             Copyright by
             <span className={`text-primary-color-2 uppercase`}>

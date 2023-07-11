@@ -1,2 +1,9 @@
 @forward "./pages/home";
 @forward "./pages/about-us";
+.dot-bg {
+  background-image: url("../public/images/feature_dot.png");
+}
+
+.section-gap {
+  padding: 120px 0;
+}
