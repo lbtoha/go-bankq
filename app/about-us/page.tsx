@@ -10,7 +10,7 @@ import { Navbar } from "@/components/home/navbar/Navbar";
 import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
 import { Footer } from "@/components/shared/Footer";
 
-export default function Home() {
+export default function About() {
   return (
     <main>
       <AboutHeader />

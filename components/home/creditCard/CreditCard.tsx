@@ -62,7 +62,7 @@ export const CreditCard = () => {
       that the cardholder can borrow at any given time. The cardholder is
       responsible for making payments on time."
                 />
-                <div className="flex items-center  gap-[41px] mt-[]57px]">
+                <div className="flex items-center  gap-[41px] mt-[57px]">
                   <button className="card-arrow__left relative">
                     <Image src={arrowLeft} alt="Arrow Left" />
                   </button>

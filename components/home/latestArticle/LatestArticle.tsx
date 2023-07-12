@@ -31,7 +31,7 @@ export const LatestArticle = () => {
               </span>
             </div>
             <p
-              className={`font-semibold text-xl ${titleFont.className} leading-[130%] text-[#FAFAFC] mt-3 `}
+              className={`font-semibold text-xl font-montserrat leading-[130%] text-[#FAFAFC] mt-3 `}
             >
               The Importance of Choosing the Right
             </p>
@@ -64,7 +64,7 @@ export const LatestArticle = () => {
               </span>
             </div>
             <p
-              className={`font-semibold text-xl ${titleFont.className} leading-[130%] text-[#FAFAFC] mt-3 `}
+              className={`font-semibold text-xl font-montserrat leading-[130%] text-[#FAFAFC] mt-3 `}
             >
               The Importance of Choosing the Right
             </p>
@@ -97,7 +97,7 @@ export const LatestArticle = () => {
               </span>
             </div>
             <p
-              className={`font-semibold text-xl ${titleFont.className} leading-[130%] text-[#FAFAFC] mt-3 `}
+              className={`font-semibold text-xl font-montserrat leading-[130%] text-[#FAFAFC] mt-3 `}
             >
               The Importance of Choosing the Right
             </p>

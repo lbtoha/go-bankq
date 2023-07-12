@@ -1,11 +1,11 @@
 import { Inter, Montserrat } from "next/font/google";
 
-export const titleFont = Inter({
+export const textFont = Inter({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-export const textFont = Montserrat({
+export const titleFont = Montserrat({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });

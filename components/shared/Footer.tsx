@@ -43,7 +43,7 @@ export const Footer = () => {
         <div className="flex mt-[124px] justify-between border-b pb-[60px]">
           <div className="flex items-center">
             <span
-              className={`text-primary-color-2 uppercase text-[42px] ${titleFont.className} pe-10`}
+              className={`text-primary-color-2 uppercase text-[42px] font-montserrat pe-10`}
             >
               <span className="text-white">GO</span>BANK
             </span>

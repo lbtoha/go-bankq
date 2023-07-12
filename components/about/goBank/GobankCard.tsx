@@ -16,7 +16,7 @@ export const GobankCard = ({ title, subText, children }: Props) => {
         <div className="p-3 bg-[#FFD584] rounded-full">{children}</div>
       </div>
       <h3
-        className={`${titleFont.className} mt-5 text-sub-title-color text-xl font-semibold`}
+        className={`font-montserrat mt-5 text-sub-title-color text-xl font-semibold`}
       >
         {title}
       </h3>

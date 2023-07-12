@@ -19,13 +19,13 @@ export const CashFlow = () => {
               <div className="space-y-6 flex flex-col items-center">
                 <div className="border-8 rounded-full border-primary-color-1 h-[127px] w-[127px] flex items-center justify-center">
                   <p
-                    className={`${titleFont.className} text-[40px] font-bold text-primary-color-1 `}
+                    className={`font-montserrat text-[40px] font-bold text-primary-color-1 `}
                   >
                     90%
                   </p>
                 </div>
                 <p
-                  className={`text-black text-2xl font-semibold text-center ${titleFont.className}`}
+                  className={`text-black text-2xl font-semibold text-center font-montserrat`}
                 >
                   Satisfied User
                 </p>
@@ -33,13 +33,13 @@ export const CashFlow = () => {
               <div className="space-y-6 flex flex-col items-center">
                 <div className="border-8 rounded-full border-primary-color-1 h-[127px] w-[127px] flex items-center justify-center">
                   <p
-                    className={`${titleFont.className} text-[40px] font-bold text-primary-color-1 `}
+                    className={`font-montserrat text-[40px] font-bold text-primary-color-1 `}
                   >
                     20+
                   </p>
                 </div>
                 <p
-                  className={`text-black text-2xl font-semibold text-center ${titleFont.className}`}
+                  className={`text-black text-2xl font-semibold text-center font-montserrat`}
                 >
                   Years of Business
                 </p>
@@ -47,13 +47,13 @@ export const CashFlow = () => {
               <div className="space-y-6 flex flex-col items-center">
                 <div className="border-8 rounded-full border-primary-color-1 h-[127px] w-[127px] flex items-center justify-center">
                   <p
-                    className={`${titleFont.className} text-[40px] font-bold text-primary-color-1 `}
+                    className={`font-montserrat text-[40px] font-bold text-primary-color-1 `}
                   >
                     5+
                   </p>
                 </div>
                 <p
-                  className={`text-black text-2xl font-semibold text-center ${titleFont.className}`}
+                  className={`text-black text-2xl font-semibold text-center font-montserrat`}
                 >
                   Awards
                 </p>

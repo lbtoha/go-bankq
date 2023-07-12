@@ -13,7 +13,7 @@ export const Banner = () => {
     >
       <div className="my-container">
         <h1
-          className={`${titleFont.className} main-heading text-white text-4xl md:text-5xl lg:text-7xl text-center font-bold `}
+          className={`font-montserrat main-heading text-white text-4xl md:text-5xl lg:text-7xl text-center font-bold `}
         >
           All <span className="text-[#E0F300] custom">Banking</span> Solution{" "}
           <br /> In One Place

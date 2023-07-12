@@ -26,7 +26,7 @@ export const Loan = () => {
           </div>
           <div>
             <h3
-              className={`${titleFont.className} text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] mt-6 mb-5 `}
+              className={`font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] mt-6 mb-5 `}
             >
               Loans, minus the paperwork and haggling.
             </h3>

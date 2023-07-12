@@ -12,7 +12,7 @@ export const StandOut = () => {
         <div className="grid grid-cols-2 items-center">
           <div className="standOut-section-title relative">
             <h3
-              className={`${titleFont.className} text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] mt-6 mb-5 text-white`}
+              className={`font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] mt-6 mb-5 text-white`}
             >
               What makes us stand out from the rest?
             </h3>
@@ -23,7 +23,7 @@ export const StandOut = () => {
                     <BsLightbulb className="text-xl" />
                   </div>
                   <span
-                    className={`text-xl font-semibold leading-[130%] ${titleFont.className}`}
+                    className={`text-xl font-semibold leading-[130%] font-montserrat`}
                   >
                     Innovation
                   </span>
@@ -39,7 +39,7 @@ export const StandOut = () => {
                     <RiSecurePaymentLine className="text-xl" />
                   </div>
                   <span
-                    className={`text-xl font-semibold leading-[130%] ${titleFont.className}`}
+                    className={`text-xl font-semibold leading-[130%] font-montserrat`}
                   >
                     Security
                   </span>
@@ -55,7 +55,7 @@ export const StandOut = () => {
                     <RiCustomerService2Line className="text-xl" />
                   </div>
                   <span
-                    className={`text-xl font-semibold leading-[130%] ${titleFont.className}`}
+                    className={`text-xl font-semibold leading-[130%] font-montserrat`}
                   >
                     Service
                   </span>
@@ -71,7 +71,7 @@ export const StandOut = () => {
                     <BsLaptop className="text-xl" />
                   </div>
                   <span
-                    className={`text-xl font-semibold leading-[130%] ${titleFont.className}`}
+                    className={`text-xl font-semibold leading-[130%] font-montserrat`}
                   >
                     Technology
                   </span>

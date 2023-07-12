@@ -7,14 +7,14 @@ export const OurImpact = () => {
   return (
     <>
       <h3
-        className={`${titleFont.className} text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%]  text-center mt-[120px] mb-[60px]`}
+        className={`font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%]  text-center mt-[120px] mb-[60px]`}
       >
         Our impact in numbers
       </h3>
       <div className="flex items-center justify-evenly text-center">
         <div>
           <h6
-            className={`${titleFont.className} font-semibold leading-[120%] text-[64px] text-[#055F5B]`}
+            className={`font-montserrat font-semibold leading-[120%] text-[64px] text-[#055F5B]`}
           >
             600<span className="text-[#FFD584]">K</span>
           </h6>
@@ -22,7 +22,7 @@ export const OurImpact = () => {
         </div>
         <div>
           <h6
-            className={`${titleFont.className} font-semibold leading-[120%] text-[64px] text-[#055F5B]`}
+            className={`font-montserrat font-semibold leading-[120%] text-[64px] text-[#055F5B]`}
           >
             99<span className="text-[#FFD584]">%</span>
           </h6>
@@ -30,7 +30,7 @@ export const OurImpact = () => {
         </div>
         <div>
           <h6
-            className={`${titleFont.className} font-semibold leading-[120%] text-[64px] text-[#055F5B]`}
+            className={`font-montserrat font-semibold leading-[120%] text-[64px] text-[#055F5B]`}
           >
             260<span className="text-[#FFD584]">B</span>
           </h6>

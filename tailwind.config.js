@@ -15,9 +15,16 @@ module.exports = {
       colors: {
         "primary-color-1": "var(--primary-color-1)",
         "primary-color-2": "var(--primary-color-2)",
+        "primary-color-2.1": "var(--primary-color-2-1)",
+        "primary-color-2.2": "var(--primary-color-2-2)",
         "primary-text-1": "var(--primary-text-1)",
         "primary-text-2": "var(--primary-text-2)",
         "sub-title-color": "var(--sub-title-color)",
+        "section-bg": "var(--section-bg)",
+      },
+      fontFamily: {
+        inter: ["var(--body-font)"],
+        montserrat: ["var(--head-font)"],
       },
     },
   },
