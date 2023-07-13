@@ -9,9 +9,8 @@ import { PiHandCoins } from "react-icons/pi";
 import { PiPiggyBankLight } from "react-icons/pi";
 import AnimateHeight from "react-animate-height";
 
-export const FrequentlyAsk = () => {
+export const Faq = () => {
   const [open, setOpen] = useState<number | null>(1);
-
   return (
     <section>
       <div className="my-container my-[120px]">

@@ -20,3 +20,54 @@
   border: 1px solid #e7e9ee;
   background: #fafafc;
 }
+
+#range-slider-yellow .range-slider__range {
+  background: #ffbf00;
+  transition: height 0.3s;
+}
+
+.single-thumb .range-slider__thumb[data-lower] {
+  width: 0;
+}
+
+.single-thumb .range-slider__thumb[data-upper] {
+  background: #ffbf00;
+}
+.single-thumb .range-slider__range {
+  border-radius: 6px;
+}
+
+// Home Loan page
+.how-it-work-section {
+  .card {
+    .card-number::after {
+      content: "";
+      position: absolute;
+      background: #ffd584;
+      border-radius: 5px;
+      height: 50%;
+      width: 110%;
+      padding: 0 10px;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    .card-title {
+      font-family: ver(--head-font);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 130%;
+      margin-top: 32px;
+    }
+    .card-text {
+      font-size: 18px;
+      line-height: 150%;
+      margin-top: 12px;
+    }
+  }
+}
+
+.max-unset {
+  max-width: unset;
+}

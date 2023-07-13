@@ -8,7 +8,7 @@ type Props = {
 export const Button = ({ url, text }: Props) => {
   return (
     <Link href={url}>
-      <button className="px-10 py-[15px] bg-primary-color-2 text-[#292C32]  font-medium border">
+      <button className="px-10 py-[15px] bg-primary-color-2 hover:bg-slate-200 text-[#292C32]  font-medium border">
         {text}
       </button>
     </Link>

@@ -8,7 +8,7 @@ type Props = {
 export const SectionHeading = ({ title }: Props) => {
   return (
     <h3
-      className={`font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%]`}
+      className={`font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] text-[#292C32]`}
     >
       {title}
     </h3>
