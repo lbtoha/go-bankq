@@ -4,6 +4,38 @@ import { FiChevronRight } from "react-icons/fi";
 
 export const PageHeader = () => {
   const path = usePathname();
+
+  if (path.includes("/") && path.includes("-")) {
+    const convertToTitleCase2 = (str: string) => {
+      // Remove leading slash
+      str = str.slice(1);
+      // Split the string into words
+      const words = str.split("-");
+      // Capitalize the first letter of each word
+      const capitalizedWords = words.map(
+        (word) => word.charAt(0).toUpperCase() + word.slice(1)
+      );
+      // Join the words with a space
+      const result = capitalizedWords.join(" ");
+      return result;
+    };
+  }
+
+  const convertToTitleCase2 = (str: string) => {
+    // Remove leading slash
+    str = str.slice(1);
+    // Split the string into words
+    const words = str.split("-");
+    // Capitalize the first letter of each word
+    const capitalizedWords = words.map(
+      (word) => word.charAt(0).toUpperCase() + word.slice(1)
+    );
+    // Join the words with a space
+    const result = capitalizedWords.join(" ");
+    return result;
+  };
+  const heading2 = convertToTitleCase2(path);
+
   const convertToTitleCase = (str: string) => {
     // Remove leading slash
     str = str.slice(1);

@@ -1,8 +1,9 @@
+"use client";
 import { PageHeader } from "@/components/shared/PageHeader";
 import Image from "next/image";
-import serviceBanner from "@/public/images/service_banner.png";
+import cardImage from "@/public/images/card_banner.png";
 
-export const ServiceHeader = () => {
+export const CardHeader = () => {
   return (
     <section className="bg-primary-color-1 ">
       <div className="my-container">
@@ -11,7 +12,7 @@ export const ServiceHeader = () => {
             <PageHeader />
           </div>
           <div>
-            <Image src={serviceBanner} alt="service banner" />
+            <Image src={cardImage} alt="service banner" />
           </div>
         </div>
       </div>

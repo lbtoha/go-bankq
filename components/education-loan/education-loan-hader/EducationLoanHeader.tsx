@@ -1,17 +1,18 @@
 import { PageHeader } from "@/components/shared/PageHeader";
 import Image from "next/image";
-import serviceBanner from "@/public/images/service_banner.png";
+import React from "react";
+import educationLoanImage from "@/public/images/education_loan_banner.png";
 
-export const ServiceHeader = () => {
+export const EducationLoanHeader = () => {
   return (
-    <section className="bg-primary-color-1 ">
+    <section className="bg-primary-color-1 dot-bg">
       <div className="my-container">
         <div className="flex items-center justify-between">
           <div>
             <PageHeader />
           </div>
           <div>
-            <Image src={serviceBanner} alt="service banner" />
+            <Image src={educationLoanImage} alt="Personal Loan banner" />
           </div>
         </div>
       </div>

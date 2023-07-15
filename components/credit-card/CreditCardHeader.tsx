@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
-import { PageHeader } from "@/components/shared/PageHeader";
+import { PageHeader } from "../shared/PageHeader";
 import Image from "next/image";
-import loanBanner from "@/public/images/loan_banner.png";
+import creditCard from "@/public/images/credit_banner.png";
 
-export const LoanHeader = () => {
+export const CreditCardHeader = () => {
   return (
     <section className="bg-primary-color-1 dot-bg">
       <div className="my-container">
@@ -13,7 +12,7 @@ export const LoanHeader = () => {
             <PageHeader />
           </div>
           <div>
-            <Image src={loanBanner} alt="about banner" />
+            <Image src={creditCard} alt="Credit Card banner" />
           </div>
         </div>
       </div>

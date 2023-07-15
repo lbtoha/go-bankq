@@ -21,6 +21,7 @@
   background: #fafafc;
 }
 
+// range Slider yellow
 #range-slider-yellow .range-slider__range {
   background: #ffbf00;
   transition: height 0.3s;
@@ -33,9 +34,27 @@
 .single-thumb .range-slider__thumb[data-upper] {
   background: #ffbf00;
 }
-.single-thumb .range-slider__range {
-  border-radius: 6px;
+// .single-thumb .range-slider__range {
+//   border-radius: 6px;
+// }
+
+// range Slider green
+#range-slider-green .range-slider__range {
+  background: var(--primary-color-1);
+  transition: height 0.3s;
 }
+
+.single-thumb-green .range-slider__thumb[data-upper] {
+  background: var(--primary-color-1);
+}
+
+.single-thumb-green .range-slider__thumb[data-lower] {
+  width: 0;
+}
+
+// .single-thumb-green .range-slider__range {
+//   border-radius: 6px;
+// }
 
 // Home Loan page
 .how-it-work-section {

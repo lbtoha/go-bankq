@@ -8,7 +8,9 @@ export const SaveWithUs = () => {
   return (
     <section className="bg-primary-color-1 text-white text-center dot-bg">
       <div className="my-container py-[120px]">
-        <SectionHeading title="Save With Us" />
+        <h3 className="font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] text-white">
+          Save With Us
+        </h3>
 
         <p className="text-lg  leading-[150%] text-[#E7E9EE] lg:mb-10 mt-6 mb-[60px] max-w-[595px] mx-auto">
           A checking account is a type of bank account that allows you to

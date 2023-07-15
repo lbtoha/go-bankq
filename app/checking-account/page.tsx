@@ -4,10 +4,10 @@ import { CashFlow } from "@/components/checkingAccount/cashFlow/CashFlow";
 import { CheckingAccount } from "@/components/checkingAccount/checkingAccount/CheckingAccount";
 import { CheckingAccountHeader } from "@/components/checkingAccount/checkingAccountHeader/CheckingAccountHeader";
 import { CheckingSlider } from "@/components/checkingAccount/checkingSlider/CheckingSlider";
-import { SaveWithUs } from "@/components/checkingAccount/saveWithUs/SaveWithUs";
 import { SecurityAndPeace } from "@/components/checkingAccount/securityAndPeace/SecurityAndPeace";
 import { WorkStep } from "@/components/checkingAccount/workStep/WorkStep";
 import { OpenAccount } from "@/components/home/openAccount/OpenAccount";
+import { SaveWithUs } from "@/components/shared/SaveWithUs";
 
 export default function Checking() {
   return (

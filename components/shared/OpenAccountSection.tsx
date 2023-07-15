@@ -11,7 +11,9 @@ export const OpenAccountSection = () => {
     <section className="open-account-section relative">
       <div className="my-container text-center py-[120px]">
         <div className=" text-white text-center max-w-[761px] mx-auto mb-[60px]">
-          <SectionHeading title="Open your account today and experience the next-gen banking" />
+          <h2 className="font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] text-white">
+            Open your account today and experience the next-gen banking
+          </h2>
         </div>
         <div className="flex justify-center gap-2 mt-[60px]">
           <div>

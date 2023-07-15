@@ -21,6 +21,7 @@ module.exports = {
         "primary-text-2": "var(--primary-text-2)",
         "sub-title-color": "var(--sub-title-color)",
         "section-bg": "var(--section-bg)",
+        "border-color": "var(--border-color)",
       },
       fontFamily: {
         inter: ["var(--body-font)"],

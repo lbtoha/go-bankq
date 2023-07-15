@@ -8,7 +8,7 @@ import star from "@/public/images/testimonial_vector.png";
 
 export const OurClientSaySection = () => {
   return (
-    <section className="our-client-section">
+    <section className="our-client-section bg-section-bg">
       <div className="my-container py-[120px]">
         <div className="text-center">
           <SectionHeading title="What Our Client's Say" />
