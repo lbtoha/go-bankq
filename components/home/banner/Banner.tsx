@@ -9,29 +9,29 @@ import rightArrow from "@/public/images/banner/stars.png";
 export const Banner = () => {
   return (
     <section
-      className={`bg-[url("/images/banner/bannerBg.png")] w-full h-full pt-[99px] overflow-clip relative`}
+      className={`relative h-full w-full overflow-clip bg-[url("/images/banner/bannerBg.png")] pt-[99px]`}
     >
       <div className="my-container">
         <h1
-          className={`font-montserrat main-heading text-white text-4xl md:text-5xl lg:text-7xl text-center font-bold `}
+          className={`main-heading text-center font-montserrat  text-3xl font-bold text-white md:text-5xl lg:text-7xl `}
         >
-          All <span className="text-[#E0F300] custom">Banking</span> Solution{" "}
+          All <span className="custom text-[#E0F300]">Banking</span> Solution{" "}
           <br /> In One Place
         </h1>
-        <div className="card flex items-end justify-center relative z-50 ">
+        <div className="card relative z-50 flex items-end justify-center ">
           <div className="card__left md:w-[250px]">
             <Image
               src={LeftCard}
               alt="Image left"
-              className="rounded-xl z-50"
+              className="z-50 hidden rounded-xl md:block"
             ></Image>
           </div>
           <Image
-            className="md:w-[300px] card__mobile "
+            className="card__mobile hidden md:block md:w-[300px]"
             src={mobile}
             alt="mobile"
           ></Image>
-          <div className="card__right md:w-[250px]">
+          <div className="card__right hidden md:block md:w-[250px]">
             <Image
               className="rounded-xl"
               src={RightCard}
@@ -42,12 +42,12 @@ export const Banner = () => {
         <div className="banner-objects">
           <div className="banner-objects__left absolute left-[15%] ">
             <Image
-              className="w-[25%] lg:w-[18%]"
+              className="hidden w-[25%] md:block lg:w-[18%]"
               src={leftArrow}
               alt="Left Arrow"
             />
           </div>
-          <div className="banner-objects__right absolute top-[28%] right-[7%]">
+          <div className="banner-objects__right absolute right-[7%] top-[28%] hidden md:block">
             <Image src={rightArrow} alt="right Arrow" />
           </div>
         </div>

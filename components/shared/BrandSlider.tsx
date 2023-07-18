@@ -21,13 +21,27 @@ export const BrandSlider = () => {
     autoplaySpeed: 2000,
     cssEase: "linear",
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 320,
+        settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 2, slidesToScroll: 2, infinite: true },
+      },
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true },
+      },
+    ],
   };
 
   return (
     <div className="">
       <Slider
         {...settings}
-        className={` bg-[url("/images/sponsor-slider.png")] flex gap-[223px]   w-full justify-center items-center py-[120px] bg-no-repeat `}
+        className={` flex w-full items-center   justify-center gap-[223px] bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[120px] `}
       >
         <div>
           <Image src={sponsor1} alt="Our Mission Image1" />

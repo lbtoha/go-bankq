@@ -12,22 +12,23 @@ import { Services } from "@/components/home/services/Services";
 import { StandOut } from "@/components/home/standOut/StandOut";
 import { Footer } from "@/components/shared/Footer";
 import { OurImpact } from "@/components/shared/OurImpact";
+import NewNav from "@/components/shared/navbar/NewNav";
 
 export default function Home() {
   return (
     <main>
-      <Banner />
+      {/* <Banner />
       <Loan />
       <Brand />
-      <Services />
-      <StandOut />
-      <OurImpact />
-      <CreditCard />
-      <OpenAccount />
-      <FrequentlyAsk />
-      <LatestArticle />
-      <OurClientSay />
-      <AccountForm />
+      <Services /> */}
+      {/* <StandOut /> */}
+      {/* <OurImpact /> */}
+      {/* <CreditCard /> */}
+      {/* <OpenAccount /> */}
+      {/* <FrequentlyAsk /> */}
+      {/* <LatestArticle /> */}
+      {/* <OurClientSay /> */}
+      {/* <AccountForm />  */}
     </main>
   );
 }

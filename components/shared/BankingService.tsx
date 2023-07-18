@@ -9,15 +9,15 @@ export const BankingService = () => {
   return (
     <section className="mt-[120px]">
       <div className="lg:my-container">
-        <div className="lg:grid grid-cols-2 md:px-5">
+        <div className="grid-cols-2 md:px-5 lg:grid">
           <div>
             <h3 className="text-[40px] font-bold leading-[120%] text-[#292C32]">
               Browse our set of banking services and offerings
             </h3>
-            <div className="flex mt-[60px] gap-[35px]">
+            <div className="mt-[60px] flex gap-[35px]">
               <Button text="Get Started" url="/" />
               <Link href="/">
-                <button className="px-10 py-[15px] bg-gray-100 text-[#292C32] font-medium underline">
+                <button className="bg-gray-100 px-10 py-[15px] font-medium text-[#292C32] underline">
                   Browser Feature
                 </button>
               </Link>
@@ -29,7 +29,7 @@ export const BankingService = () => {
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
               <PermIdentity
-                className={`text-8xl bg-yellow-100 rounded-full p-3`}
+                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
               />
             </CardYellow>
             <CardYellow
@@ -37,21 +37,21 @@ export const BankingService = () => {
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
               <PermIdentity
-                className={`text-8xl bg-yellow-100 rounded-full p-3`}
+                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
               />
             </CardYellow>
           </div>
         </div>
       </div>
       <div className="relative">
-        <div className="lg:my-container grid grid-cols-4 mt-[30px] pb-[120px] gap-4">
+        <div className="lg:my-container mt-[30px] grid grid-cols-4 gap-4 pb-[120px]">
           <div className="col-start-2">
             <CardYellow
               cardTitle="Checking Account"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
               <PermIdentity
-                className={`text-8xl bg-yellow-100 rounded-full p-3`}
+                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
               />
             </CardYellow>
           </div>
@@ -61,7 +61,7 @@ export const BankingService = () => {
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
               <PermIdentity
-                className={`text-8xl bg-yellow-100 rounded-full p-3`}
+                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
               />
             </CardYellow>
           </div>
@@ -71,12 +71,12 @@ export const BankingService = () => {
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
               <PermIdentity
-                className={`text-8xl bg-yellow-100 rounded-full p-3`}
+                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
               />
             </CardYellow>
           </div>
         </div>
-        <div className="absolute w-1/4 h-full bg-gray-50 bottom-0 left-0 -z-10"></div>
+        <div className="absolute bottom-0 left-0 -z-10 h-full w-1/4 bg-gray-50"></div>
       </div>
     </section>
   );

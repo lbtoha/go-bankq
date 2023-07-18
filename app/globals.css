@@ -4,10 +4,14 @@
 
 @layer components {
   .my-container {
-    @apply lg:max-w-[1296px] mx-auto;
+    @apply mx-auto lg:max-w-[1296px];
   }
   .grid-2-center {
     @apply grid grid-cols-2 items-center justify-between;
+  }
+
+  .my-transition {
+    @apply duration-350 py-10 transition-all delay-100 ease-in-out;
   }
 }
 

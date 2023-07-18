@@ -1,6 +1,4 @@
-@forward "./pages/home";
-@forward "./pages/about-us";
-@forward "./pages/checkingAccount";
+@forward "./all-pages-styles";
 
 .dot-bg {
   background-image: url("../public/images/feature_dot.png");
@@ -34,9 +32,6 @@
 .single-thumb .range-slider__thumb[data-upper] {
   background: #ffbf00;
 }
-// .single-thumb .range-slider__range {
-//   border-radius: 6px;
-// }
 
 // range Slider green
 #range-slider-green .range-slider__range {
@@ -51,10 +46,6 @@
 .single-thumb-green .range-slider__thumb[data-lower] {
   width: 0;
 }
-
-// .single-thumb-green .range-slider__range {
-//   border-radius: 6px;
-// }
 
 // Home Loan page
 .how-it-work-section {
@@ -89,4 +80,87 @@
 
 .max-unset {
   max-width: unset;
+}
+
+// blog page pagination
+.pagination {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  list-style-type: none;
+  padding: 0 5rem;
+  margin-bottom: 120px;
+}
+
+.pagination li a {
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  border: var(--primary-color-1) 1px solid;
+  color: var(--primary-color-1);
+  cursor: pointer;
+}
+
+.pagination li.active a {
+  border: var(--primary-color-1) 1px solid;
+  background-color: var(--primary-color-1);
+  color: #fff;
+}
+
+ul.pagination li.selected a {
+  background-color: #0366d6;
+  border-color: transparent;
+  color: white;
+  min-width: 32px;
+}
+
+ul.pagination li.disabled a {
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  border: var(--primary-color-1) 1px solid;
+  background: #caccd1;
+  border-color: transparent;
+}
+
+ul.pagination li.disable,
+ul.pagination li.disabled a {
+  cursor: default;
+}
+
+.custom-class {
+  inset-inline-start: 0;
+  inset-block-start: calc(100% + 0.5rem);
+  pointer-events: none;
+  min-width: 230px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #055f5b;
+  margin: 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 0;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+}
+
+.custom-class-sub-item {
+  inset-inline-start: 0;
+  inset-block-start: calc(100% + 0.5rem);
+  pointer-events: none;
+  min-width: 230px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #055f5b;
+  margin: 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 0;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
 }

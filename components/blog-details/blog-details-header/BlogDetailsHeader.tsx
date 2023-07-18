@@ -1,9 +1,9 @@
-import React from "react";
-import { PageHeader } from "../shared/PageHeader";
+import { PageHeader } from "@/components/shared/PageHeader";
 import Image from "next/image";
-import creditCard from "@/public/images/credit_banner.png";
+import React from "react";
+import blogDetailsBanner from "@/public/images/blog_banner.png";
 
-export const CreditCardHeader = () => {
+export const BlogDetailsHeader = () => {
   return (
     <section className="dot-bg bg-primary-color-1">
       <div className="my-container">
@@ -12,7 +12,7 @@ export const CreditCardHeader = () => {
             <PageHeader />
           </div>
           <div>
-            <Image src={creditCard} alt="Credit Card banner" />
+            <Image src={blogDetailsBanner} alt="Personal Loan banner" />
           </div>
         </div>
       </div>

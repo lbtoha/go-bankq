@@ -16,6 +16,7 @@
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@types/react-paginate": "^7.1.1",
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",
@@ -27,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.1",
     "react-icons": "^4.10.1",
+    "react-paginate": "^8.2.0",
     "react-range-slider-input": "^3.0.7",
     "react-slick": "^0.29.0",
     "sass": "^1.63.6",
@@ -34,5 +36,9 @@
     "swiper": "^10.0.4",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }

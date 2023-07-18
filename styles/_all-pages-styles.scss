@@ -2,6 +2,10 @@
   --primary-color-2: #ffd584;
 }
 
+// ******************                         ******************
+// ****************** Home Page Styles Start  ******************
+// ******************                         ******************
+
 // ======= Navbar Section Styles Start ============
 .navbar {
   &::after {
@@ -12,6 +16,47 @@
     width: 96%;
     left: 2%;
     z-index: 1;
+  }
+
+  .nav__items li {
+    a {
+      position: relative;
+      display: flex;
+      &::before {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        background-color: var(--primary-color-2);
+        top: 100%;
+        left: 45%;
+        transition: all 0.35s ease-in-out;
+      }
+    }
+    .active-nav:hover::before {
+      position: absolute;
+      top: 60%;
+      opacity: 1;
+      width: 2px;
+      height: 20px;
+    }
+
+    .dropdown-icon {
+      &::after {
+        border: none;
+        content: "\e5cf";
+        font-family: "Material Symbols Outlined";
+        font-size: 20px;
+        margin-left: auto;
+        transition: all 0.35s ease-in-out 0.1s;
+      }
+      &:hover {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
   }
 }
 
@@ -146,7 +191,7 @@
 
 // countdown section
 .countdown-section {
-  background-image: url("../../public/images/countdown_bg.png");
+  background-image: url("../public/images/countdown_bg.png");
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -192,14 +237,14 @@
 
 // open account
 .open-account-section {
-  background-image: url("../../public/images/call-to-action-bg.png");
+  background-image: url("../public/images/call-to-action-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 // latest feature article
 .latest-article-section {
-  background-image: url("../../public/images/feature_dot.png");
+  background-image: url("../public/images/feature_dot.png");
   background-color: #191b1a;
 }
 
@@ -244,7 +289,7 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../../public/images/earth.png");
+        background-image: url("../public/images/earth.png");
         z-index: 122;
         right: -17%;
         bottom: -24%;
@@ -255,7 +300,7 @@
       &::after {
         content: "";
         position: absolute;
-        background-image: url("../../public/images/visa.png");
+        background-image: url("../public/images/visa.png");
         z-index: 122;
         right: -21%;
         bottom: -64%;
@@ -270,7 +315,7 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("../../public/images/asset.png");
+        background-image: url("../public/images/asset.png");
         z-index: 122;
         right: 2%;
         bottom: -5%;
@@ -284,12 +329,12 @@
 
 // Footer section
 .footer-section {
-  background: url("../../public//images/feature_dot.png");
+  background: url("../public//images/feature_dot.png");
   background-color: #191b1a;
 
   &::after {
     content: "";
-    background: url("../../public//images/footer_bg.png") repeat;
+    background: url("../public//images/footer_bg.png") repeat;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -299,3 +344,46 @@
     z-index: -1;
   }
 }
+
+// ******************                       ******************
+// ****************** Home Page Styles End  ******************
+// ******************                       ******************
+
+// ******************                                    ******************
+// ****************** checking Account page style start  ******************
+// ******************                                    ******************
+.paying-section {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #e7e9ee;
+    z-index: 122;
+    left: 0px;
+    bottom: 0px;
+    width: 197px;
+    height: 263px;
+    background-size: contain;
+  }
+}
+
+.work-card {
+  position: relative;
+
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i})::after {
+      content: "0#{$i}";
+      position: absolute;
+      color: rgba(5, 95, 91, 0.1);
+      font-size: 72px;
+      font-weight: bold;
+      z-index: 122;
+      right: 10%;
+      top: 40px;
+    }
+  }
+}
+
+// ******************                                  ******************
+// ****************** checking Account page style End  ******************
+// ******************                                  ******************

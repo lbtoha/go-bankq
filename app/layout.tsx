@@ -2,8 +2,9 @@ import { textFont } from "@/utils/fonts";
 import { Inter, Montserrat, Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 import "../styles/main.scss";
-import { Navbar } from "@/components/home/navbar/Navbar";
 import { Footer } from "@/components/shared/Footer";
+import { Navbar } from "@/components/shared/navbar/Navbar";
+import { NewNavbar } from "@/components/shared/navbar/NewNavbar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
 const montserrat = Montserrat({
@@ -30,11 +31,12 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${montserrat.variable} ${inter.variable} text-lg font-inter`}
+        className={`${montserrat.variable} ${inter.variable}  font-inter text-lg`}
       >
+        {/* <NewNavbar /> */}
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
