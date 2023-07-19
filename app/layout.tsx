@@ -5,6 +5,8 @@ import "../styles/main.scss";
 import { Footer } from "@/components/shared/Footer";
 import { Navbar } from "@/components/shared/navbar/Navbar";
 import { NewNavbar } from "@/components/shared/navbar/NewNavbar";
+import MyDatepicker, { VNew } from "@/components/shared/navbar/VNew";
+import { NewNavbar2 } from "@/components/shared/navbar/NewNavbar copy 2";
 
 const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
 const montserrat = Montserrat({
@@ -33,8 +35,8 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${inter.variable}  font-inter text-lg`}
       >
-        {/* <NewNavbar /> */}
-        <Navbar />
+        <NewNavbar />
+
         {children}
         {/* <Footer /> */}
       </body>

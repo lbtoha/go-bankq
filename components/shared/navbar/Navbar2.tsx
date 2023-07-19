@@ -10,7 +10,7 @@ import { Offcanvas, Ripple, Dropdown, initTE } from "tw-elements";
 import "tw-elements/dist/css/tw-elements.min.css";
 import AnimateHeight from "react-animate-height";
 
-export const NewNavbar = ({ cls = "" }) => {
+export const Navbar2 = ({ cls = "" }) => {
   const [windowHeight, setWindowHeight] = useState(0);
   const [active, setActive] = useState(false);
   const [dropdownId, setDropdownId] = useState("");
@@ -70,15 +70,9 @@ export const NewNavbar = ({ cls = "" }) => {
       >
         <div className="md:my-container px-4 py-3 ">
           <div className="flex items-center justify-between lg:hidden">
-            <div className="py-5  ">
+            <div className="py-5 ps-4 ">
               <Link href="/">
-                <Image
-                  src={Logo}
-                  width={213}
-                  height={40}
-                  alt="Logo"
-                  className="md:full w-40"
-                />
+                <Image src={Logo} width={213} height={40} alt="Logo" />
               </Link>
             </div>
             <div

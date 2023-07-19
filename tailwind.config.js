@@ -19,6 +19,12 @@ module.exports = {
         "4xl": "1800px",
       },
     },
+    // screens: {
+    //   'sm': {'min': '576px', 'max': '767px'},
+    //   'md': {'min': '768px', 'max': '991px'},
+    //   'lg': {'min': '992px', 'max': '1199px'},
+    //   'xl': {'min': '1200px'},
+    // },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -58,6 +64,16 @@ module.exports = {
           "border-bottom-right-radius": "5px",
         },
 
+        ".dropdown-menu-sm": {
+          "inset-block-start": "100%",
+          "pointer-events": "unset",
+          visibility: "visible",
+          opacity: "1",
+          border: "none",
+          "box-shadow": "none",
+          padding: "0px 0px 0px 25px",
+        },
+
         ".dropdown-menu-sub-item": {
           "inset-block-start": "100%",
           "pointer-events": "unset",
@@ -67,7 +83,7 @@ module.exports = {
           "border-bottom-right-radius": "5px",
         },
       };
-
+      [require("tw-elements/dist/plugin.cjs")];
       addComponents(customComponent);
     }),
   ],

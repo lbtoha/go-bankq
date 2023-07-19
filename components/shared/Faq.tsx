@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
 import { faqs } from "@/public/data/faq";
 import React, { useState } from "react";
-import { BsChevronDown, BsChevronUp, BsCreditCard2Back } from "react-icons/bs";
+import { BsChevronDown, BsCreditCard2Back } from "react-icons/bs";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { PiHandCoins } from "react-icons/pi";
 import { PiPiggyBankLight } from "react-icons/pi";
@@ -22,7 +22,7 @@ export const Faq = () => {
             <div className="mb-[60px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount ." />
             </div>
-            <div className="text-xl leading-[150%] text-[#292C32] space-y-[11px] max-w-[207px]">
+            <div className="max-w-[207px] space-y-[11px] text-xl leading-[150%] text-[#292C32]">
               <div className="flex items-center gap-[17px] p-4 hover:bg-primary-color-2 ">
                 <span>
                   <MdOutlineAccountBalanceWallet />
@@ -53,7 +53,7 @@ export const Faq = () => {
             {faqs.map(({ id, question, answer }) => (
               <div>
                 <button
-                  className="flex justify-between border-b-2 pb-6 items-center w-full"
+                  className="flex w-full items-center justify-between border-b-2 pb-6"
                   key={id}
                   onClick={() => setOpen((p) => (id == p ? null : id))}
                 >
@@ -66,9 +66,9 @@ export const Faq = () => {
                 <AnimateHeight
                   id="example-panel"
                   duration={500}
-                  height={open == id ? "auto" : 0} // see props documentation below
+                  height={open == id ? "auto" : 0}
                 >
-                  <p className="text-base leading-[150%] font-normal mt-6">
+                  <p className="mt-6 text-base font-normal leading-[150%]">
                     {answer}
                   </p>
                 </AnimateHeight>

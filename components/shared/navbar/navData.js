@@ -101,6 +101,24 @@ export const navData = [
         id: "du@01s",
         dp_itm: "About Us",
         url: "/about",
+        sbu_dropdown: true,
+        sub_items: [
+          {
+            id: "sub@0001",
+            sub_itm: "Blog Grid",
+            url: "/blog",
+          },
+          {
+            id: "sub@0002",
+            sub_itm: " Blog List",
+            url: "/blog/list",
+          },
+          {
+            id: "sub@0003",
+            sub_itm: "Blog Details",
+            url: "/blog/1",
+          },
+        ],
       },
       {
         id: "du@03s",

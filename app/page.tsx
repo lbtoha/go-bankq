@@ -17,10 +17,10 @@ import NewNav from "@/components/shared/navbar/NewNav";
 export default function Home() {
   return (
     <main>
-      {/* <Banner />
+      <Banner />
       <Loan />
-      <Brand />
-      <Services /> */}
+      {/* <Brand /> */}
+      {/* <Services />  */}
       {/* <StandOut /> */}
       {/* <OurImpact /> */}
       {/* <CreditCard /> */}

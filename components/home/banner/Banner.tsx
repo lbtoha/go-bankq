@@ -19,7 +19,7 @@ export const Banner = () => {
           <br /> In One Place
         </h1>
         <div className="card relative z-50 flex items-end justify-center ">
-          <div className="card__left md:w-[250px]">
+          <div className="card__left  md:w-[250px] ">
             <Image
               src={LeftCard}
               alt="Image left"
@@ -27,7 +27,7 @@ export const Banner = () => {
             ></Image>
           </div>
           <Image
-            className="card__mobile hidden md:block md:w-[300px]"
+            className="card__mobile hidden md:block md:w-[300px] "
             src={mobile}
             alt="mobile"
           ></Image>
@@ -40,9 +40,9 @@ export const Banner = () => {
           </div>
         </div>
         <div className="banner-objects">
-          <div className="banner-objects__left absolute left-[15%] ">
+          <div className="banner-objects__left absolute left-[15%] md:left-[10%] md:top-[45%] ">
             <Image
-              className="hidden w-[25%] md:block lg:w-[18%]"
+              className="hidden w-[25%]  md:block lg:w-[18%]"
               src={leftArrow}
               alt="Left Arrow"
             />
