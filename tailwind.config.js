@@ -19,6 +19,15 @@ module.exports = {
         "4xl": "1800px",
       },
     },
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      xxl: "1400px",
+      "3xl": "1600px",
+      "4xl": "1800px",
+    },
     // screens: {
     //   'sm': {'min': '576px', 'max': '767px'},
     //   'md': {'min': '768px', 'max': '991px'},
@@ -45,6 +54,49 @@ module.exports = {
       fontFamily: {
         inter: ["var(--body-font)"],
         montserrat: ["var(--head-font)"],
+      },
+
+      keyframes: {
+        previewShapeY: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "10%, 30%, 50%, 70%, 90%": { transform: "translateY(-10px)" },
+          "20%, 40%, 60%, 80%": { transform: "translateY(10px)" },
+        },
+
+        previewShape: {
+          "0%": {
+            transform: "translateX(-30px) translateY(0)",
+          },
+          "50%": {
+            transform: "translateX(0px) translateY(5px)",
+          },
+          "100%": {
+            transform: "translateX(-30px) translateY(0)",
+          },
+        },
+
+        pulse: {
+          "0%": {
+            "-webkit-transform": "scale(1)",
+            "-ms-transform": "scale(1)",
+            transform: "scale(1)",
+          },
+          "50%": {
+            "-webkit-transform": "scale(1.1)",
+            "-ms-transform": "scale(1.1)",
+            transform: "scale(1.1)",
+          },
+          "100%": {
+            "-webkit-transform": "scale(1)",
+            "-ms-transform": "scale(1)",
+            transform: "scale(1)",
+          },
+        },
+      },
+      animation: {
+        previewShapeY: "previewShapeY 15s linear infinite",
+        previewShape: "previewShape 5s infinite",
+        pulse: "pulse 5s linear infinite",
       },
     },
   },

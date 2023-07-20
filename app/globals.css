@@ -26,10 +26,3 @@
   --section-bg: #fafafc;
   --border-color: #caccd1;
 }
-
-inset-block-start: 100%;
-pointer-events: unset;
-visibility: visible;
-opacity: 1;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;

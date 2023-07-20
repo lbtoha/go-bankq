@@ -4,13 +4,14 @@ import { MarkEmailRead, PermIdentity } from "@mui/icons-material";
 import Link from "next/link";
 import { CardYellow } from "./CardYellow";
 import { Button } from "./Button";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export const BankingService = () => {
   return (
-    <section className="mt-[120px]">
+    <section className="relative mt-[120px]">
       <div className="lg:my-container">
-        <div className="grid-cols-2 md:px-5 lg:grid">
-          <div>
+        <div className="browse-set-container mb-[200px] gap-4 md:px-5">
+          <div className="browse-set-card">
             <h3 className="text-[40px] font-bold leading-[120%] text-[#292C32]">
               Browse our set of banking services and offerings
             </h3>
@@ -23,61 +24,74 @@ export const BankingService = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="browse-set-card">
             <CardYellow
               cardTitle="Checking Account"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <PermIdentity
-                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
-              />
+              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
+                <PermIdentity className={`rounded-full `} />
+              </div>
             </CardYellow>
+          </div>
+          <div className="browse-set-card">
             <CardYellow
               cardTitle="Checking Account"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <PermIdentity
-                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
-              />
+              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
+                <PermIdentity className={`rounded-full `} />
+              </div>
+            </CardYellow>
+          </div>
+          <div className="browse-set-card">
+            <CardYellow
+              cardTitle="Checking Account"
+              cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
+            >
+              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
+                <PermIdentity className={`rounded-full `} />
+              </div>
+            </CardYellow>
+          </div>
+          <div className="browse-set-card">
+            <CardYellow
+              cardTitle="Checking Account"
+              cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
+            >
+              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
+                <PermIdentity className={`rounded-full `} />
+              </div>
+            </CardYellow>
+          </div>
+          <div className="browse-set-card">
+            <CardYellow
+              cardTitle="Checking Account"
+              cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
+            >
+              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
+                <PermIdentity className={`rounded-full `} />
+              </div>
             </CardYellow>
           </div>
         </div>
       </div>
-      <div className="relative">
-        <div className="lg:my-container mt-[30px] grid grid-cols-4 gap-4 pb-[120px]">
-          <div className="col-start-2">
-            <CardYellow
-              cardTitle="Checking Account"
-              cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
-            >
-              <PermIdentity
-                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
-              />
-            </CardYellow>
-          </div>
-          <div className="">
-            <CardYellow
-              cardTitle="Checking Account"
-              cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
-            >
-              <PermIdentity
-                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
-              />
-            </CardYellow>
-          </div>
-          <div className="">
-            <CardYellow
-              cardTitle="Checking Account"
-              cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
-            >
-              <PermIdentity
-                className={`rounded-full bg-yellow-100 p-3 text-8xl`}
-              />
-            </CardYellow>
-          </div>
-        </div>
-        <div className="absolute bottom-0 left-0 -z-10 h-full w-1/4 bg-gray-50"></div>
-      </div>
+
+      <div className="absolute bottom-0 left-0 -z-10 h-1/2 w-1/4 bg-gray-50"></div>
     </section>
   );
 };
+
+{
+  /* 
+      <div className="ula  bg-emerald-300">
+        <p className="li">First list item</p>
+        <p className="li">Second list item</p>
+        <p className="li">Third list item</p>
+        <p className="li">Fourth list item</p>
+        <p className="li">Fifth list item</p>
+        <p className="li">Fifth list item</p>
+
+        
+      </div> */
+}

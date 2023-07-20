@@ -5,7 +5,7 @@ import { CreditCard } from "@/components/home/creditCard/CreditCard";
 import { FrequentlyAsk } from "@/components/home/frequentlyAsk/FrequentlyAsk";
 import { LatestArticle } from "@/components/home/latestArticle/LatestArticle";
 import { Loan } from "@/components/home/loan/Loan";
-import { Navbar } from "@/components/home/navbar/Navbar";
+// import { Navbar } from "@/components/home/navbar/Navbar";
 import { OpenAccount } from "@/components/home/openAccount/OpenAccount";
 import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
 import { Services } from "@/components/home/services/Services";
@@ -19,8 +19,8 @@ export default function Home() {
     <main>
       <Banner />
       <Loan />
-      {/* <Brand /> */}
-      {/* <Services />  */}
+      <Brand />
+      <Services />
       {/* <StandOut /> */}
       {/* <OurImpact /> */}
       {/* <CreditCard /> */}

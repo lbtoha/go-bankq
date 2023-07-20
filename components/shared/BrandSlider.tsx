@@ -16,7 +16,7 @@ export const BrandSlider = () => {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
@@ -24,42 +24,66 @@ export const BrandSlider = () => {
     responsive: [
       {
         breakpoint: 320,
-        settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true },
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 2, slidesToScroll: 2, infinite: true },
+        settings: { slidesToShow: 2, slidesToScroll: 2 },
       },
       {
-        breakpoint: 1024,
-        settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true },
+        breakpoint: 1200,
+        settings: { slidesToShow: 3, slidesToScroll: 3 },
       },
     ],
   };
 
   return (
-    <div className="">
+    <div className="mt-[30px] sm:mt-[40px] md:mt-[70px] lg:mt-[80px] xl:mt-[97px]">
       <Slider
         {...settings}
-        className={` flex w-full items-center   justify-center gap-[223px] bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[120px] `}
+        className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
       >
-        <div>
-          <Image src={sponsor1} alt="Our Mission Image1" />
+        <div className="mx-auto flex items-center">
+          <Image
+            src={sponsor1}
+            alt="Our Mission Image1"
+            className="mx-auto object-cover"
+          />
         </div>
         <div>
-          <Image src={sponsor2} alt="Our Mission Image1" />
+          <Image
+            src={sponsor2}
+            alt="Our Mission Image1"
+            className="mx-auto object-cover"
+          />
         </div>
         <div>
-          <Image src={sponsor3} alt="Our Mission Image1" />
+          <Image
+            src={sponsor3}
+            alt="Our Mission Image1"
+            className="mx-auto object-cover"
+          />
         </div>
         <div>
-          <Image src={sponsor4} alt="Our Mission Image1" />
+          <Image
+            src={sponsor4}
+            alt="Our Mission Image1"
+            className="mx-auto object-cover"
+          />
         </div>
         <div>
-          <Image src={sponsor5} alt="Our Mission Image1" />
+          <Image
+            src={sponsor5}
+            alt="Our Mission Image1"
+            className="mx-auto object-cover"
+          />
         </div>
         <div>
-          <Image src={sponsor6} alt="Our Mission Image1" />
+          <Image
+            src={sponsor6}
+            alt="Our Mission Image1"
+            className="mx-auto object-cover"
+          />
         </div>
       </Slider>
     </div>

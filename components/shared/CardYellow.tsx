@@ -11,16 +11,16 @@ type Props = {
 export const CardYellow = ({ cardTitle, cardBody, children }: Props) => {
   return (
     <div
-      className={`shadow-lg group hover:bg-[#FFD584] p-10 transition-colors duration-500`}
+      className={`group p-10 shadow-lg transition-colors duration-500 hover:bg-[#FFD584]`}
     >
       <span className="">{children}</span>
-      <h4 className="text-2xl leading-[120%] text-[#191B1A] mt-[32px] font-medium">
+      <h4 className="mt-[32px] text-2xl font-medium leading-[120%] text-[#191B1A]">
         {cardTitle}
       </h4>
-      <p className="mt-5 text-base leading-[150%] text-justify mb-[60px]">
+      <p className="mb-[60px] mt-5 text-justify text-base leading-[150%]">
         {cardBody}
       </p>
-      <div className="bg-gray-300 group-hover:bg-gray-600 w-max p-4 rounded-full">
+      <div className="w-max rounded-full bg-gray-300 p-4 group-hover:bg-gray-600">
         <BsArrowUpRight className="text-2xl" />
       </div>
     </div>

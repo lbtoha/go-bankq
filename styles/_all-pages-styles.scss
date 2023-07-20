@@ -74,7 +74,6 @@
     left: 23%;
     transform-origin: left bottom;
     bottom: -20%;
-    transform: rotateZ(340deg);
     position: absolute;
     transition: 1s;
     z-index: -1;
@@ -84,7 +83,6 @@
     right: 22%;
     transform-origin: left bottom;
     bottom: 0%;
-    transform: rotateZ(-340deg);
     position: absolute;
     transition: 1s;
     z-index: -1;
