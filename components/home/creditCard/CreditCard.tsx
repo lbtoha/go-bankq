@@ -6,23 +6,42 @@ import Image from "next/image";
 import cardSlider from "@/public/images/card_slider.png";
 import cardSlider2 from "@/public/images/card_slider2.png";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import arrowLeft from "@/public/images/arrow_left.png";
 import arrowRight from "@/public/images/arrow_right.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { useRef } from "react";
 
 export const CreditCard = () => {
+  type SliderRefType = MutableRefObject<Slider | null>;
+
+  let sliderRef: SliderRefType = useRef(null);
+  const next = () => {
+    sliderRef.current?.slickNext();
+  };
+  const previous = () => {
+    sliderRef.current?.slickPrev();
+  };
+
+  var settings = {
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    // autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+
   return (
-    <section className="card-section horizontal-gap relative ">
+    <section className="card-section section-gap relative ">
       <div className="section-gap container">
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <div className="grid items-center gap-[158px] md:grid-cols-2">
+        <Slider ref={sliderRef} {...settings}>
+          <div>
+            <div className="grid grid-cols-2 items-center gap-[158px]">
               <div>
                 <div className="mb-5">
                   <SectionHeading title="Credit Card" />
@@ -33,15 +52,22 @@ export const CreditCard = () => {
       responsible for making payments on time."
                 />
 
-                <div className="mt-[57px] flex  items-center gap-[41px]">
-                  <button className="card-arrow__left relative">
-                    <Image src={arrowLeft} alt="Arrow Left" />
+                <div className="mt-[57px] flex  items-center gap-[41px] lg:ms-6">
+                  <button
+                    onClick={previous}
+                    className="card-arrow__left relative"
+                  >
+                    <Image
+                      src={arrowLeft}
+                      alt="Arrow Left"
+                      className="relative z-[2]"
+                    />
                   </button>
-                  <button className="card-arrow__right relative">
+                  <button onClick={next} className="card-arrow__right relative">
                     <Image
                       src={arrowRight}
                       alt="Arrow Right"
-                      className="mx-10"
+                      className="relative z-[2] mx-10"
                     />
                   </button>
                 </div>
@@ -50,8 +76,8 @@ export const CreditCard = () => {
                 <Image src={cardSlider} alt="Card Slider1" />
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
             <div className="grid items-center gap-[158px] md:grid-cols-2">
               <div>
                 <div className="mb-5">
@@ -63,14 +89,21 @@ export const CreditCard = () => {
       responsible for making payments on time."
                 />
                 <div className="mt-[57px] flex  items-center gap-[41px]">
-                  <button className="card-arrow__left relative">
-                    <Image src={arrowLeft} alt="Arrow Left" />
+                  <button
+                    onClick={previous}
+                    className="card-arrow__left relative"
+                  >
+                    <Image
+                      src={arrowLeft}
+                      alt="Arrow Left"
+                      className="relative z-[2]"
+                    />
                   </button>
-                  <button className="card-arrow__right relative">
+                  <button onClick={next} className="card-arrow__right relative">
                     <Image
                       src={arrowRight}
                       alt="Arrow Right"
-                      className="mx-10"
+                      className="relative z-[2] mx-10"
                     />
                   </button>
                 </div>
@@ -79,8 +112,8 @@ export const CreditCard = () => {
                 <Image src={cardSlider2} alt="Card Slider1" />
               </div>
             </div>
-          </SwiperSlide>
-        </Swiper>
+          </div>
+        </Slider>
       </div>
     </section>
   );

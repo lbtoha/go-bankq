@@ -318,6 +318,9 @@
       justify-content: space-between;
       align-items: self-start;
     }
+
+    @media (min-width: 768px) {
+    }
     .card-left {
       background-color: rgba(0, 102, 255, 0.06);
       &::before {

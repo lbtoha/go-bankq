@@ -43,7 +43,7 @@ export const CheckingSlider = () => {
   };
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Slider
         {...settings}
         className={` flex w-full items-center   justify-center gap-[223px] bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[120px] `}

@@ -9,6 +9,7 @@ import { Button } from "../Button";
 import { Offcanvas, Ripple, Dropdown, initTE } from "tw-elements";
 import "tw-elements/dist/css/tw-elements.min.css";
 import AnimateHeight from "react-animate-height";
+import { useParams, usePathname } from "next/navigation";
 
 export const Navbar = ({ cls = "" }) => {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -18,6 +19,7 @@ export const Navbar = ({ cls = "" }) => {
   const [subDropdown, setSubDropdown] = useState("");
   const [openDropDown, setOpenDropDown] = useState<string | null>("");
   const [openSubDropDown, setOpenSubDropDown] = useState<string | null>("");
+  const pathname = usePathname();
 
   const handleActive = () => {
     setActive(false);
@@ -25,7 +27,7 @@ export const Navbar = ({ cls = "" }) => {
     setSubDropdown("");
   };
 
-  const handleActiveItem = (url: string) => {
+  const handleActiveItem = (url: any) => {
     setActiveNav(url);
   };
   const handleDropdown = (id: string) => {
@@ -63,8 +65,6 @@ export const Navbar = ({ cls = "" }) => {
     };
   }, []);
 
-  console.log({ openSubDropDown });
-
   return (
     <>
       <header
@@ -74,7 +74,7 @@ export const Navbar = ({ cls = "" }) => {
       >
         <div className="container ">
           <div className="flex items-center justify-between lg:hidden">
-            <div className="py-5  ">
+            <div className="py-5 ">
               <Link href="/">
                 <Image
                   src={Logo}
@@ -144,11 +144,12 @@ export const Navbar = ({ cls = "" }) => {
                             ({
                               id,
                               dropdown_title,
-                              parentUrl,
+                              dropdownUrl,
                               sbu_dropdown,
                               sub_items,
                             }) => {
                               return sbu_dropdown ? (
+                                // This nav item have sub-dropdown data
                                 <li
                                   key={id}
                                   className="group custom-transition relative"
@@ -196,73 +197,17 @@ export const Navbar = ({ cls = "" }) => {
                                   </AnimateHeight>
                                 </li>
                               ) : (
+                                // This nav item have only dropdown data
                                 <li
                                   key={id}
-                                  className=" last-of-type:border-none"
+                                  className="last-of-type:border-none"
                                 >
                                   <Link
                                     className="custom-transition border-b-[0.3px] border-gray-400 px-3 py-5 hover:text-primary-color-2"
-                                    href={url}
-                                    onClick={handleActive}
-                                  >
-                                    {dropdown_title}
-                                  </Link>
-                                </li>
-                              );
-                            },
-                          )}
-                        </ul>
-
-                        <ul
-                          className={`custom-class   absolute min-w-[200px] bg-primary-color-1 group-hover/nav-item:dropdown-menu group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
-                            dropdownId === id && ""
-                          }`}
-                        >
-                          {dropdownItems?.map(
-                            ({
-                              id,
-                              dropdown_title,
-                              url,
-                              sbu_dropdown,
-                              sub_items,
-                            }) => {
-                              return sbu_dropdown ? (
-                                <li
-                                  key={id}
-                                  className="group custom-transition relative"
-                                >
-                                  <Link
-                                    onClick={() => handleSubDropdown(id)}
-                                    className="dropdown-icon  px-3 hover:text-primary-color-2"
-                                    href="URL:void(0)"
-                                  >
-                                    {dropdown_title}
-                                  </Link>
-                                  <ul
-                                    className={`custom-class-sub-item absolute min-w-[200px] group-hover:dropdown-menu-sub-item group-hover:left-[109%] group-hover:block group-hover:space-y-6 group-hover:bg-primary-color-1 group-hover:px-4 ${
-                                      subDropdown === id &&
-                                      "nav__dropdown-active"
-                                    }`}
-                                  >
-                                    {sub_items?.map(({ id, url, sub_itm }) => (
-                                      <li key={id}>
-                                        <Link
-                                          className=""
-                                          href={url}
-                                          onClick={handleActive}
-                                        >
-                                          {sub_itm}
-                                        </Link>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </li>
-                              ) : (
-                                <li key={id}>
-                                  <Link
-                                    className="custom-transition px-3  hover:text-primary-color-2"
-                                    href={url}
-                                    onClick={handleActive}
+                                    href={`${dropdownUrl}`}
+                                    onClick={() => {
+                                      handleActive();
+                                    }}
                                   >
                                     {dropdown_title}
                                   </Link>
@@ -274,7 +219,8 @@ export const Navbar = ({ cls = "" }) => {
                       </AnimateHeight>
                     </li>
                   ) : (
-                    <li className=" ">
+                    // This item do not have any dropdown
+                    <li key={id} className=" " data-te-offcanvas-dismiss>
                       <Link
                         className=" border-b-[0.3px] border-gray-400  py-5"
                         href={`${url}`}
@@ -313,7 +259,7 @@ export const Navbar = ({ cls = "" }) => {
                 return dropdown ? (
                   <li
                     key={id}
-                    className=" group/nav-item custom-transition relative"
+                    className={`group/nav-item custom-transition relative `}
                   >
                     <Link
                       onClick={() => {
@@ -323,7 +269,7 @@ export const Navbar = ({ cls = "" }) => {
                       // href={url}
                       href="URL:void(0)"
                       className={` dropdown-icon ${
-                        activeNav == url && "active-nav"
+                        pathname.includes(url) && "active-nav"
                       } py-10 hover:text-primary-color-2  ${
                         dropdownId === id && "Todo"
                       } ${active && "fitext-primary-color-2"}`}
@@ -339,12 +285,13 @@ export const Navbar = ({ cls = "" }) => {
                         ({
                           id,
                           dropdown_title,
-                          url,
-                          p_url,
+                          dropdownUrl,
+                          parentUrl,
                           sbu_dropdown,
                           sub_items,
                         }) => {
                           return sbu_dropdown ? (
+                            // if have sub-dropdown
                             <li
                               key={id}
                               className="group custom-transition relative"
@@ -378,10 +325,13 @@ export const Navbar = ({ cls = "" }) => {
                               </ul>
                             </li>
                           ) : (
-                            <li key={id}>
+                            <li
+                              onClick={() => handleActiveItem(parentUrl)}
+                              key={id}
+                            >
                               <Link
                                 className="custom-transition px-3  hover:text-primary-color-2"
-                                href={url}
+                                href={dropdownUrl}
                                 onClick={handleActive}
                               >
                                 {dropdown_title}
@@ -393,7 +343,10 @@ export const Navbar = ({ cls = "" }) => {
                     </ul>
                   </li>
                 ) : (
-                  <li className="group/nav-item custom-transition relative">
+                  <li
+                    key={id}
+                    className="group/nav-item custom-transition relative"
+                  >
                     <Link
                       onClick={() => handleActiveItem(url)}
                       className={` py-10 hover:text-primary-color-2 ${

@@ -20,7 +20,7 @@ export const LatestArticle = () => {
         <div className="mx-auto max-w-[642px] pb-6 text-center text-[#E7E9EE]">
           <SectionText text="Banks have been around for centuries, and their role in the economy has evolved over time. " />
         </div>
-        <div className="gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 ">
+        <div className="gap-6 max-md:space-y-5 md:grid md:grid-cols-2 lg:grid-cols-3 ">
           <div>
             <Image src={block} alt="blog1" className="w-full" />
             <div className="mt-5 flex items-center justify-between text-[#FFD584] ">
