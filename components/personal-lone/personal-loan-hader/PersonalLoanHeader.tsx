@@ -5,13 +5,16 @@ import Image from "next/image";
 
 export const PersonalLoanHeader = () => {
   return (
-    <section className="bg-primary-color-1 dot-bg">
-      <div className="my-container">
+    <section className="dot-bg max-lg:section-gap header-section-space bg-primary-color-1">
+      <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader />
+            <PageHeader
+              title="Home"
+              items={["Home", "Loan", "Personal Loan"]}
+            />
           </div>
-          <div>
+          <div className="hidden lg:block">
             <Image src={personalLoanImage} alt="Personal Loan banner" />
           </div>
         </div>

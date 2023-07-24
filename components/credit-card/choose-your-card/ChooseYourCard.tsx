@@ -5,7 +5,7 @@ import { SectionText } from "@/components/shared/SectionText";
 export const ChooseYourCard = () => {
   return (
     <section>
-      <div className="my-container section-gap">
+      <div className="section-gap container max-sm:px-2">
         <div className="mb-6">
           <SectionHeading title="Choose your perfect credit card" />
         </div>

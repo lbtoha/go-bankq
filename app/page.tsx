@@ -10,9 +10,9 @@ import { OpenAccount } from "@/components/home/openAccount/OpenAccount";
 import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
 import { Services } from "@/components/home/services/Services";
 import { StandOut } from "@/components/home/standOut/StandOut";
+import { Faq } from "@/components/shared/Faq";
 import { Footer } from "@/components/shared/Footer";
 import { OurImpact } from "@/components/shared/OurImpact";
-import NewNav from "@/components/shared/navbar/NewNav";
 
 export default function Home() {
   return (
@@ -21,14 +21,14 @@ export default function Home() {
       <Loan />
       <Brand />
       <Services />
-      {/* <StandOut /> */}
-      {/* <OurImpact /> */}
-      {/* <CreditCard /> */}
-      {/* <OpenAccount /> */}
-      {/* <FrequentlyAsk /> */}
-      {/* <LatestArticle /> */}
-      {/* <OurClientSay /> */}
-      {/* <AccountForm />  */}
+      <StandOut />
+      <OurImpact />
+      <CreditCard />
+      <OpenAccount />
+      <Faq />
+      <LatestArticle />
+      <OurClientSay />
+      <AccountForm />
     </main>
   );
 }

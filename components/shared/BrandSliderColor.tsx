@@ -27,7 +27,7 @@ export const BrandSliderColor = () => {
     <div className="">
       <Slider
         {...settings}
-        className={` bg-primary-color-2 flex gap-[223px]   w-full justify-center items-center py-[120px] bg-no-repeat `}
+        className={` flex w-full items-center   justify-center gap-[223px] bg-primary-color-2 bg-no-repeat py-[120px] `}
       >
         <div>
           <Image src={sponsor1} alt="Our Mission Image1" />

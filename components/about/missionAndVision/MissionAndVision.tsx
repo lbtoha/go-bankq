@@ -15,35 +15,54 @@ import Image from "next/image";
 export const MissionAndVision = () => {
   var settings = {
     infinite: true,
+    autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 2,
-    autoplay: true,
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
     centerMode: false,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 992,
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 1200,
+        settings: { slidesToShow: 4, slidesToScroll: 2 },
+      },
+    ],
   };
+
   return (
     <section className="overflow-clip">
-      <div className="my-container mt-[120px] mb-[94px]">
-        <div className="grid grid-cols-2 gap-[134px]">
-          <div className="space-y-6">
+      <div className="section-gap horizontal-gap container">
+        <div className="mb-5 grid grid-cols-1 gap-5 lg:mb-0 lg:grid-cols-2 xl:gap-[134px]">
+          <div className="space-y-6 md:mb-7">
             <SectionHeading title="Our mission" />
-            <div className="max-w-[526px]">
+            <div className="md:max-w-[526px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount that the cardholder can borrow at any given time. The cardholder is responsible for making payments on time, and if they do not." />
             </div>
           </div>
           <div className="space-y-6">
             <SectionHeading title="Our vision" />
             <div className={textFont.className}>
-              <div className="max-w-[526px]">
+              <div className="lg:max-w-[526px]">
                 <SectionText text="Credit cards typically have a credit limit, which is the maximum amount that the cardholder can borrow at any given time. The cardholder is responsible for making payments on time, and if they do not." />
               </div>
             </div>
           </div>
         </div>
         {/* mission and vision slider */}
-        <div className="w-[90vw]">
+        <div className="xl:w-[90vw]">
           <Slider {...settings}>
             <div>
               <Image src={ourMissionImage1} alt="Our Mission Image1" />

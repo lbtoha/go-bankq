@@ -4,13 +4,13 @@ import serviceBanner from "@/public/images/service_banner.png";
 
 export const ServiceHeader = () => {
   return (
-    <section className="bg-primary-color-1 ">
-      <div className="my-container">
+    <section className="msx-lg:section-gap bg-primary-color-1 max-sm:ps-2">
+      <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader />
+            <PageHeader title="Service" items={["Home", "Service"]} />
           </div>
-          <div>
+          <div className="hidden lg:block">
             <Image src={serviceBanner} alt="service banner" />
           </div>
         </div>

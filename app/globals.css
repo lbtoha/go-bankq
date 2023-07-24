@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .my-container {
+  .container {
     @apply mx-auto lg:max-w-[1296px];
   }
   .grid-2-center {
@@ -12,6 +12,22 @@
 
   .my-transition {
     @apply duration-350 py-10 transition-all delay-100 ease-in-out;
+  }
+
+  .section-gap {
+    @apply py-[50px]  md:py-[60px] lg:py-[70px] xl:py-[120px];
+  }
+
+  .header-section-space {
+    @apply max-lg:ps-2;
+  }
+
+  .horizontal-gap {
+    @apply px-3  xl:px-0;
+  }
+
+  .container {
+    @apply mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px];
   }
 }
 

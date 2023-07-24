@@ -3,6 +3,7 @@ import { ChooseYourCard } from "@/components/credit-card/choose-your-card/Choose
 import { CreditCardLimit } from "@/components/credit-card/credit-card-limit/CreditCardLimit";
 import { GetCreditCard } from "@/components/credit-card/get-credit-card/GetCreditCard";
 import { SmartSave } from "@/components/credit-card/smart-save/SmartSave";
+import { BrandSlider } from "@/components/shared/BrandSlider";
 import { BrandSliderColor } from "@/components/shared/BrandSliderColor";
 import { Faq } from "@/components/shared/Faq";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
@@ -15,11 +16,13 @@ export default function CreditCard() {
       <SmartSave />
       <GetCreditCard />
       <ChooseYourCard />
-      <BrandSliderColor />
+      <div className="bg-primary-2">
+        <BrandSlider />
+      </div>
       <CreditCardLimit />
       <OpenAccountSection />
       <OurClientSaySection />
-      <Faq />
+      <Faq />/
     </main>
   );
 }

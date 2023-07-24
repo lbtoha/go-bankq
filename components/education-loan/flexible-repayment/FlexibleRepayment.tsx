@@ -8,8 +8,8 @@ import flexibleReplacementImage from "@/public/images/flexible_repayment.png";
 export const FlexibleRepayment = () => {
   return (
     <section className="relative">
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12 items-center justify-between">
+      <div className="section-gap container max-sm:px-2">
+        <div className="grid-cols-12 items-center justify-between lg:grid">
           <div className="col-span-6">
             <div className="mb-6">
               <SectionHeading title="Education loans typically have flexible repayment." />
@@ -19,7 +19,7 @@ export const FlexibleRepayment = () => {
             </div>
             <Button text="Apply now" url="/" />
           </div>
-          <div className="col-start-8 col-span-12">
+          <div className="col-span-12 col-start-8 hidden lg:block">
             <Image
               src={flexibleReplacementImage}
               alt="Flexible Replacement Image"
@@ -27,7 +27,7 @@ export const FlexibleRepayment = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bg-primary-color-2 w-[25%] h-[50%] bottom-0 right-0 -z-10"></div>
+      <div className="absolute bottom-0 right-0 -z-10 hidden h-[50%] w-[25%] bg-primary-color-2 lg:block"></div>
     </section>
   );
 };

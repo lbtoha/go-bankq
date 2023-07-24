@@ -6,24 +6,24 @@ import React from "react";
 
 export const SaveWithUs = () => {
   return (
-    <section className="bg-primary-color-1 text-white text-center dot-bg">
-      <div className="my-container py-[120px]">
-        <h3 className="font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] text-white">
+    <section className="dot-bg bg-primary-color-1 text-center text-white">
+      <div className="container py-[120px]">
+        <h3 className="font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:text-[40px]">
           Save With Us
         </h3>
 
-        <p className="text-lg  leading-[150%] text-[#E7E9EE] lg:mb-10 mt-6 mb-[60px] max-w-[595px] mx-auto">
+        <p className="mx-auto  mb-[60px] mt-6 max-w-[595px] text-lg leading-[150%] text-[#E7E9EE] lg:mb-10">
           A checking account is a type of bank account that allows you to
           deposit and withdraw money
         </p>
         <div className="flex items-center justify-center gap-[21px]">
           <Link href="/">
-            <button className="px-10 py-[15px] bg-primary-color-2 text-primary-color-1  font-medium border-primary-color-2">
+            <button className=" border-primary-color-2 bg-primary-color-2 px-3 py-[15px] font-medium  text-primary-color-1 md:px-10">
               Open account
             </button>
           </Link>
           <Link href="/">
-            <button className="px-10 py-[15px]  text-primary-color-2  font-medium border border-primary-color-2">
+            <button className="border border-primary-color-2  px-3 py-[15px]  font-medium text-primary-color-2 md:px-10">
               Get in touch
             </button>
           </Link>

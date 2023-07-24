@@ -5,13 +5,13 @@ import creditCard from "@/public/images/credit_banner.png";
 
 export const CreditCardHeader = () => {
   return (
-    <section className="dot-bg bg-primary-color-1">
-      <div className="my-container">
+    <section className="dot-bg max-lg:section-gap bg-primary-color-1 max-sm:px-2">
+      <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader />
+            <PageHeader title="Hoem" items={["Home", "Card", "Credit Card"]} />
           </div>
-          <div>
+          <div className="hidden lg:block">
             <Image src={creditCard} alt="Credit Card banner" />
           </div>
         </div>

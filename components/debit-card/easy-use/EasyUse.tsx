@@ -8,13 +8,13 @@ import easyUseImage from "@/public/images/easy_use_debit.png";
 export const EasyUse = () => {
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12 items-center justify-between">
-          <div className="col-span-5">
+      <div className="section-gap container max-sm:px-2">
+        <div className="grid-cols-12 items-center justify-between md:grid md:gap-5 xl:gap-0">
+          <div className="hidden md:col-span-6 md:block xl:col-span-5">
             <Image src={easyUseImage} alt="Next Car Image" />
           </div>
-          <div className="col-start-8 col-span-12">
-            <div className="mb-6">
+          <div className=" md:col-span-12 md:col-start-7 xl:col-span-12 xl:col-start-8">
+            <div className="mb-6 max-sm:text-center">
               <SectionHeading title="Easy to use your card  everywhere " />
             </div>
             <div className="mb-10">

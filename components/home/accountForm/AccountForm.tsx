@@ -7,37 +7,37 @@ import visaCard from "@/public/images/visa_bg.png";
 export const AccountForm = () => {
   return (
     <section className="account-section">
-      <div className="my-container py-[120px]">
-        <div className="grid grid-cols-12 items-center">
+      <div className="section-gap horizontal-gap container">
+        <div className="grid-cols-12 items-center xl:grid">
           <div className="col-span-6">
-            <div className="pb-[60px] account-section__title relative">
+            <div className="account-section__title relative max-w-[750px] pb-[60px] ">
               <SectionHeading title="Open your account today and experience the next-gen banking" />
             </div>
-            <div className="grid grid-cols-2 ps-5 relative account-section__card-container gap-[23px]">
-              <div className=" w-full h-[237px] card-content card-left">
+            <div className="account-section__card-container relative grid-cols-2 gap-[23px] ps-5 max-md:space-y-5 md:grid">
+              <div className=" card-content card-left h-[237px] w-full">
                 <p className="text-xl leading-[150%] text-[#292C32]">
                   Pay anywhere
                 </p>
-                <button className="underline text-base text-[#055F5B] pb-5">
+                <button className="pb-5 text-base text-[#055F5B] underline">
                   Browse
                 </button>
               </div>
-              <div className=" w-full h-[237px] card-content card-right">
+              <div className=" card-content card-right h-[237px] w-full">
                 <p className="text-xl leading-[150%] text-[#292C32]">
                   Manage your assets
                 </p>
-                <button className="underline text-base text-[#055F5B] pb-5">
+                <button className="pb-5 text-base text-[#055F5B] underline">
                   Browse
                 </button>
               </div>
             </div>
           </div>
-          <div className="col-start-8 bg-[#FAFAFC]  h-full px-10 py-20 w-[526px]">
+          <div className="mt-4 h-full  bg-[#FAFAFC] px-10 py-20 md:mt-16  xl:col-start-8 xl:w-[526px]">
             <Form></Form>
           </div>
         </div>
       </div>
-      <div className="visa-card_bg absolute">
+      <div className="visa-card_bg absolute hidden xl:block">
         <Image src={visaCard} alt="Visa Card" />
       </div>
     </section>

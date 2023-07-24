@@ -11,18 +11,18 @@ import { AiOutlineCheck } from "react-icons/ai";
 export const CheckingAccount = () => {
   return (
     <section>
-      <div className="my-container my-[120px]">
-        <div className="grid grid-cols-12 items-center">
-          <div className="col-span-6">
+      <div className="section-gap horizontal-gap container">
+        <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-12">
+          <div className="hidden md:block lg:col-span-6">
             <Image src={checkingAccountImage} alt="Checking Account" />
           </div>
-          <div className="col-start-8 col-span-12">
+          <div className="lg:col-span-12 lg:col-start-8">
             <SectionHeading title="Create checking account For your daily life " />
-            <div className="mt-6 mb-10">
+            <div className="mb-10 mt-6">
               <SectionText text="Minimum balance requirement: Many banks require you to maintain a minimum balance in your checking account in order to avoid fees." />
             </div>
             <div>
-              <div className="flex gap-5 items-center mt-6">
+              <div className="mt-6 flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>
@@ -30,7 +30,7 @@ export const CheckingAccount = () => {
                   <p>Monthly maintenance fees</p>
                 </div>
               </div>
-              <div className="flex gap-5 items-center mt-6">
+              <div className="mt-6 flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>
@@ -38,7 +38,7 @@ export const CheckingAccount = () => {
                   <p>Overdraft fees </p>
                 </div>
               </div>
-              <div className="flex gap-5 items-center mt-6">
+              <div className="mt-6 flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>
@@ -46,7 +46,7 @@ export const CheckingAccount = () => {
                   <p>Debit cards </p>
                 </div>
               </div>
-              <div className="flex gap-5 items-center mt-6">
+              <div className="mt-6 flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>

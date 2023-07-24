@@ -14,8 +14,8 @@ export const FrequentlyAsk = () => {
 
   return (
     <section>
-      <div className="my-container my-[120px]">
-        <div className="grid grid-cols-2 gap-[134px]">
+      <div className="section-gap horizontal-gap container">
+        <div className="grid-cols-2 gap-[134px] lg:grid">
           <div>
             <div className="mb-6">
               <SectionHeading title="Frequently asked questions" />
@@ -23,8 +23,8 @@ export const FrequentlyAsk = () => {
             <div className="mb-[60px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount ." />
             </div>
-            <div className="text-xl leading-[150%] text-[#292C32] space-y-[11px] max-w-[207px]">
-              <div className="flex items-center gap-[17px] p-4 hover:bg-primary-color-2 ">
+            <div className="mb-8 flex flex-wrap items-center gap-4 text-xl leading-[150%] text-[#292C32] md:max-w-[207px] md:space-y-[11px] lg:mb-0">
+              <div className="flex  items-center  gap-[17px] p-4 hover:bg-primary-color-2 ">
                 <span>
                   <MdOutlineAccountBalanceWallet />
                 </span>
@@ -54,7 +54,7 @@ export const FrequentlyAsk = () => {
             {faqs.map(({ id, question, answer }) => (
               <div>
                 <button
-                  className="flex justify-between border-b-2 pb-6 items-center w-full"
+                  className="flex w-full items-center justify-between border-b-2 pb-6"
                   key={id}
                   onClick={() => setOpen((p) => (id == p ? null : id))}
                 >
@@ -69,7 +69,7 @@ export const FrequentlyAsk = () => {
                   duration={500}
                   height={open == id ? "auto" : 0} // see props documentation below
                 >
-                  <p className="text-base leading-[150%] font-normal mt-6">
+                  <p className="mt-6 text-base font-normal leading-[150%]">
                     {answer}
                   </p>
                 </AnimateHeight>

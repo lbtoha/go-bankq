@@ -22,15 +22,15 @@ export const PlanAction = () => {
   }, [value, month]);
   return (
     <section>
-      <div className="my-container py-[80px] px-[110px] bg-[#FAFAFC] border border-[#CACCD1] my-[120px]">
+      <div className="container my-[120px] border border-[#CACCD1] bg-[#FAFAFC] px-[50px] py-[50px] md:px-[110px] md:py-[80px]">
         <div className="text-center">
           <div className="mb-6">
             <SectionHeading title="Put Your Plans into Action" />
           </div>
-          <div className="max-w-[780px] mx-auto">
+          <div className="mx-auto max-w-[780px]">
             <SectionText text=" Personal loans typically range from $1,000 to $100,000, depending on the lender and the borrower's creditworthiness." />
           </div>{" "}
-          <p className="text-[32px] font-montserrat font-semibold leading-[120%] my-[60px]">
+          <p className="py-[40px] font-montserrat text-2xl font-semibold leading-[120%] md:my-[60px] md:text-[32px]">
             Personal Loan Amount:{" "}
             <span className="text-primary-color-1">${value[1]}</span>
           </p>
@@ -47,10 +47,10 @@ export const PlanAction = () => {
             onInput={setValue}
           />
         </div>
-        <div className="grid grid-cols-4 items-center justify-evenly text-primary-color-1 text-center gap-6">
+        <div className="grid items-center justify-evenly gap-6 text-center text-primary-color-1 md:grid-cols-2 lg:grid-cols-4">
           <div
             onClick={() => setMonth(3)}
-            className={`  border border-border-color hover:bg-primary-color-2.2 px-10 py-[30px] rounded-md cursor-pointer ${
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
               month === 3 && `bg-primary-color-2.2`
             }`}
           >
@@ -59,7 +59,7 @@ export const PlanAction = () => {
           </div>
           <div
             onClick={() => setMonth(6)}
-            className={`  border border-border-color hover:bg-primary-color-2.2 px-10 py-[30px] rounded-md cursor-pointer ${
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
               month === 6 && `bg-primary-color-2.2`
             }`}
           >
@@ -68,7 +68,7 @@ export const PlanAction = () => {
           </div>
           <div
             onClick={() => setMonth(12)}
-            className={`  border border-border-color hover:bg-primary-color-2.2 px-10 py-[30px] rounded-md cursor-pointer ${
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
               month === 12 && `bg-primary-color-2.2`
             }`}
           >
@@ -77,7 +77,7 @@ export const PlanAction = () => {
           </div>
           <div
             onClick={() => setMonth(24)}
-            className={`  border border-border-color hover:bg-primary-color-2.2 px-10 py-[30px] rounded-md cursor-pointer ${
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
               month === 24 && `bg-primary-color-2.2`
             }`}
           >
@@ -85,8 +85,8 @@ export const PlanAction = () => {
             <p className="mt-[10px] text-[#6F7278]">Av. APR is 7.99%</p>
           </div>
         </div>
-        <div className="flex justify-between items-center mt-[60px]">
-          <p className="font-semibold text-[32px] font-montserrat">
+        <div className="mt-[60px] flex items-center justify-between max-md:flex-col max-md:space-y-4">
+          <p className="font-montserrat text-2xl font-semibold md:text-[32px]">
             Monthly:{" "}
             <span className="text-primary-color-1">${monthlyAmount}</span>
           </p>

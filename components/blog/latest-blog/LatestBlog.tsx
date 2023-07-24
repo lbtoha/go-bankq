@@ -33,14 +33,14 @@ export const LatestBlog = () => {
 
   return (
     <section>
-      <div className="my-container section-gap">
-        <h2 className="mb-7 font-montserrat text-[64px] font-semibold leading-[120%]">
+      <div className="section-gap container">
+        <h2 className="mb-7 font-montserrat text-4xl font-semibold  leading-[120%] md:text-[50px] xl:text-[64px]">
           Latest Blog
         </h2>
         <p className="mb-10">
           the amount is deducted from your bank account balance immediatel
         </p>
-        <div className="mb-[92px] grid grid-cols-2 gap-6">
+        <div className="mb-[92px] max-lg:space-y-5  md:grid md:grid-cols-2 md:gap-6">
           <div>
             <Image src={block} alt="blog1" className="w-full" />
             <div className="mt-5 flex items-center justify-between text-primary-color-1 ">
@@ -113,7 +113,7 @@ export const LatestBlog = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid-cols-1 gap-6 max-lg:space-y-5 md:grid md:grid-cols-2 lg:grid-cols-3">
           <div>
             <Image src={block3} alt="blog1" className="w-full" />
             <div className="mt-5 flex items-center justify-between text-primary-color-1 ">
@@ -221,7 +221,7 @@ export const LatestBlog = () => {
           </div>
         </div>
       </div>
-      <div className="my-container flex justify-center">
+      <div className="container flex justify-center overflow-scroll max-sm:ps-2 max-sm:pt-5">
         <ReactPaginate
           previousLabel={"<"}
           nextLabel={">"}

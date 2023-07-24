@@ -8,12 +8,12 @@ import personalLoan from "@/public/images/personal_loans.png";
 export const OpenPersonalLoan = () => {
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12 items-center justify-between">
-          <div className="col-span-5">
+      <div className="section-gap container max-sm:px-2">
+        <div className="grid items-center justify-between md:grid-cols-5 md:gap-6 xl:grid-cols-12 xl:gap-0">
+          <div className="hidden md:col-span-2 md:block xl:col-span-5">
             <Image src={personalLoan} alt="Next Car Image" />
           </div>
-          <div className="col-start-8 col-span-12">
+          <div className="md:col-span-5 md:col-start-3 xl:col-span-12 xl:col-start-8">
             <div className="mb-6">
               <SectionHeading title="Personal loans are often " />
             </div>

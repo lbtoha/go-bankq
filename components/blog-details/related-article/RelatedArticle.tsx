@@ -10,11 +10,11 @@ import { Button } from "@/components/shared/Button";
 export const RelatedArticle = () => {
   return (
     <section>
-      <div className="my-container section-gap">
+      <div className="section-gap container">
         <div className="text-center">
           <SectionHeading title="Related Article" />
         </div>
-        <div className="mt-[60px] grid grid-cols-3 gap-6">
+        <div className="mt-[60px] grid grid-cols-1 gap-6 max-lg:space-y-5 md:grid-cols-2 lg:grid-cols-3">
           <div>
             <Image src={block3} alt="blog1" className="w-full" />
             <div className="mt-5 flex items-center justify-between text-primary-color-1 ">

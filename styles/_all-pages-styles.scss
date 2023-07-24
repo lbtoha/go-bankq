@@ -34,7 +34,7 @@
         transition: all 0.35s ease-in-out;
       }
     }
-    .active-nav:hover::before {
+    .active-nav::before {
       position: absolute;
       top: 60%;
       opacity: 1;
@@ -68,7 +68,7 @@
 }
 
 .card {
-  margin-top: 70px;
+  margin-top: 20px;
 
   &__left {
     left: 23%;
@@ -117,6 +117,22 @@
       bottom: 0%;
       width: 200px;
     }
+  }
+
+  @media (min-width: 576px) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: 992px) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 70px;
   }
 }
 
@@ -196,16 +212,34 @@
 }
 
 // credit card
-.card-section::after {
-  content: "";
-  position: absolute;
-  background-color: #ffd584;
-  width: 40%;
-  height: 50%;
-  border-radius: 50px 0 0 50px;
-  right: 0;
-  top: 25%;
-  z-index: -2;
+
+@media (min-width: 768px) {
+  .card-section::after {
+    content: "";
+    position: absolute;
+    background-color: #ffd584;
+    width: 40%;
+    height: 50%;
+    border-radius: 50px 0 0 50px;
+    right: 0;
+    top: 25%;
+    z-index: -2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-section::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: #ffd584;
+    width: 40%;
+    height: 50%;
+    border-radius: 50px 0 0 50px;
+    right: 0;
+    top: 25%;
+    z-index: -2;
+  }
 }
 
 .card-arrow {
@@ -217,7 +251,7 @@
     height: 40px;
     left: -20px;
     top: -15px;
-    z-index: -1;
+    z-index: 1;
     border-radius: 100%;
   }
   &__right:hover:after {
@@ -228,7 +262,7 @@
     height: 40px;
     left: 50%;
     top: -15px;
-    z-index: -1;
+    z-index: 1;
     border-radius: 100%;
   }
 }
@@ -246,19 +280,21 @@
   background-color: #191b1a;
 }
 
-// account
 .account-section {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: #055f5b;
-    right: 0px;
-    bottom: 0px;
-    width: 35%;
-    height: 100%;
-    z-index: -2;
-    background-size: contain;
+  @media (min-width: 1200px) {
+    // account
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #055f5b;
+      right: 0px;
+      bottom: 0px;
+      width: 35%;
+      height: 100%;
+      z-index: -2;
+      background-size: contain;
+    }
   }
 
   .visa-card_bg {
@@ -350,18 +386,21 @@
 // ******************                                    ******************
 // ****************** checking Account page style start  ******************
 // ******************                                    ******************
-.paying-section {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: #e7e9ee;
-    z-index: 122;
-    left: 0px;
-    bottom: 0px;
-    width: 197px;
-    height: 263px;
-    background-size: contain;
+
+@media (min-width: 1200px) {
+  .paying-section {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #e7e9ee;
+      z-index: -1;
+      left: 0px;
+      bottom: 0px;
+      width: 197px;
+      height: 263px;
+      background-size: contain;
+    }
   }
 }
 

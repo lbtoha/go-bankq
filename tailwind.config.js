@@ -28,12 +28,7 @@ module.exports = {
       "3xl": "1600px",
       "4xl": "1800px",
     },
-    // screens: {
-    //   'sm': {'min': '576px', 'max': '767px'},
-    //   'md': {'min': '768px', 'max': '991px'},
-    //   'lg': {'min': '992px', 'max': '1199px'},
-    //   'xl': {'                min': '1200px'},
-    // },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

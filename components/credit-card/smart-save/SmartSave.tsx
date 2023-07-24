@@ -9,12 +9,12 @@ import { MdSupportAgent } from "react-icons/md";
 export const SmartSave = () => {
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12 items-center justify-between">
-          <div className="col-span-5">
+      <div className="section-gap container max-sm:px-2">
+        <div className="grid-cols-12 items-center justify-between md:grid md:max-lg:gap-5">
+          <div className="hidden md:col-span-4 md:block lg:col-span-5">
             <Image src={smartSave} alt="Smart Save" />
           </div>
-          <div className="col-span-12 col-start-8">
+          <div className="md:col-span-12 md:col-start-5 lg:col-span-12 lg:col-start-8">
             <div className="mb-6">
               <SectionHeading title="Smart—save and spend with confidence" />
             </div>

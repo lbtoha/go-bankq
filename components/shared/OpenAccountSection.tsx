@@ -9,13 +9,13 @@ import callToActionRight from "@/public/images/call-to-action-vactor.png";
 export const OpenAccountSection = () => {
   return (
     <section className="open-account-section relative">
-      <div className="my-container text-center py-[120px]">
-        <div className=" text-white text-center max-w-[761px] mx-auto mb-[60px]">
-          <h2 className="font-montserrat text-[25px] md:text-[35px] lg:text-[40px] font-bold leading-[120%] text-white">
+      <div className="container py-[120px] text-center">
+        <div className=" mx-auto mb-[60px] max-w-[761px] text-center text-white">
+          <h2 className="font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:text-[40px]">
             Open your account today and experience the next-gen banking
           </h2>
         </div>
-        <div className="flex justify-center gap-2 mt-[60px]">
+        <div className="mt-[60px] flex justify-center gap-2">
           <div>
             <Button text="Get Started" url="/" />
           </div>
@@ -24,10 +24,10 @@ export const OpenAccountSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute left-[15%] bottom-[30%]">
+      <div className="absolute bottom-[40%] left-[5%] hidden md:bottom-[30%] md:left-[15%] lg:block ">
         <Image className="w-[100%]" src={callToActionLeft} alt="Left Arrow" />
       </div>
-      <div className=" absolute right-[15%] bottom-[35%]">
+      <div className=" absolute bottom-[40%] right-[5%] hidden md:bottom-[35%] md:right-[15%] lg:block">
         <Image className="w-[100%]" src={callToActionRight} alt="Left Arrow" />
       </div>
     </section>

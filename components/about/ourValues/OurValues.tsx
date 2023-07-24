@@ -7,12 +7,12 @@ import { SectionText } from "@/components/shared/SectionText";
 export const OurValues = () => {
   return (
     <section>
-      <div className="my-container mb-[120px]">
-        <div className="grid-2-center gap-[138px]">
+      <div className="section-gap horizontal-gap container">
+        <div className="grid-2-center grid-cols-1 md:grid-cols-2">
           <div>
             <Image src={OurValuesImage} alt="Our Values" />
           </div>
-          <div className="space-y-6">
+          <div className="mt-5 space-y-6 md:mt-0">
             <SectionHeading title="Our values help us set the bar for good banking high." />
             <div className="max-w-[474px]">
               <SectionText text="Our values define us. They guide us in building and improving our product, hiring teammates, and serving our customers." />

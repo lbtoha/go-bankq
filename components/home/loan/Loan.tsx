@@ -12,7 +12,7 @@ export const Loan = () => {
           arrow_downward
         </span>
       </a>
-      <div className="lg:my-container grid-cols-12 justify-between px-5 pt-[70px] sm:pt-[100px] md:px-10 md:pt-[120px] lg:grid lg:pt-[160px] xl:pt-[226px]">
+      <div className="grid-cols-12 justify-between px-5 pt-[30px] lg:container sm:pt-[40px] md:px-10 md:pt-[50px] lg:grid lg:pt-[60px] xl:pt-[100px]">
         <div className="col-start-1 col-end-8 ">
           <h4 className="loan-section__sub-heading mb-4 text-lg font-normal">
             Banking Solution __

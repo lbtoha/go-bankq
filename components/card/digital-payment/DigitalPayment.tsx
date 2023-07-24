@@ -10,8 +10,8 @@ import { MdCreditScore, MdLocalAtm } from "react-icons/md";
 export const DigitalPayment = () => {
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-2 items-center justify-between">
+      <div className="section-gap container">
+        <div className="grid-cols-2 items-center justify-between lg:grid">
           <div>
             <div className="mb-6">
               <SectionHeading title="Process and Manage Digital Payments" />
@@ -19,26 +19,26 @@ export const DigitalPayment = () => {
             <div className="mb-10">
               <SectionText text="Proven, scalable and secure payment solutions for issuing, acquiring, processing and banking" />
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className=" grid-cols-2 gap-6 space-y-5 sm:grid sm:space-y-0">
               <div>
-                <div className="flex gap-4 items-center mb-3">
+                <div className="mb-3 flex items-center gap-4">
                   <Icon padding="p-2">
                     {" "}
                     <MdCreditScore className="text-xl text-primary-color-1" />
                   </Icon>
-                  <span className="font-montserrat font-semibold text-xl">
+                  <span className="font-montserrat text-xl font-semibold">
                     Credit card
                   </span>
                 </div>
                 <SectionText text="In today's digital age, customers have high expectations when it come." />
               </div>
               <div>
-                <div className="flex gap-4 items-center mb-3">
+                <div className="mb-3 flex items-center gap-4">
                   <Icon padding="p-2">
                     {" "}
                     <MdLocalAtm className="text-xl text-primary-color-1" />
                   </Icon>
-                  <span className="font-montserrat font-semibold text-xl">
+                  <span className="font-montserrat text-xl font-semibold">
                     Debit card
                   </span>
                 </div>
@@ -46,7 +46,7 @@ export const DigitalPayment = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="hidden lg:block">
             <Image src={digitalPaymentImage} alt="Flexible Replacement Image" />
           </div>
         </div>

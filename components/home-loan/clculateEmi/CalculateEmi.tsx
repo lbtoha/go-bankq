@@ -22,19 +22,19 @@ export const CalculateEmi = () => {
   }, [value, month]);
 
   return (
-    <section className="bg-primary-color-1 dot-bg relative">
-      <div className="my-container section-gap">
-        <div className="max-w-[480px] mx-auto mb-[60px]">
-          <p className="text-[32px] font-montserrat font-semibold text-[#FAFAFC] leading-[120%] text-center">
+    <section className="dot-bg section-gap horizontal-gap relative bg-primary-color-1">
+      <div className="section-gap container">
+        <div className="mx-auto mb-[60px] max-w-[480px]">
+          <p className="text-center font-montserrat text-[32px] font-semibold leading-[120%] text-[#FAFAFC]">
             Taking a loan? Calculate your EMI
           </p>
         </div>
-        <div className="grid grid-cols-12 items-center">
-          <div className="col-start-2 col-end-7">
+        <div className="grid grid-cols-1 items-center lg:grid-cols-12">
+          <div className="max-md:mb-4 lg:col-start-2 lg:col-end-7">
             <div>
-              <p className="text-2xl leading-[150%] text-[#FAFAFC] mb-5 ">
+              <p className="mb-5 text-2xl leading-[150%] text-[#FAFAFC] ">
                 Loan Amount:{" "}
-                <span className="text-[#FFD584] font-bold">${value[1]}</span>
+                <span className="font-bold text-[#FFD584]">${value[1]}</span>
               </p>
               <RangeSlider
                 className="single-thumb range-slider__range"
@@ -48,9 +48,9 @@ export const CalculateEmi = () => {
               />
             </div>
             <div>
-              <p className="text-2xl leading-[150%] text-[#FAFAFC] mb-5 mt-[60px]">
+              <p className="mb-5 mt-[60px] text-2xl leading-[150%] text-[#FAFAFC]">
                 Month:{" "}
-                <span className="text-[#FFD584] font-bold">${month[1]}</span>
+                <span className="font-bold text-[#FFD584]">${month[1]}</span>
               </p>
               <RangeSlider
                 className="single-thumb range-slider__range"
@@ -63,50 +63,50 @@ export const CalculateEmi = () => {
                 onInput={setMonth}
               />
             </div>
-            <p className="text-base text-[#E7E9EE] leading-[150%] mt-[10px]">
+            <p className="mt-[10px] text-base leading-[150%] text-[#E7E9EE]">
               5% interest rate
             </p>
           </div>
-          <div className="col-start-8 col-end-12 bg-primary-color-2 rounded-md py-[30px]">
-            <p className="Text-[20px] leading-[150%] text-[#292C32] text-center">
+          <div className="rounded-md bg-primary-color-2 py-[30px] lg:col-start-8 lg:col-end-12">
+            <p className="Text-[20px] text-center leading-[150%] text-[#292C32]">
               Your Total Amount
             </p>
-            <p className="text-[52px] font-semibold leading-[120%] font-montserrat text-primary-color-1 text-center mt-5">
+            <p className="mt-5 text-center font-montserrat text-[52px] font-semibold leading-[120%] text-primary-color-1">
               ${totalAmount}
             </p>
-            <div className="border-b border-t  border-gray-300 mx-[30px] py-[18px] my-[30px]">
-              <div className="flex text-center items-center justify-evenly">
+            <div className="mx-[30px] my-[30px]  border-b border-t border-gray-300 py-[18px]">
+              <div className="flex items-center justify-evenly text-center">
                 <div>
                   <p className="text-base leading-[150%] text-[#292C32]">
                     Rate
                   </p>
-                  <span className="text-base text-primary-color-1 font-semibold">
+                  <span className="text-base font-semibold text-primary-color-1">
                     5.00%
                   </span>
                 </div>
                 <div>
                   <p className="text-base leading-[150%] text-[#292C32]">ARP</p>
-                  <span className="text-base text-primary-color-1 font-semibold">
+                  <span className="text-base font-semibold text-primary-color-1">
                     4.162
                   </span>
                 </div>
                 <div>
                   <p className="text-base leading-[150%] text-[#292C32]">EMI</p>
-                  <span className="text-base text-primary-color-1 font-semibold">
+                  <span className="text-base font-semibold text-primary-color-1">
                     ${emi}
                   </span>
                 </div>
               </div>
             </div>
             <div className="flex justify-center">
-              <button className="px-10 py-[15px] bg-primary-color-1 text-white  font-medium border">
+              <button className="border bg-primary-color-1 px-10 py-[15px]  font-medium text-white">
                 Apply now
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute right-0 bottom-0">
+      <div className="absolute bottom-0 right-0 hidden xl:block">
         <Image src={emiImage} alt="Taking Loan" />
       </div>
     </section>

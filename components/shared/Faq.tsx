@@ -13,8 +13,8 @@ export const Faq = () => {
   const [open, setOpen] = useState<number | null>(1);
   return (
     <section>
-      <div className="my-container my-[120px]">
-        <div className="grid grid-cols-2 gap-[134px]">
+      <div className="section-gap horizontal-gap container">
+        <div className="grid-cols-2 gap-[134px] lg:grid">
           <div>
             <div className="mb-6">
               <SectionHeading title="Frequently asked questions" />
@@ -22,8 +22,8 @@ export const Faq = () => {
             <div className="mb-[60px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount ." />
             </div>
-            <div className="max-w-[207px] space-y-[11px] text-xl leading-[150%] text-[#292C32]">
-              <div className="flex items-center gap-[17px] p-4 hover:bg-primary-color-2 ">
+            <div className="mb-8 flex flex-wrap items-center gap-4 text-xl leading-[150%] text-[#292C32] md:max-w-[207px] md:space-y-[11px] lg:mb-0">
+              <div className="flex  items-center  gap-[17px] p-4 hover:bg-primary-color-2 ">
                 <span>
                   <MdOutlineAccountBalanceWallet />
                 </span>
@@ -49,11 +49,11 @@ export const Faq = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-10 font-semibold ">
+          <div className="flex flex-col space-y-10 font-semibold">
             {faqs.map(({ id, question, answer }) => (
               <div>
                 <button
-                  className="flex w-full items-center justify-between border-b-2 pb-6"
+                  className="flex w-full items-center justify-between border-b-2 pb-6 text-left"
                   key={id}
                   onClick={() => setOpen((p) => (id == p ? null : id))}
                 >
@@ -66,7 +66,7 @@ export const Faq = () => {
                 <AnimateHeight
                   id="example-panel"
                   duration={500}
-                  height={open == id ? "auto" : 0}
+                  height={open == id ? "auto" : 0} // see props documentation below
                 >
                   <p className="mt-6 text-base font-normal leading-[150%]">
                     {answer}

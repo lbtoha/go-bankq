@@ -6,13 +6,13 @@ import aboutBanner from "@/public/images/about_banner.png";
 
 export const AboutHeader = () => {
   return (
-    <section className="bg-primary-color-1 ">
-      <div className="my-container">
+    <section className="dot-bg max-lg:section-gap bg-primary-color-1 max-sm:px-2">
+      <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader />
+            <PageHeader title="About us" items={["Home", "About us"]} />
           </div>
-          <div>
+          <div className="hidden md:block">
             <Image src={aboutBanner} alt="about banner" />
           </div>
         </div>

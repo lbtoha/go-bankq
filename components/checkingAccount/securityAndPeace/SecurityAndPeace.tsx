@@ -7,15 +7,15 @@ import securityImage2 from "@/public/images/security2.png";
 export const SecurityAndPeace = () => {
   return (
     <section>
-      <div className="my-container section-gap text-center">
-        <div className="max-w-[629px] mx-auto">
+      <div className="section-gap section-gap horizontal-gap container text-center">
+        <div className="mx-auto max-w-[629px]">
           <div className="mb-6">
             <SectionHeading title="Security and peace of mind in your pocket" />
           </div>
 
           <SectionText text="A prepaid card is loaded with funds in advance and can be used to make purchases or withdraw cash until." />
         </div>
-        <div className="mt-[60px] grid-2-center">
+        <div className="grid-1-center md:grid-2-center mt-[60px] space-y-4 md:space-y-0">
           <Image src={securityImage} alt="Security" />
           <Image src={securityImage2} alt="Security2" />
         </div>

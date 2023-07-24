@@ -5,9 +5,9 @@ import exploreImage from "@/public/images/explore_roles_map.png";
 
 export const Explore = () => {
   return (
-    <section>
-      <div className="my-container my-[120px]">
-        <div className="max-w-[791px] text-center mx-auto mb-[60px]">
+    <section className="">
+      <div className="section-gap horizontal-gap container">
+        <div className="mx-auto mb-[60px] text-center  xl:max-w-[791px]">
           <SectionHeading title="Explore roles at GOBank offices around the world" />
         </div>
         <Image src={exploreImage} alt="Explore Image" />

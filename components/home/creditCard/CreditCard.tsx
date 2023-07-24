@@ -13,8 +13,8 @@ import "swiper/css";
 
 export const CreditCard = () => {
   return (
-    <section className="card-section relative">
-      <div className="my-container mt-[141px] mb-[120px]">
+    <section className="card-section horizontal-gap relative ">
+      <div className="section-gap container">
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -22,9 +22,9 @@ export const CreditCard = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="grid grid-cols-2 items-center gap-[158px]">
+            <div className="grid items-center gap-[158px] md:grid-cols-2">
               <div>
-                <div>
+                <div className="mb-5">
                   <SectionHeading title="Credit Card" />
                 </div>
                 <SectionText
@@ -33,7 +33,7 @@ export const CreditCard = () => {
       responsible for making payments on time."
                 />
 
-                <div className="flex items-center  gap-[41px] mt-[]57px]">
+                <div className="mt-[57px] flex  items-center gap-[41px]">
                   <button className="card-arrow__left relative">
                     <Image src={arrowLeft} alt="Arrow Left" />
                   </button>
@@ -46,15 +46,15 @@ export const CreditCard = () => {
                   </button>
                 </div>
               </div>
-              <div className="">
+              <div className="hidden md:block">
                 <Image src={cardSlider} alt="Card Slider1" />
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="grid grid-cols-2 items-center gap-[158px]">
+            <div className="grid items-center gap-[158px] md:grid-cols-2">
               <div>
-                <div>
+                <div className="mb-5">
                   <SectionHeading title="Credit Card" />
                 </div>
                 <SectionText
@@ -62,7 +62,7 @@ export const CreditCard = () => {
       that the cardholder can borrow at any given time. The cardholder is
       responsible for making payments on time."
                 />
-                <div className="flex items-center  gap-[41px] mt-[57px]">
+                <div className="mt-[57px] flex  items-center gap-[41px]">
                   <button className="card-arrow__left relative">
                     <Image src={arrowLeft} alt="Arrow Left" />
                   </button>
@@ -75,7 +75,7 @@ export const CreditCard = () => {
                   </button>
                 </div>
               </div>
-              <div className="">
+              <div className="hidden md:block">
                 <Image src={cardSlider2} alt="Card Slider1" />
               </div>
             </div>

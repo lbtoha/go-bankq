@@ -5,13 +5,13 @@ import blogImage from "@/public/images/blog_banner.png";
 
 export const BlogHeader = () => {
   return (
-    <section className="dot-bg bg-primary-color-1">
-      <div className="my-container">
+    <section className="dot-bg max-lg:section-gap bg-primary-color-1 max-sm:px-2">
+      <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader />
+            <PageHeader title="Home" items={["Home", "Blog"]} />
           </div>
-          <div>
+          <div className="hidden lg:block">
             <Image src={blogImage} alt="Personal Loan banner" />
           </div>
         </div>

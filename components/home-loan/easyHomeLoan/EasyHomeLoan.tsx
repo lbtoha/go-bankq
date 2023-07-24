@@ -8,26 +8,26 @@ import { AiOutlineBank } from "react-icons/ai";
 export const EasyHomeLoan = () => {
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12 items-center justify-between">
-          <div className="col-span-6">
+      <div className="section-gap horizontal-gap container">
+        <div className="grid-cols-12 items-center justify-between xl:grid">
+          <div className="col-span-6 hidden xl:block">
             <Image src={lowInterest} alt="Low interest" />
           </div>
           <div className="col-start-8 col-end-13">
             <SectionHeading title="Make your dream home a reality with easy home loans" />
             <div>
-              <div className="mt-10 grid grid-cols-5 items-center justify-between">
-                <div className="col-span-2">
+              <div className="mt-10 grid items-center justify-between xl:grid-cols-5">
+                <div className="col-span-2 me-5 hidden md:block">
                   <Image src={lowInterestInner} alt="Low interest inner" />
                 </div>
-                <div className="col-start-3 col-span-5">
+                <div className="col-span-5 col-start-3">
                   <div>
-                    <AiOutlineBank className="text-primary-color-1 text-[50px]" />
+                    <AiOutlineBank className="text-[50px] text-primary-color-1" />
                   </div>
-                  <p className="text-[20px] font-montserrat leading-[130%] text-[#292C32] font-semibold mt-3">
+                  <p className="mt-3 font-montserrat text-[20px] font-semibold leading-[130%] text-[#292C32]">
                     Low interest amount{" "}
                   </p>
-                  <p className="text-base leading-[150%] text-[#6F7278] mt-[18px]">
+                  <p className="mt-[18px] text-base leading-[150%] text-[#6F7278]">
                     Interest rates: Home loan interest rates can be fixed or
                     adjustable, depending on the loan type. A fixed-rate
                     mortgage has an interest rate that remains the same over the

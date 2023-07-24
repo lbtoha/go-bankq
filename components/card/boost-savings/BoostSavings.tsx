@@ -13,24 +13,24 @@ export const BoostSavings = () => {
   const [toggle, setToggle] = useState(true);
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12">
-          <div className="col-span-5">
+      <div className="section-gap container">
+        <div className="grid lg:grid-cols-5 lg:gap-6 xxl:grid-cols-12">
+          <div className="hidden md:col-span-2 lg:block xxl:col-span-5">
             <Image src={boostSavingsImage} alt="Boost Savings Image" />
           </div>
-          <div className="col-start-8 col-span-12">
+          <div className="lg:col-span-5 lg:col-start-3 xxl:col-span-12 xxl:col-start-8">
             <div className="mb-6">
               <SectionHeading title="Boost your savings with the right credit card." />
             </div>
             <div className="mb-10">
               <SectionText text="All your needs covered with a full range of credit and debit cards ." />
             </div>
-            <div className="grid grid-cols-2 items-center justify-between gap-[18px] bg-[#E7E9EE] rounded-md mb-10">
+            <div className="mb-10 grid grid-cols-2 items-center justify-between gap-[18px] rounded-md bg-[#E7E9EE]">
               <div
                 onClick={() => setToggle(!toggle)}
                 className={`${
                   toggle && `bg-white`
-                } ms-[10px] my-[10px] py-3 rounded-md flex items-center justify-center  gap-4 text-xl cursor-pointer`}
+                } my-[10px] ms-[10px] flex cursor-pointer items-center justify-center gap-4  rounded-md py-3 text-xl`}
               >
                 <MdCreditScore
                   className={`${
@@ -43,7 +43,7 @@ export const BoostSavings = () => {
                 onClick={() => setToggle(!toggle)}
                 className={`${
                   toggle ? `` : `bg-white`
-                } me-[10px] my-[10px] py-3 rounded-md flex items-center justify-center  gap-4 text-xl cursor-pointer`}
+                } my-[10px] me-[10px] flex cursor-pointer items-center justify-center gap-4  rounded-md py-3 text-xl`}
               >
                 <MdCreditScore
                   className={`${
@@ -54,12 +54,12 @@ export const BoostSavings = () => {
               </div>
             </div>
             {toggle ? (
-              <div className="mb-[60px] ">
-                <p className="text-xl leading-[150%] text-[#292C32] mb-5">
+              <div className="md-5 md:mb-10 xl:mb-[60px] ">
+                <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
                   Lifestyle Benefits:
                 </p>
                 <div className="space-y-[37px]">
-                  <div className="flex gap-5 items-center mt-6">
+                  <div className="mt-6 flex items-center gap-5">
                     <BsCheckCircle className="text-xl text-primary-color-1" />
                     <div>
                       <p className="text-[#6F7278]">
@@ -68,7 +68,7 @@ export const BoostSavings = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-5 items-center mt-6">
+                  <div className="mt-6 flex items-center gap-5">
                     <BsCheckCircle className="text-xl text-primary-color-1" />
                     <div>
                       <p className="text-[#6F7278]">
@@ -79,12 +79,12 @@ export const BoostSavings = () => {
                 </div>
               </div>
             ) : (
-              <div className="mb-[60px] ">
-                <p className="text-xl leading-[150%] text-[#292C32] mb-5">
+              <div className=" md-5 md:mb-10 xl:mb-[60px] ">
+                <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
                   Lifestyle Benefits:
                 </p>
                 <div className="space-y-[37px]">
-                  <div className="flex gap-5 items-center mt-6">
+                  <div className="mt-6 flex items-center gap-5">
                     <BsCheckCircle className="text-xl text-primary-color-1" />
                     <div>
                       <p className="text-[#6F7278]">
@@ -93,7 +93,7 @@ export const BoostSavings = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="flex gap-5 items-center mt-6">
+                  <div className="mt-6 flex items-center gap-5">
                     <BsCheckCircle className="text-xl text-primary-color-1" />
                     <div>
                       <p className="text-[#6F7278]">

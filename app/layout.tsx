@@ -4,9 +4,8 @@ import "./globals.css";
 import "../styles/main.scss";
 import { Footer } from "@/components/shared/Footer";
 import { Navbar } from "@/components/shared/navbar/Navbar";
-import { NewNavbar } from "@/components/shared/navbar/NewNavbar";
-import MyDatepicker, { VNew } from "@/components/shared/navbar/VNew";
-import { NewNavbar2 } from "@/components/shared/navbar/NewNavbar copy 2";
+import { Suspense } from "react";
+import { Loading } from "./loading";
 
 const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
 const montserrat = Montserrat({
@@ -33,12 +32,11 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${montserrat.variable} ${inter.variable}  font-inter text-lg`}
+        className={`relative ${montserrat.variable} ${inter.variable}  font-inter text-lg`}
       >
-        <NewNavbar />
-
-        {children}
-        {/* <Footer /> */}
+        <Navbar />
+        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Footer />
       </body>
     </html>
   );

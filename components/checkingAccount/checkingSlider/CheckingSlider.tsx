@@ -21,13 +21,32 @@ export const CheckingSlider = () => {
     autoplaySpeed: 200,
     cssEase: "linear",
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        centerMode: true,
+        settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: false },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 992,
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 1200,
+        settings: { slidesToShow: 4, slidesToScroll: 2 },
+      },
+    ],
   };
 
   return (
     <div className="">
       <Slider
         {...settings}
-        className={` bg-[url("/images/sponsor-slider.png")] flex gap-[223px]   w-full justify-center items-center py-[120px] bg-no-repeat `}
+        className={` flex w-full items-center   justify-center gap-[223px] bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[120px] `}
       >
         <Image src={detailSlider1} alt="Slider Image1" />
 

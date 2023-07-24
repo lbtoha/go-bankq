@@ -17,9 +17,9 @@ export const Banner = () => {
     <section
       className={`bg-[url("/images/hero_bg_dot.png") relative h-full w-full overflow-clip bg-[url("/images/banner/bannerBg.png")] pt-[99px]`}
     >
-      <div className="my-container">
+      <div className="container max-md:pb-14">
         <h1
-          className={`main-heading text-center font-montserrat  text-3xl font-bold text-white md:text-5xl lg:text-7xl `}
+          className={`main-heading text-center font-montserrat text-2xl  font-bold text-white sm:text-3xl md:text-5xl lg:text-7xl `}
         >
           All <span className="custom text-[#E0F300]">Banking</span> Solution{" "}
           <br /> In One Place{" "}

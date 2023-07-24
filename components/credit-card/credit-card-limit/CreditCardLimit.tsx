@@ -6,9 +6,9 @@ import easyUseImage from "@/public/images/easy_use_credit.png";
 export const CreditCardLimit = () => {
   return (
     <section>
-      <div className="my-container section-gap">
-        <div className="grid grid-cols-12 items-center justify-between">
-          <div className="col-span-6">
+      <div className="section-gap container max-sm:px-2 max-sm:text-center">
+        <div className="grid items-center justify-between max-lg:gap-5 md:grid-cols-2 lg:grid-cols-12">
+          <div className="lg:col-span-6 ">
             <div className="mb-6">
               <SectionHeading title="Credit card limit" />
             </div>
@@ -17,7 +17,7 @@ export const CreditCardLimit = () => {
             </div>
             <Button text="Apply Credit card" url="/" />
           </div>
-          <div className="col-span-12 col-start-8">
+          <div className="hidden md:block lg:col-span-12 lg:col-start-8">
             <Image src={easyUseImage} alt="Improve cost Image" />
           </div>
         </div>
