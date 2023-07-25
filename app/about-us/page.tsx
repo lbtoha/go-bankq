@@ -6,9 +6,7 @@ import { GoBank } from "@/components/about/goBank/GoBank";
 import { ImpactNumber } from "@/components/about/impactNumber/ImpactNumber";
 import { MissionAndVision } from "@/components/about/missionAndVision/MissionAndVision";
 import { OurValues } from "@/components/about/ourValues/OurValues";
-import { Navbar } from "@/components/home/navbar/Navbar";
 import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
-import { Footer } from "@/components/shared/Footer";
 
 export default function About() {
   return (

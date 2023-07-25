@@ -7,6 +7,18 @@
 // ******************                         ******************
 
 // ======= Navbar Section Styles Start ============
+
+.header-active {
+  position: fixed;
+  top: -70px;
+  transform: translateY(70px);
+  transition: transform 0.5s;
+  background-position: center;
+  left: 0;
+  width: 100%;
+  z-index: 50000;
+}
+
 .navbar {
   &::after {
     content: "";
@@ -63,6 +75,15 @@
 // ======= Navbar Section Styles End ============
 
 // ======= Banner Section Styles Start ============
+
+@media (min-width: 768px) {
+  .banner {
+    background: url("../public//images/hero_bg_dot.png"),
+      url("../public//images/hero_bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
 .main-heading {
   line-height: 120%;
 }

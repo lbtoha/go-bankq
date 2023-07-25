@@ -38,54 +38,52 @@ export const BrandSlider = () => {
   };
 
   return (
-    <div className="mt-[30px] sm:mt-[40px] md:mt-[70px] lg:mt-[80px] xl:mt-[97px]">
-      <Slider
-        {...settings}
-        className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
-      >
-        <div className="mx-auto flex items-center">
-          <Image
-            src={sponsor1}
-            alt="Our Mission Image1"
-            className="mx-auto object-cover"
-          />
-        </div>
-        <div>
-          <Image
-            src={sponsor2}
-            alt="Our Mission Image1"
-            className="mx-auto object-cover"
-          />
-        </div>
-        <div>
-          <Image
-            src={sponsor3}
-            alt="Our Mission Image1"
-            className="mx-auto object-cover"
-          />
-        </div>
-        <div>
-          <Image
-            src={sponsor4}
-            alt="Our Mission Image1"
-            className="mx-auto object-cover"
-          />
-        </div>
-        <div>
-          <Image
-            src={sponsor5}
-            alt="Our Mission Image1"
-            className="mx-auto object-cover"
-          />
-        </div>
-        <div>
-          <Image
-            src={sponsor6}
-            alt="Our Mission Image1"
-            className="mx-auto object-cover"
-          />
-        </div>
-      </Slider>
-    </div>
+    <Slider
+      {...settings}
+      className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
+    >
+      <div className="mx-auto flex items-center">
+        <Image
+          src={sponsor1}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
+          src={sponsor2}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
+          src={sponsor3}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
+          src={sponsor4}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
+          src={sponsor5}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
+          src={sponsor6}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+    </Slider>
   );
 };

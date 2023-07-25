@@ -6,10 +6,9 @@ import { navData } from "./navData";
 import Logo from "/public/images/logo.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Button } from "../Button";
-import { Offcanvas, Ripple, Dropdown, initTE } from "tw-elements";
 import "tw-elements/dist/css/tw-elements.min.css";
 import AnimateHeight from "react-animate-height";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export const Navbar = ({ cls = "" }) => {
   const [windowHeight, setWindowHeight] = useState(0);
@@ -19,7 +18,20 @@ export const Navbar = ({ cls = "" }) => {
   const [subDropdown, setSubDropdown] = useState("");
   const [openDropDown, setOpenDropDown] = useState<string | null>("");
   const [openSubDropDown, setOpenSubDropDown] = useState<string | null>("");
+
   const pathname = usePathname();
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    setWindowHeight(scrollY);
+  };
+  // console.log(windowHeight);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleActive = () => {
     setActive(false);
@@ -48,21 +60,13 @@ export const Navbar = ({ cls = "" }) => {
   };
 
   useEffect(() => {
-    initTE({ Offcanvas, Ripple, Dropdown });
-  }, []);
-
-  const navBarTop = () => {
-    if (window !== undefined) {
-      let height = window.scrollY;
-      setWindowHeight(height);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", navBarTop);
-    return () => {
-      window.removeEventListener("scroll", navBarTop);
+    const init = async () => {
+      const { Offcanvas, Ripple, Dropdown, initTE } = await import(
+        "tw-elements"
+      );
+      initTE({ Offcanvas, Ripple, Dropdown });
     };
+    init();
   }, []);
 
   return (
@@ -72,7 +76,7 @@ export const Navbar = ({ cls = "" }) => {
           windowHeight > 50 && "header-active"
         } dot-bg relative bg-primary-color-1 text-white`}
       >
-        <div className="container ">
+        <div className="container">
           <div className="flex items-center justify-between lg:hidden">
             <div className="py-5 ">
               <Link href="/">
@@ -232,9 +236,9 @@ export const Navbar = ({ cls = "" }) => {
                 })}
               </ul>
             </div>
-            <button
+            <Link
               data-te-offcanvas-toggle
-              href="#offcanvasExample"
+              href={"#offcanvasExample"}
               role="button"
               aria-controls="offcanvasExample"
               data-te-ripple-init
@@ -244,7 +248,7 @@ export const Navbar = ({ cls = "" }) => {
                 onClick={() => setActive(!active)}
                 className={` text-3xl `}
               />
-            </button>
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -299,7 +303,7 @@ export const Navbar = ({ cls = "" }) => {
                               <Link
                                 onClick={() => {
                                   handleSubDropdown(id);
-                                  handleActiveItem(p_url);
+                                  handleActiveItem(parentUrl);
                                 }}
                                 className="dropdown-icon  px-3 hover:text-primary-color-2"
                                 href="URL:void(0)"

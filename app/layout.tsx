@@ -5,7 +5,9 @@ import "../styles/main.scss";
 import { Footer } from "@/components/shared/Footer";
 import { Navbar } from "@/components/shared/navbar/Navbar";
 import { Suspense } from "react";
-import { Loading } from "./loading";
+import ScrollBackToTop from "@/components/scrollBackToTop/ScrollBackToTop";
+import Loading from "./loading";
+import "material-symbols";
 
 const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
 const montserrat = Montserrat({
@@ -26,18 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`relative ${montserrat.variable} ${inter.variable}  font-inter text-lg`}
+        className={`relative ${montserrat.variable} ${inter.variable}  relative font-inter text-lg`}
       >
         <Navbar />
         <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />
+        <ScrollBackToTop />
       </body>
     </html>
   );

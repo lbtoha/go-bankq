@@ -21,6 +21,7 @@ export const MissionAndVision = () => {
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    arrows: false,
     centerMode: false,
     responsive: [
       {
@@ -43,7 +44,7 @@ export const MissionAndVision = () => {
   };
 
   return (
-    <section className="overflow-clip">
+    <section className="overflow-clip bg-gray-200">
       <div className="section-gap horizontal-gap container">
         <div className="mb-5 grid grid-cols-1 gap-5 lg:mb-0 lg:grid-cols-2 xl:gap-[134px]">
           <div className="space-y-6 md:mb-7">

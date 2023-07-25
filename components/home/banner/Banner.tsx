@@ -15,7 +15,7 @@ import {
 export const Banner = () => {
   return (
     <section
-      className={`bg-[url("/images/hero_bg_dot.png") relative h-full w-full overflow-clip bg-[url("/images/banner/bannerBg.png")] pt-[99px]`}
+      className={`banner bg-[url("/images/hero_bg_dot.png") relative h-full w-full overflow-clip bg-[url("/images/banner/bannerBg.png")] pt-[99px]`}
     >
       <div className="container max-md:pb-14">
         <h1
@@ -47,9 +47,9 @@ export const Banner = () => {
           </RightCardAnimation>
         </div>
         <div className="banner-objects">
-          <div className="banner-objects__left absolute left-[15%] md:left-[10%] md:top-[45%] ">
+          <div className="banner-objects__left absolute left-[15%] md:left-[15%] md:top-[45%] ">
             <Image
-              className="hidden w-[25%]  animate-previewShape md:block lg:w-[18%]"
+              className="hidden w-[25%]  animate-previewShape md:block lg:w-[150px]"
               src={leftArrow}
               alt="Left Arrow"
             />

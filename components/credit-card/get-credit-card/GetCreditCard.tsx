@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
-import emiImage from "@/public/images/taking_loan.png";
 import { BsQuestionOctagon } from "react-icons/bs";
 
 export const GetCreditCard = () => {

@@ -7,7 +7,7 @@ import { SectionText } from "@/components/shared/SectionText";
 export const OurValues = () => {
   return (
     <section>
-      <div className="section-gap horizontal-gap container">
+      <div className="container  pb-[50px] md:pb-[60px] lg:pb-[70px] xl:pb-[120px]">
         <div className="grid-2-center grid-cols-1 md:grid-cols-2">
           <div>
             <Image src={OurValuesImage} alt="Our Values" />

@@ -1,13 +1,13 @@
 "use client";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
-import { faqs } from "@/public/data/faq";
 import React, { useState } from "react";
 import { BsChevronDown, BsCreditCard2Back } from "react-icons/bs";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { PiHandCoins } from "react-icons/pi";
 import { PiPiggyBankLight } from "react-icons/pi";
 import AnimateHeight from "react-animate-height";
+import { faqs } from "@/public/data/faq";
 
 export const Faq = () => {
   const [open, setOpen] = useState<number | null>(1);

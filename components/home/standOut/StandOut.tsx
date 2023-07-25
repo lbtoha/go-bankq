@@ -17,7 +17,7 @@ export const StandOut = () => {
             >
               What makes us stand out from the rest?
             </h3>
-            <div className="mt-[60px] grid-cols-2 md:grid ">
+            <div className="mt-[60px] grid-cols-2 md:grid md:gap-6 ">
               <div className="mb-9 gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
@@ -30,8 +30,8 @@ export const StandOut = () => {
                   </span>
                 </div>
                 <p className="text-lg font-normal leading-[150%]">
-                  In today's digital age, customers have high expectations when
-                  it come.
+                  In today&apos;s digital age, customers have high expectations
+                  when it come.
                 </p>
               </div>
               <div className="mb-9 gap-6">
@@ -46,8 +46,8 @@ export const StandOut = () => {
                   </span>
                 </div>
                 <p className="text-lg font-normal leading-[150%]">
-                  In today's digital age, customers have high expectations when
-                  it come.
+                  In today&apos;s digital age, customers have high expectations
+                  when it come.
                 </p>
               </div>
               <div className="mb-9 gap-6">
@@ -62,8 +62,8 @@ export const StandOut = () => {
                   </span>
                 </div>
                 <p className="text-lg font-normal leading-[150%]">
-                  In today's digital age, customers have high expectations when
-                  it come.
+                  In today&apos;s digital age, customers have high expectations
+                  when it come.
                 </p>
               </div>
               <div className="mb-9 gap-6">
@@ -78,8 +78,8 @@ export const StandOut = () => {
                   </span>
                 </div>
                 <p className="text-lg font-normal leading-[150%]">
-                  In today's digital age, customers have high expectations when
-                  it come.
+                  In today&apos;s digital age, customers have high expectations
+                  when it come.
                 </p>
               </div>
             </div>

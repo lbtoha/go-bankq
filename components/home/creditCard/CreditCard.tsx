@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import arrowLeft from "@/public/images/arrow_left.png";
 import arrowRight from "@/public/images/arrow_right.png";
 import { useRef } from "react";
+import { MutableRefObject } from "react";
 
 export const CreditCard = () => {
   type SliderRefType = MutableRefObject<Slider | null>;
@@ -37,11 +38,11 @@ export const CreditCard = () => {
   };
 
   return (
-    <section className="card-section section-gap relative ">
+    <section className="card-section section-gap relative hidden md:block">
       <div className="section-gap container">
         <Slider ref={sliderRef} {...settings}>
           <div>
-            <div className="grid grid-cols-2 items-center gap-[158px]">
+            <div className="grid grid-cols-2 items-center gap-8 md:gap-14 xl:gap-[158px]">
               <div>
                 <div className="mb-5">
                   <SectionHeading title="Credit Card" />
@@ -52,7 +53,7 @@ export const CreditCard = () => {
       responsible for making payments on time."
                 />
 
-                <div className="mt-[57px] flex  items-center gap-[41px] lg:ms-6">
+                <div className="mb-4 ms-6 mt-[57px]  flex items-center gap-[41px]">
                   <button
                     onClick={previous}
                     className="card-arrow__left relative"
@@ -88,7 +89,7 @@ export const CreditCard = () => {
       that the cardholder can borrow at any given time. The cardholder is
       responsible for making payments on time."
                 />
-                <div className="mt-[57px] flex  items-center gap-[41px]">
+                <div className="mb-4 ms-6  mt-[57px] flex items-center gap-[41px]">
                   <button
                     onClick={previous}
                     className="card-arrow__left relative"

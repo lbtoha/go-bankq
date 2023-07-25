@@ -1,6 +1,9 @@
 import "../styles/preloder.css";
+import "tw-elements/dist/css/tw-elements.min.css";
 
-export default function Loading() {
+import React from "react";
+
+const Loading = () => {
   return (
     <div className="custom-transition absolute left-0 top-0 z-[50000] flex h-screen w-full items-center justify-center bg-white transition-transform">
       <div className="loading ">
@@ -12,4 +15,6 @@ export default function Loading() {
       </div>
     </div>
   );
-}
+};
+
+export default Loading;

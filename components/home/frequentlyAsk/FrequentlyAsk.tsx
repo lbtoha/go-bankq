@@ -52,7 +52,7 @@ export const FrequentlyAsk = () => {
           </div>
           <div className="flex flex-col space-y-10 font-semibold ">
             {faqs.map(({ id, question, answer }) => (
-              <div>
+              <div key={id}>
                 <button
                   className="flex w-full items-center justify-between border-b-2 pb-6"
                   key={id}

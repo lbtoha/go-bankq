@@ -62,7 +62,7 @@ export const Footer = () => {
             <p className="mb-10 text-lg font-semibold leading-[130%] text-white">
               Page
             </p>
-            <ul className=" flex flex-col justify-between gap-5 text-[#A0A2A7] xl:flex-row xl:items-center ">
+            <ul className=" flex flex-wrap justify-between gap-5 text-[#A0A2A7] xl:flex-row xl:items-center ">
               <li className="cursor-pointer hover:text-primary-color-2">
                 <Link href="/">Home</Link>
               </li>

@@ -231,8 +231,7 @@ export const LatestBlog = () => {
           marginPagesDisplayed={1}
           pageRangeDisplayed={2}
           onPageChange={handlePageClick}
-          containerClassName={"pagination"}
-          subContainerClassName={"pages pagination"}
+          containerClassName={"pagination pages pagination"}
           activeClassName={"active"}
         />
       </div>

@@ -9,7 +9,10 @@ export const CreditCardHeader = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader title="Hoem" items={["Home", "Card", "Credit Card"]} />
+            <PageHeader
+              title="Credit Card"
+              items={["Home", "Card", "Credit Card"]}
+            />
           </div>
           <div className="hidden lg:block">
             <Image src={creditCard} alt="Credit Card banner" />
