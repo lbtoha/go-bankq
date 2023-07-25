@@ -28,11 +28,15 @@ export const BrandSlider = () => {
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 2, slidesToScroll: 2 },
+        settings: { slidesToShow: 3, slidesToScroll: 2 },
       },
       {
-        breakpoint: 1200,
-        settings: { slidesToShow: 3, slidesToScroll: 3 },
+        breakpoint: 800,
+        settings: { slidesToShow: 6, slidesToScroll: 3 },
+      },
+      {
+        breakpoint: 1300,
+        settings: { slidesToShow: 6, slidesToScroll: 3 },
       },
     ],
   };
@@ -72,7 +76,21 @@ export const BrandSlider = () => {
       </div>
       <div>
         <Image
+          src={sponsor6}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
           src={sponsor5}
+          alt="Our Mission Image1"
+          className="mx-auto object-cover"
+        />
+      </div>
+      <div>
+        <Image
+          src={sponsor4}
           alt="Our Mission Image1"
           className="mx-auto object-cover"
         />

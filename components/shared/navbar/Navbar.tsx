@@ -238,7 +238,7 @@ export const Navbar = ({ cls = "" }) => {
             </div>
             <Link
               data-te-offcanvas-toggle
-              href={"#offcanvasExample"}
+              href="#offcanvasExample"
               role="button"
               aria-controls="offcanvasExample"
               data-te-ripple-init

@@ -6,7 +6,7 @@ import loanBanner from "@/public/images/loan_banner.png";
 
 export const LoanHeader = () => {
   return (
-    <section className="dot-bg  max-md:section-gap bg-primary-color-1  max-sm:px-2">
+    <section className="dot-bg  max-lg:section-gap bg-primary-color-1  max-sm:px-2">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
@@ -14,7 +14,7 @@ export const LoanHeader = () => {
           </div>
           <div>
             <Image
-              className="hidden sm:block sm:max-md:w-3/4 "
+              className="hidden sm:max-md:w-3/4 lg:block "
               src={loanBanner}
               alt="about banner"
             />

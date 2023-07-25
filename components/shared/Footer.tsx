@@ -17,7 +17,7 @@ export const Footer = () => {
           <div className="text-center max-lg:mb-10  md:text-left lg:max-w-[334px]">
             <SectionHeading title="Subscribe Our Newsletter" />
           </div>
-          <form className="flex flex-wrap items-center  gap-3">
+          <form className="flex flex-wrap items-stretch  gap-3">
             <input
               type="email"
               name="email"

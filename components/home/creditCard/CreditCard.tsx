@@ -39,7 +39,7 @@ export const CreditCard = () => {
 
   return (
     <section className="card-section section-gap relative hidden md:block">
-      <div className="section-gap container">
+      <div className=" container">
         <Slider ref={sliderRef} {...settings}>
           <div>
             <div className="grid grid-cols-2 items-center gap-8 md:gap-14 xl:gap-[158px]">
