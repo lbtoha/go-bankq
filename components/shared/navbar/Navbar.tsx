@@ -273,7 +273,8 @@ export const Navbar = ({ cls = "" }) => {
                       // href={url}
                       href="URL:void(0)"
                       className={` dropdown-icon ${
-                        pathname.includes(url) && "active-nav"
+                        pathname.includes(url) &&
+                        "active-nav text-primary-color-2"
                       } py-10 hover:text-primary-color-2  ${
                         dropdownId === id && "Todo"
                       } ${active && "fitext-primary-color-2"}`}
@@ -354,7 +355,7 @@ export const Navbar = ({ cls = "" }) => {
                     <Link
                       onClick={() => handleActiveItem(url)}
                       className={` py-10 hover:text-primary-color-2 ${
-                        activeNav == url && "active-nav"
+                        activeNav == url && "active-nav text-primary-color-2"
                       }`}
                       href={`${url}`}
                     >

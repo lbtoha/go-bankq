@@ -8,7 +8,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export const StandOut = () => {
   return (
-    <section className="horizontal-gap relative  bg-[#055F5B] text-white">
+    <section className="horizontal-gap relative bg-[#055F5B] text-white">
       <div className="section-gap container">
         <div className="md:grid-w md:grid- grid-cols-1 items-center sm:grid-cols-2 md:gap-6  xl:grid">
           <div className="standOut-section-title relative">

@@ -7,7 +7,7 @@ import yourDream from "@/public/images/your_dream.png";
 export const DreamHome = () => {
   return (
     <section>
-      <div className="section-gap horizontal-gap container">
+      <div className="section-gap container max-sm:px-2">
         <div className="mx-auto mb-[60px] max-w-[557px] text-center">
           <SectionHeading title="Make Your Dream Home a Reality" />
           <div className="mt-6">

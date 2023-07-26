@@ -44,10 +44,10 @@ export const MissionAndVision = () => {
   };
 
   return (
-    <section className="overflow-clip bg-gray-200">
+    <section className="overflow-clip bg-[#FAFAFC]">
       <div className="section-gap horizontal-gap container">
-        <div className="mb-5 grid grid-cols-1 gap-5 lg:mb-0 lg:grid-cols-2 xl:gap-[134px]">
-          <div className="space-y-6 md:mb-7">
+        <div className="mb-5 grid grid-cols-1 gap-5 lg:mb-[60px] lg:grid-cols-2 xl:gap-[134px]">
+          <div className="space-y-6 max-md:mb-7">
             <SectionHeading title="Our mission" />
             <div className="md:max-w-[526px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount that the cardholder can borrow at any given time. The cardholder is responsible for making payments on time, and if they do not." />

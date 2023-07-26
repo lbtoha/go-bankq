@@ -25,29 +25,29 @@ export const Form = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="grid grid-cols-2 justify-between  gap-5 mb-10">
+      <div className="grid-cols-2 justify-between gap-5  md:mb-10 md:grid">
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] border-b border-slate-300"
+          className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="text"
           placeholder="First name"
           {...register("firstName", { required: true, maxLength: 80 })}
         />
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] border-b border-slate-300"
+          className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="text"
           placeholder="Last name"
           {...register("lastName", { required: true, maxLength: 100 })}
         />
       </div>
-      <div className="grid grid-cols-2 justify-between  gap-5 mb-10">
+      <div className="grid-cols-2 justify-between gap-5  md:mb-10 md:grid">
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] border-b border-slate-300"
+          className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="text"
           placeholder="Email"
           {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
         />
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] border-b border-slate-300"
+          className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="tel"
           placeholder="Mobile number"
           {...register("mobileNumber", {
@@ -58,31 +58,32 @@ export const Form = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 justify-between  gap-5 mb-10">
+      <div className="grid-cols-2 justify-between gap-5  md:mb-10 md:grid">
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] border-b border-slate-300"
+          className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="text"
           placeholder="Company"
           {...register("company", { required: true })}
         />
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] border-b border-slate-300"
+          className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="text"
           placeholder="Company Position"
           {...register("companyPosition", { required: true })}
         />
       </div>
 
-      <div className="border-b border-slate-300">
+      <div className="  md:mb-10 ">
         <input
-          className="bg-transparent outline-none pb-5 placeholder:text-lg text-[#A0A2A7] "
+          className="w-full border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg 
+          max-md:mb-5"
           type="text"
           placeholder="Message"
           {...register("message", { required: true })}
         />
       </div>
       <button
-        className="px-10 py-[15px] bg-primary-color-2 text-[#292C32]  font-medium border mt-10"
+        className="mt-10 border bg-primary-color-2 px-10  py-[15px] font-medium text-[#292C32]"
         type="submit"
       >
         Get Started

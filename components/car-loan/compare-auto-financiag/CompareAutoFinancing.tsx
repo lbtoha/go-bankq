@@ -35,7 +35,7 @@ export const CompareAutoFinancing = () => {
     },
   ];
   return (
-    <section>
+    <section className="bg-[#FAFAFC]">
       <div className="section-gap container max-sm:px-2 max-sm:text-center">
         <div className="">
           <div className="md:max-w-[627px]">

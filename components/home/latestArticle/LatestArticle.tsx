@@ -9,6 +9,7 @@ import { RiMessage2Line } from "react-icons/ri";
 import articleAuthor from "@/public/images/article_author.png";
 import { Button } from "@/components/shared/Button";
 import { SectionHeadingWhite } from "@/components/shared/SectionHeadingWhite";
+import Link from "next/link";
 
 export const LatestArticle = () => {
   return (
@@ -17,7 +18,7 @@ export const LatestArticle = () => {
         <div className="pb-6 text-center text-white">
           <SectionHeadingWhite title="Our Latest article" />
         </div>
-        <div className="mx-auto max-w-[642px] pb-6 text-center text-[#E7E9EE]">
+        <div className="mx-auto max-w-[642px] pb-8 text-center text-[#E7E9EE] md:pb-10 lg:pb-[60px]">
           <SectionText text="Banks have been around for centuries, and their role in the economy has evolved over time. " />
         </div>
         <div className="gap-6 max-md:space-y-5 md:grid md:grid-cols-2 lg:grid-cols-3 ">
@@ -27,7 +28,9 @@ export const LatestArticle = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2">
                 <RiMessage2Line />
-                <span className="text-sm text-white">06 comments</span>
+                <Link href="/" className="text-sm text-white">
+                  06 comments
+                </Link>
               </span>
             </div>
             <p
@@ -60,7 +63,9 @@ export const LatestArticle = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2">
                 <RiMessage2Line />
-                <span className="text-sm text-white">06 comments</span>
+                <Link href="/" className="text-sm text-white">
+                  06 comments
+                </Link>
               </span>
             </div>
             <p
@@ -93,7 +98,9 @@ export const LatestArticle = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2">
                 <RiMessage2Line />
-                <span className="text-sm text-white">06 comments</span>
+                <Link href="/" className="text-sm text-white">
+                  06 comments
+                </Link>
               </span>
             </div>
             <p

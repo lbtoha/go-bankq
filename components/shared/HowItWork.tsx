@@ -12,9 +12,9 @@ export const HowItWork = () => {
             <SectionText text="Once you have been prequalified, you can start looking for a home that fits your budget and preferences." />
           </div>
         </div>
-        <div className="grid grid-cols-1 items-center justify-between md:grid-cols-2 xl:grid-cols-4">
-          <div className="card text-center">
-            <p className="card-number relative z-20 mx-auto mt-4 w-fit font-montserrat text-[64px] font-semibold leading-[120%] text-primary-color-1 xl:mt-8">
+        <div className="mt-5 items-center  justify-between gap-3 max-md:space-y-8 md:mt-10 md:grid md:grid-cols-2 xl:mt-[60px] xl:grid-cols-4">
+          <div className="card-how-to-work text-center">
+            <p className="card-number relative z-20 mx-auto  w-fit font-montserrat text-4xl font-semibold leading-[120%] text-primary-color-1 md:text-5xl lg:text-[64px] ">
               01
             </p>
             <p className="card-title">Fill the from</p>
@@ -22,8 +22,8 @@ export const HowItWork = () => {
               There are several types of bank cards, including debit cards.
             </p>
           </div>
-          <div className="card text-center">
-            <p className="card-number relative z-20 mx-auto mt-[32px] w-fit font-montserrat text-[64px] font-semibold leading-[120%] text-primary-color-1">
+          <div className="card-how-to-work text-center">
+            <p className="card-number relative z-20 mx-auto  w-fit font-montserrat text-4xl font-semibold leading-[120%] text-primary-color-1 md:text-5xl lg:text-[64px]">
               02
             </p>
             <p className="card-title">Get pre-qualified</p>
@@ -31,8 +31,8 @@ export const HowItWork = () => {
               There are several types of bank cards, including debit cards.
             </p>
           </div>
-          <div className="card text-center">
-            <p className="card-number relative z-20 mx-auto mt-[32px] w-fit font-montserrat text-[64px] font-semibold leading-[120%] text-primary-color-1">
+          <div className="card-how-to-work text-center">
+            <p className="card-number relative z-20 mx-auto  w-fit font-montserrat text-4xl font-semibold leading-[120%] text-primary-color-1 md:text-5xl lg:text-[64px]">
               03
             </p>
             <p className="card-title">Send documents</p>
@@ -40,8 +40,8 @@ export const HowItWork = () => {
               There are several types of bank cards, including debit cards.
             </p>
           </div>
-          <div className="card text-center">
-            <p className="card-number relative z-20 mx-auto mt-[32px] w-fit font-montserrat text-[64px] font-semibold leading-[120%] text-primary-color-1">
+          <div className="card-how-to-work text-center">
+            <p className="card-number relative z-20 mx-auto  w-fit font-montserrat text-4xl font-semibold leading-[120%] text-primary-color-1 md:text-5xl lg:text-[64px]">
               04
             </p>
             <p className="card-title">Get a Loan</p>

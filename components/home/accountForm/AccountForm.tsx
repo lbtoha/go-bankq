@@ -32,7 +32,7 @@ export const AccountForm = () => {
               </div>
             </div>
           </div>
-          <div className=" h-full bg-[#FAFAFC] px-10 py-10 max-xl:mt-10  md:py-20  xl:col-start-8 xl:w-[526px]">
+          <div className=" h-full bg-[#FAFAFC] px-3 py-10 max-xl:mt-10 md:px-10  md:py-20  xl:col-start-8 xl:w-[526px]">
             <Form></Form>
           </div>
         </div>

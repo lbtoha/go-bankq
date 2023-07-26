@@ -14,7 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 export const BrandSlider = () => {
   var settings = {
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     // autoplay: true,
     speed: 1000,
@@ -44,7 +44,7 @@ export const BrandSlider = () => {
   return (
     <Slider
       {...settings}
-      className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
+      className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-cover bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
     >
       <div className="mx-auto flex items-center">
         <Image

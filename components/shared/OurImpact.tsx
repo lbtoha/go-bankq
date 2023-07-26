@@ -67,7 +67,7 @@ export const OurImpact = () => {
             <p className="text-lg leading-[150%]">Money managed</p>
           </div>
         </div>
-        <div className="mt-[60px] flex  hidden justify-center md:block">
+        <div className="mt-[60px] justify-center  justify-items-center max-md:hidden md:block lg:flex">
           <Image src={countdown} alt="countdown" />
         </div>
       </div>

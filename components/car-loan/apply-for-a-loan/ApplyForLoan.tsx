@@ -5,9 +5,9 @@ import { Form } from "./Form";
 
 export const ApplyForLoan = () => {
   return (
-    <section>
-      <div className="section-gap container">
-        <div className="items-center xl:grid xxl:grid-cols-12 ">
+    <section className="overflow-hidden">
+      <div className="section-gap container ">
+        <div className="items-center xl:grid xl:grid-cols-12 ">
           <div className="col-span-6 bg-section-bg pb-20">
             <div className="px-10 pt-[58px]  ">
               <p className="mb-[60px] font-montserrat text-2xl font-semibold leading-[130%]">
@@ -16,12 +16,10 @@ export const ApplyForLoan = () => {
               <Form />
             </div>
           </div>
-          <div className="col-start-8 col-end-13 hidden xxl:block">
-            <Image
-              src={forLoan}
-              alt="For Loan Image"
-              className="xxl:max-w-none"
-            />
+          <div className=" col-start-8 col-end-13  hidden xl:block">
+            <div className="full-width-image">
+              <Image src={forLoan} alt="For Loan Image" />
+            </div>
           </div>
         </div>
       </div>

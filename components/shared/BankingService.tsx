@@ -18,14 +18,16 @@ export const BankingService = () => {
     <section className="section-gap relative max-md:mx-3">
       <div className="lg:container">
         <div className="browse-set-container gap-4 md:px-5">
-          <div className="browse-set-card  group mx-0 flex flex-col p-10   duration-500  ">
+          <div className="browse-set-card  group mx-0 flex flex-col duration-500   lg:p-10  ">
             <h3 className=" text-[20px] font-bold leading-[120%] text-[#292C32] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px]">
               Browse our set of banking services and offerings
             </h3>
-            <div className="mt-[60px] flex gap-2  md:gap-[35px]">
-              <Button text="Get Started" url="/" />
+            <div className="mt-[60px] flex gap-2 lg:gap-[35px]">
+              <button className="border bg-primary-color-2 px-3 py-[15px] text-sm font-medium text-[#292C32] hover:bg-slate-200 sm:text-lg  md:px-5  xl:px-10">
+                Get Started
+              </button>
               <Link href="/">
-                <button className="bg-gray-100 px-3 py-[15px] text-sm font-medium text-[#292C32] underline md:px-5 md:text-lg lg:px-10">
+                <button className="bg-gray-100 px-3 py-[15px] text-sm font-medium text-[#292C32] underline md:px-5 md:text-lg xl:px-10">
                   Browser Feature
                 </button>
               </Link>

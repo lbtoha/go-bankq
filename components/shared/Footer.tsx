@@ -13,26 +13,28 @@ export const Footer = () => {
   return (
     <footer className="footer-section relative z-0">
       <div className=" section-gap horizontal-gap sm:container">
-        <div className="relative mb-5 flex flex-wrap bg-primary-color-2 px-5 pb-10 pt-5 max-lg:justify-center  lg:py-[80px] lg:ps-[81px]">
+        <div className="relative mb-5 flex flex-wrap items-center bg-primary-color-2 px-5 pb-10 pt-5 max-lg:justify-center  lg:py-[80px] lg:ps-[81px]">
           <div className="text-center max-lg:mb-10  md:text-left lg:max-w-[334px]">
             <SectionHeading title="Subscribe Our Newsletter" />
           </div>
-          <form className="flex flex-wrap items-stretch  gap-3">
-            <input
-              type="email"
-              name="email"
-              id=""
-              placeholder="Email"
-              className="border border-gray-400 bg-transparent p-5"
-            />
+          <div>
+            <form className="flex flex-wrap items-stretch  gap-3">
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Email"
+                className="border border-[#191B1A] bg-transparent px-5 placeholder:text-[#191B1A] max-md:py-[15px]"
+              />
 
-            <button
-              className="border bg-[#055F5B] px-10 py-[15px]  font-medium text-white"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
+              <button
+                className="border bg-[#055F5B] px-10 py-[15px]  font-medium text-white"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
           <div className="absolute right-0 top-0 hidden xl:block">
             <Image src={footerImage} alt="Footer Image" />
           </div>

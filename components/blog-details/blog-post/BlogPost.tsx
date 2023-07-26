@@ -37,7 +37,7 @@ export const BlogPost = () => {
               <Image src={blogDetailImage2} alt="Blog Details Image" />
             </div>
           </div>
-          <div className="grid-cols-12 md:grid lg:mb-[60px]">
+          <div className="grid-cols-12 md:grid ">
             <div className="col-span-8 col-start-3">
               <p className="mb-6 font-montserrat text-[32px] font-semibold leading-[120%] text-[#000515]">
                 Facilitating Transactions and Payments
@@ -46,7 +46,7 @@ export const BlogPost = () => {
               <div className="mb-10 mt-5 font-semibold">
                 <SectionText text="Banks also play a key role in investing in the economy. Banks use deposits from customers to make loans to businesses and individuals, which helps to drive economic growth and create jobs. Banks also invest in financial instruments such as stocks and bonds, which can generate returns for their customers." />
               </div>
-              <ul className=" ms-5 list-disc space-y-5 ">
+              <ul className="ms-5 list-disc space-y-5 ">
                 <li>
                   Banks have been around for centuries, and their role in the
                   economy has evolved over time. Today, banks are critical to

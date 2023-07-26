@@ -12,16 +12,16 @@ type Props = {
 export const GobankCard = ({ title, subText, children }: Props) => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="p-5 bg-[#FFD584] bg-opacity-20  rounded-full w-fit">
-        <div className="p-3 bg-[#FFD584] rounded-full">{children}</div>
+      <div className="w-fit rounded-full bg-[#FFD584]  bg-opacity-20 p-5">
+        <div className="rounded-full bg-[#FFD584] p-3">{children}</div>
       </div>
       <h3
-        className={`font-montserrat mt-5 text-sub-title-color text-xl font-semibold`}
+        className={`mt-5 font-montserrat text-xl font-semibold text-sub-title-color`}
       >
         {title}
       </h3>
       <div className="mt-3">
-        <p className="text-base text-[#6F7278] leading-[150%] mb-5 lg:mb-10">
+        <p className="text-base leading-[150%] text-[#6F7278] max-md:mb-5">
           {subText}
         </p>
       </div>

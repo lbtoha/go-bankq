@@ -8,8 +8,8 @@ export default function EducationLoan() {
   return (
     <main>
       <EducationLoanHeader />
-      <HowItWork />
       <HelpStudent />
+      <HowItWork />
       <FlexibleRepayment />
       <OurClientSay />
     </main>

@@ -8,7 +8,7 @@ import callToActionRight from "@/public/images/call-to-action-vactor.png";
 
 export const OpenAccountSection = () => {
   return (
-    <section className="open-account-section section-gap relative">
+    <section className="open-account-section section-gap relative ">
       <div className="container  text-center">
         <div className=" mx-auto mb-[60px] max-w-[761px] text-center text-white">
           <h2 className="font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:text-[40px]">

@@ -39,3 +39,6 @@
   --section-bg: #fafafc;
   --border-color: #caccd1;
 }
+html {
+  scroll-behavior: smooth;
+}

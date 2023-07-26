@@ -35,7 +35,7 @@ export const OurClientSaySection = () => {
   };
 
   return (
-    <section className="our-client-section section-gap">
+    <section className="our-client-section section-gap bg-[#F9F9FB]">
       <div className="container  max-sm:w-3/4">
         <div className="mb-5 text-center md:mb-10 xl:mb-[60px]">
           <SectionHeading title="What Our Client's Say" />

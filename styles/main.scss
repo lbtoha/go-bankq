@@ -45,7 +45,7 @@
 
 // Home Loan page
 .how-it-work-section {
-  .card {
+  .card-how-to-work {
     .card-number::after {
       content: "";
       position: absolute;
@@ -83,15 +83,15 @@
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px;
   list-style-type: none;
-  padding: 0 5rem;
+  padding: 0 3rem;
   margin-bottom: 120px;
 }
 
 .pagination li a {
   border-radius: 7px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   border: var(--primary-color-1) 1px solid;
   color: var(--primary-color-1);
   cursor: pointer;
@@ -107,12 +107,12 @@ ul.pagination li.selected a {
   background-color: #0366d6;
   border-color: transparent;
   color: white;
-  min-width: 32px;
+  min-width: 30px;
 }
 
 ul.pagination li.disabled a {
   border-radius: 7px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   border: var(--primary-color-1) 1px solid;
   background: #caccd1;
   border-color: transparent;
@@ -317,61 +317,9 @@ ul.pagination li.disabled a {
   }
 }
 
-// .browse-set-container {
-//   display: grid;
-//   grid-template-columns: repeat(12, 1fr);
-//   justify-content: space-between;
-
-//   @for $i from 1 through 6 {
-//     .browse-set-card:nth-child(#{$i}) {
-//       @if $i == 1 {
-//         grid-column: 1 / 7;
-//       } @else if $i == 2 or $i == 5 or $i == 6 {
-//         grid-column: 7 / 10;
-//       } @else {
-//         grid-column: 10 / 13;
-//       }
-//     }
-//   }
-
-//   @media (min-width: 768px) {
-//     .browse-set-card:nth-child(2),
-//     .browse-set-card:nth-child(5),
-//     .browse-set-card:nth-child(6) {
-//       grid-column: 1 / 7;
-//     }
-//     .browse-set-card:nth-child(3),
-//     .browse-set-card:nth-child(4) {
-//       grid-column: 7 / 13;
-//     }
-//   }
-
-//   @media (min-width: 992px) {
-//     .browse-set-card:nth-child(2),
-//     .browse-set-card:nth-child(4),
-//     .browse-set-card:nth-child(6) {
-//       grid-column: 7 / 13;
-//     }
-//     .browse-set-card:nth-child(1),
-//     .browse-set-card:nth-child(3),
-//     .browse-set-card:nth-child(5) {
-//       grid-column: 1 / 7;
-//     }
-//   }
-
-//   @media (min-width: 1200px), (min-width: 1400px) {
-//     .browse-set-card:nth-child(1),
-//     .browse-set-card:nth-child(2),
-//     .browse-set-card:nth-child(4) {
-//       grid-column: 1 / 7;
-//     }
-//     .browse-set-card:nth-child(3),
-//     .browse-set-card:nth-child(5),
-//     .browse-set-card:nth-child(6) {
-//       grid-column: 7 / 10;
-//     }
-//   }
-// }
+.full-width-image img {
+  min-width: max-content;
+}
 
 // @media (min-width: 576px) {
 // }

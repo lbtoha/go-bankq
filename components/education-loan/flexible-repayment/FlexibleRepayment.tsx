@@ -14,7 +14,7 @@ export const FlexibleRepayment = () => {
             <div className="mb-6">
               <SectionHeading title="Education loans typically have flexible repayment." />
             </div>
-            <div className="mb-10">
+            <div className=" mb-5 md:mb-8 lg:mb-10">
               <SectionText text="The interest rate on an education loan is typically determined by the borrower's credit score, income, and other financial factors. Interest rates can range from 3% to 15%. o apply for an education loan, borrowers typically need to provide basic personal and financial information, including their income, employment status, and credit score." />
             </div>
             <Button text="Apply now" url="/" />

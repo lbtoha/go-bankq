@@ -26,7 +26,7 @@ export const AllTypesLoan = () => {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
-    autoplay: true,
+    // autoplay: true,
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
@@ -43,11 +43,11 @@ export const AllTypesLoan = () => {
       },
       {
         breakpoint: 992,
-        settings: { slidesToShow: 4, slidesToScroll: 1 },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 4, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 1200,
@@ -56,24 +56,26 @@ export const AllTypesLoan = () => {
     ],
   };
   return (
-    <section>
-      <div className="section-gap horizontal-gap container">
+    <section className="overflow-hidden bg-[#FAFAFC]">
+      <div className="section-gap horizontal-gap container ">
         <div>
           <SectionHeading title="Our all types of loans" />
 
           <div className="mt-[30px] w-full lg:w-[90vw] xl:mt-[60px]">
             <Slider ref={sliderRef} {...settings}>
               <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-[30px] even:mt-[80px] hover:bg-primary-color-2 sm:me-4">
-                  <div className="mb-10  w-max  rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2">
-                    <BsFileText className="text-[50px] text-primary-color-1" />
+                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
+                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
+                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
+                      real_estate_agent
+                    </span>
                   </div>
                   <h3
-                    className={`mb-3 mt-10 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D] `}
+                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
                   >
                     Home Loan
                   </h3>
-                  <div className="mb-10">
+                  <div className="mb-5 md:mb-10">
                     <SectionText text="These loans allow you to borrow against the equity in your home." />
                   </div>
                   <p className="text-base leading-[150%] text-primary-color-1 underline">
@@ -82,16 +84,18 @@ export const AllTypesLoan = () => {
                 </div>
               </div>
               <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-[30px] even:mt-[80px] hover:bg-primary-color-2 sm:me-4">
-                  <div className="mb-10  w-max  rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2">
-                    <BsFileText className="text-[50px] text-primary-color-1" />
+                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
+                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
+                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
+                      person
+                    </span>
                   </div>
                   <h3
-                    className={`mb-3 mt-10 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D] `}
+                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
                   >
-                    Home Loan
+                    Personal Loan
                   </h3>
-                  <div className="mb-10">
+                  <div className="mb-5 md:mb-10">
                     <SectionText text="These loans allow you to borrow against the equity in your home." />
                   </div>
                   <p className="text-base leading-[150%] text-primary-color-1 underline">
@@ -100,16 +104,18 @@ export const AllTypesLoan = () => {
                 </div>
               </div>
               <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-[30px] even:mt-[80px] hover:bg-primary-color-2 sm:me-4">
-                  <div className="mb-10  w-max  rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2">
-                    <BsFileText className="text-[50px] text-primary-color-1" />
+                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
+                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
+                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
+                      directions_car
+                    </span>
                   </div>
                   <h3
-                    className={`mb-3 mt-10 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D] `}
+                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
                   >
-                    Home Loan
+                    Car Loan
                   </h3>
-                  <div className="mb-10">
+                  <div className="mb-5 md:mb-10">
                     <SectionText text="These loans allow you to borrow against the equity in your home." />
                   </div>
                   <p className="text-base leading-[150%] text-primary-color-1 underline">
@@ -118,16 +124,18 @@ export const AllTypesLoan = () => {
                 </div>
               </div>
               <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-[30px] even:mt-[80px] hover:bg-primary-color-2 sm:me-4">
-                  <div className="mb-10  w-max  rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2">
-                    <BsFileText className="text-[50px] text-primary-color-1" />
+                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
+                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
+                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
+                      cases
+                    </span>
                   </div>
                   <h3
-                    className={`mb-3 mt-10 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D] `}
+                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
                   >
-                    Home Loan
+                    Business Loan
                   </h3>
-                  <div className="mb-10">
+                  <div className="mb-5 md:mb-10">
                     <SectionText text="These loans allow you to borrow against the equity in your home." />
                   </div>
                   <p className="text-base leading-[150%] text-primary-color-1 underline">
@@ -136,34 +144,18 @@ export const AllTypesLoan = () => {
                 </div>
               </div>
               <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-[30px] even:mt-[80px] hover:bg-primary-color-2 sm:me-4">
-                  <div className="mb-10  w-max  rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2">
-                    <BsFileText className="text-[50px] text-primary-color-1" />
+                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
+                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
+                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
+                      school
+                    </span>
                   </div>
                   <h3
-                    className={`mb-3 mt-10 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D] `}
+                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
                   >
-                    Home Loan
+                    Education Loan
                   </h3>
-                  <div className="mb-10">
-                    <SectionText text="These loans allow you to borrow against the equity in your home." />
-                  </div>
-                  <p className="text-base leading-[150%] text-primary-color-1 underline">
-                    Learn more
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-[30px] even:mt-[80px] hover:bg-primary-color-2 sm:me-4">
-                  <div className="mb-10  w-max  rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2">
-                    <BsFileText className="text-[50px] text-primary-color-1" />
-                  </div>
-                  <h3
-                    className={`mb-3 mt-10 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D] `}
-                  >
-                    Home Loan
-                  </h3>
-                  <div className="mb-10">
+                  <div className="mb-5 md:mb-10">
                     <SectionText text="These loans allow you to borrow against the equity in your home." />
                   </div>
                   <p className="text-base leading-[150%] text-primary-color-1 underline">
@@ -172,7 +164,7 @@ export const AllTypesLoan = () => {
                 </div>
               </div>
             </Slider>
-            <div className="mt-[120px] flex  items-center gap-[41px]">
+            <div className=" mt-10 flex items-center  gap-[41px] md:mt-20 lg:mt-[120px]">
               <button className="card-arrow__left relative" onClick={previous}>
                 <Image
                   src={arrowLeft}

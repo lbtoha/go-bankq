@@ -22,8 +22,8 @@ export const CalculateEmi = () => {
   }, [value, month]);
 
   return (
-    <section className="dot-bg section-gap horizontal-gap relative bg-primary-color-1">
-      <div className="section-gap container">
+    <section className="dot-bg section-gap relative bg-primary-color-1">
+      <div className=" container">
         <div className="mx-auto mb-[60px] max-w-[480px]">
           <p className="text-center font-montserrat text-[32px] font-semibold leading-[120%] text-[#FAFAFC]">
             Taking a loan? Calculate your EMI
@@ -50,7 +50,7 @@ export const CalculateEmi = () => {
             <div>
               <p className="mb-5 mt-[60px] text-2xl leading-[150%] text-[#FAFAFC]">
                 Month:{" "}
-                <span className="font-bold text-[#FFD584]">${month[1]}</span>
+                <span className="font-bold text-[#FFD584]">{month[1]}</span>
               </p>
               <RangeSlider
                 className="single-thumb range-slider__range"

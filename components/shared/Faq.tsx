@@ -19,30 +19,30 @@ export const Faq = () => {
             <div className="mb-6">
               <SectionHeading title="Frequently asked questions" />
             </div>
-            <div className="mb-[60px]">
+            <div className=" mb-5 lg:mb-[60px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount ." />
             </div>
-            <div className="mb-8 flex flex-wrap items-center gap-4 text-xl leading-[150%] text-[#292C32] md:max-w-[207px] md:space-y-[11px] lg:mb-0">
-              <div className="flex  items-center  gap-[17px] p-4 hover:bg-primary-color-2 ">
-                <span>
+            <div className="mb-8 flex  gap-4 text-xl leading-[150%] text-[#292C32] max-md:flex-wrap md:max-w-[207px] md:flex-col lg:mb-0 lg:space-y-[11px]">
+              <div className="group flex items-center gap-[17px] py-2 hover:bg-primary-color-2 lg:p-4 lg:py-2">
+                <span className="custom-transition group-hover:text-primary-color-1">
                   <MdOutlineAccountBalanceWallet />
                 </span>
                 <span>Account</span>
               </div>
-              <div className="flex items-center gap-[17px] p-4 hover:bg-primary-color-2">
-                <span>
+              <div className="group flex items-center gap-[17px] py-2 hover:bg-primary-color-2 lg:p-4 lg:py-2">
+                <span className="custom-transition group-hover:text-primary-color-1">
                   <PiHandCoins />
                 </span>
                 <span>Loan</span>
               </div>
-              <div className="flex items-center gap-[17px] p-4 hover:bg-primary-color-2">
-                <span>
+              <div className="group flex items-center gap-[17px] py-2 hover:bg-primary-color-2 lg:p-4 lg:py-2">
+                <span className="custom-transition group-hover:text-primary-color-1">
                   <PiPiggyBankLight />
                 </span>
                 <span>Bank</span>
               </div>
-              <div className="flex items-center gap-[17px] p-4 hover:bg-primary-color-2">
-                <span>
+              <div className="group flex items-center gap-[17px] py-2 hover:bg-primary-color-2 lg:p-4 lg:py-2">
+                <span className="custom-transition group-hover:text-primary-color-1">
                   <BsCreditCard2Back />
                 </span>
                 <span>Card</span>

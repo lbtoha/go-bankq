@@ -8,8 +8,8 @@ import { FaHandHoldingUsd } from "react-icons/fa";
 
 export const GoBank = () => {
   return (
-    <section>
-      <div className="section-gap horizontal-gap container ">
+    <section className="relative">
+      <div className="section-gap  container ">
         <div className="md:w-[516px]">
           <h3 className="mb-[25px] text-[40px] font-bold text-primary-color-2">
             <span className="text-[#292C32] ">Why</span> GoBank
@@ -22,7 +22,7 @@ export const GoBank = () => {
             and institutions.
           </p>
         </div>
-        <div className=" mt-[30px] grid grid-cols-1 items-center justify-between gap-6 text-center sm:mt-[50px] sm:grid-cols-2 md:mt-[100px] md:grid-cols-4 xl:mt-[129px]">
+        <div className=" mt-[30px] grid grid-cols-1 items-center justify-between gap-6 text-center sm:mt-[50px] sm:grid-cols-2 md:mt-[80px] md:grid-cols-4 xl:mt-[115px]">
           <GobankCard
             title="Checking Account"
             subText="The bank offers a wide range of financial products and services to
@@ -53,6 +53,7 @@ export const GoBank = () => {
           </GobankCard>
         </div>
       </div>
+      <div className=" absolute hidden h-[50%] w-[40%] bg-primary-color-2.1 lg:block"></div>
     </section>
   );
 };
