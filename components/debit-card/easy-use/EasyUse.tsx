@@ -13,14 +13,16 @@ export const EasyUse = () => {
           <div className="hidden md:col-span-6 md:block xl:col-span-5">
             <Image src={easyUseImage} alt="Next Car Image" />
           </div>
-          <div className=" md:col-span-12 md:col-start-7 xl:col-span-12 xl:col-start-8">
-            <div className="mb-6 max-sm:text-center">
+          <div className="md:col-span-12 md:col-start-7 xl:col-span-12 xl:col-start-8">
+            <div className="mb-4 max-sm:text-center md:mb-6">
               <SectionHeading title="Easy to use your card  everywhere " />
             </div>
-            <div className="mb-10">
+            <div className="ld:mb-10 mb-5 max-sm:text-center md:mb-8">
               <SectionText text="A debit card is a plastic card that is linked to your bank account and allows you to access your funds electronically. When you use your debit card to make a purchase, the amount is deducted from your bank account balance immediately or shortly after the transaction is made." />
             </div>
-            <Button text="Apply now" url="/" />
+            <div className="max-sm:text-center">
+              <Button text="Apply now" url="/" />
+            </div>
           </div>
         </div>
       </div>

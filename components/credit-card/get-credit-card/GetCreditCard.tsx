@@ -24,7 +24,7 @@ export const GetCreditCard = () => {
   return (
     <section className="dot-bg bg-primary-color-2.1 max-sm:px-2">
       <div className="section-gap container">
-        <div className="mx-auto mb-[60px] max-w-[480px]">
+        <div className="mx-auto mb-10 max-w-[480px] md:mb-[60px]">
           <p className="text-center font-montserrat text-2xl font-semibold leading-[120%] md:text-[32px] ">
             Get your credit card
           </p>
@@ -33,17 +33,17 @@ export const GetCreditCard = () => {
             rewards, purchase protection
           </p>
         </div>
-        <div className="grid items-center gap-6 rounded-md border border-[#E7E9EE] bg-[#FAFAFC] p-10 max-lg:space-y-10 lg:grid-cols-10">
+        <div className="grid items-center gap-6 rounded-md border border-[#E7E9EE] bg-[#FAFAFC] p-6 md:p-10 lg:grid-cols-10">
           <div className="lg:col-span-6">
             <div>
               <p className="font-montserrat text-xl font-semibold leading-[130%]">
                 Custom pricing
               </p>
-              <p className="mb-[50px] mt-3 text-sm leading-[150%] text-[#6F7278]">
+              <p className="mb-5 mt-3 text-sm leading-[150%]  text-[#6F7278] md:mb-8 md:text-base lg:mb-[50px]">
                 The amount is deducted from your bank account balance
               </p>
-              <div className="flex items-center justify-between">
-                <p className="mb-5 text-2xl  leading-[150%]">
+              <div className="items-center justify-between max-sm:mb-5 max-sm:space-y-3 sm:flex">
+                <p className="text-2xl leading-[150%]  sm:mb-5">
                   <span className=" font-bold text-primary-color-1 md:text-5xl  xl:text-[64px]">
                     ${value[1]}
                   </span>
@@ -62,7 +62,7 @@ export const GetCreditCard = () => {
                 onInput={setValue}
               />
             </div>
-            <div className="mt-[73px] flex items-center gap-3 max-sm:text-sm sm:gap-6">
+            <div className=" mt-10 flex items-center gap-3 max-sm:text-sm sm:gap-6 lg:mt-[73px]">
               <p className="rounded-lg border border-[#A0A2A7] px-2 py-[8px]">
                 FAQs
               </p>
@@ -78,7 +78,7 @@ export const GetCreditCard = () => {
             <p className="mt-5 text-center font-montserrat font-semibold leading-[120%] text-primary-color-1 md:text-[40px] xl:text-[52px]">
               ${totalAmount}
             </p>
-            <div className="mx-[30px] my-[30px]  border-b border-t border-gray-300 py-[18px]">
+            <div className="mx-[30px] my-[30px] border-b  border-t border-[#292C32] border-opacity-10 py-[18px]">
               <div className="flex items-center justify-evenly text-center">
                 <div>
                   <p className="text-base leading-[150%] text-[#292C32]">

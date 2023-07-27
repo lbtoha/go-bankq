@@ -14,13 +14,13 @@ export const WorkStep = () => {
   return (
     <section className="work-step-section relative">
       <div className="section-gap horizontal-gap container">
-        <div className="mb-[60px] text-center">
+        <div className="mb-10 text-center lg:mb-[60px]">
           <SectionHeading title="Our Work Step" />
         </div>
         <div className="grid items-center gap-6 md:grid-cols-2  xl:grid-cols-4 ">
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-[32px] py-[60px] xl:even:mt-[80px]">
-            <div className="mb-10  w-max bg-primary-color-2.2 p-[25px] ">
-              <BsFileText className="text-[50px] text-primary-color-1" />
+          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
+            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
+              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
             </div>
             <h3
               className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
@@ -29,36 +29,36 @@ export const WorkStep = () => {
             </h3>
             <SectionText text="There are several types of bank cards, including debit cards." />
           </div>
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-[32px] py-[60px] xl:even:mt-[80px] ">
-            <div className="mb-10  w-max bg-primary-color-2.2 p-[25px] ">
-              <ImProfile className="text-[50px] text-primary-color-1" />
+          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
+            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
+              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
             </div>
             <h3
               className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
             >
-              Get Pre-qualified
+              Fill the from
             </h3>
             <SectionText text="There are several types of bank cards, including debit cards." />
           </div>
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-[32px] py-[60px] xl:even:mt-[80px] ">
-            <div className="mb-10  w-max bg-primary-color-2.2 p-[25px] ">
-              <VscSend className="text-[50px] text-primary-color-1" />
+          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
+            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
+              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
             </div>
             <h3
               className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
             >
-              Send Documents
+              Fill the from
             </h3>
             <SectionText text="There are several types of bank cards, including debit cards." />
           </div>
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-[32px] py-[60px] xl:even:mt-[80px] ">
-            <div className="mb-10  w-max bg-primary-color-2.2 p-[25px] ">
-              <MdOutlineAssignmentTurnedIn className="text-[50px] text-primary-color-1" />
+          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
+            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
+              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
             </div>
             <h3
               className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
             >
-              Get Accounts
+              Fill the from
             </h3>
             <SectionText text="There are several types of bank cards, including debit cards." />
           </div>
@@ -73,7 +73,7 @@ export const WorkStep = () => {
         <Image
           src={workVectorImage}
           alt="Vector"
-          className="absolute right-[5%] top-[30%]"
+          className="absolute right-[5%] top-[30%] animate-pulse"
         />
       </div>
     </section>

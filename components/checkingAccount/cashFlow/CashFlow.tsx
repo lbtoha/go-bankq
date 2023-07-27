@@ -24,7 +24,7 @@ export const CashFlow = () => {
             <div className="mt-6">
               <SectionText text="If you spend more money than you have in your checking account, you may be charged an overdraft fee.  Some banks offer overdraft protection services to help you avoid overdraft fees." />
             </div>
-            <div className="mt-[64px] grid items-center justify-items-center space-y-4 md:grid-cols-3 md:space-y-0">
+            <div className="mt-8 grid justify-items-center space-y-4 md:mt-10 md:grid-cols-3 md:space-y-0 lg:mt-[64px]">
               <div className="flex flex-col items-center space-y-6 ">
                 <div className="flex h-[127px] w-[127px] items-center justify-center rounded-full border-8 border-primary-color-1">
                   <p

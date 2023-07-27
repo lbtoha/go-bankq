@@ -27,12 +27,16 @@ export const BrandSlider = () => {
         settings: { slidesToShow: 1, slidesToScroll: 1 },
       },
       {
+        breakpoint: 400,
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
         breakpoint: 768,
         settings: { slidesToShow: 3, slidesToScroll: 2 },
       },
       {
         breakpoint: 800,
-        settings: { slidesToShow: 6, slidesToScroll: 3 },
+        settings: { slidesToShow: 4, slidesToScroll: 3 },
       },
       {
         breakpoint: 1300,

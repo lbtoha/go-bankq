@@ -11,8 +11,8 @@ import footerImage from "@/public/images/footer_newsletter.png";
 
 export const Footer = () => {
   return (
-    <footer className="footer-section relative z-0">
-      <div className=" section-gap horizontal-gap sm:container">
+    <footer className="footer-section relative z-0 max-sm:px-2">
+      <div className="container pt-[50px] md:pt-[60px] lg:pt-[70px] xl:pt-[120px]">
         <div className="relative mb-5 flex flex-wrap items-center bg-primary-color-2 px-5 pb-10 pt-5 max-lg:justify-center  lg:py-[80px] lg:ps-[81px]">
           <div className="text-center max-lg:mb-10  md:text-left lg:max-w-[334px]">
             <SectionHeading title="Subscribe Our Newsletter" />
@@ -28,7 +28,7 @@ export const Footer = () => {
               />
 
               <button
-                className="border bg-[#055F5B] px-10 py-[15px]  font-medium text-white"
+                className="custom-transition border border-primary-color-1 bg-[#055F5B] px-10 py-[15px] font-medium text-white hover:outline  hover:outline-4 hover:outline-primary-color-1"
                 type="submit"
               >
                 Submit
@@ -39,7 +39,7 @@ export const Footer = () => {
             <Image src={footerImage} alt="Footer Image" />
           </div>
         </div>
-        <div className=" mt-8 flex justify-between border-b pb-8 md:mt-14 md:pb-[60px] lg:mt-[124px]">
+        <div className=" mt-8 flex justify-between border-b border-white border-opacity-10 pb-8 md:mt-14 md:pb-[60px] lg:mt-[124px]">
           <div className="flex items-center ">
             <span
               className={`pe-10 font-montserrat text-3xl uppercase text-primary-color-2 md:text-[42px]`}
@@ -59,7 +59,7 @@ export const Footer = () => {
             <Button text="Open Account" url="/" />
           </div>
         </div>
-        <div className="mt-[60px] grid grid-cols-1 items-center justify-between gap-10 border-b pb-[60px] md:grid-cols-2 lg:grid-cols-3 xl:gap-[137px]">
+        <div className="mt-[60px] grid grid-cols-1 items-center justify-between gap-10 border-b border-white border-opacity-10 pb-[60px] md:grid-cols-2 lg:grid-cols-3 xl:gap-[137px]">
           <div>
             <p className="mb-10 text-lg font-semibold leading-[130%] text-white">
               Page

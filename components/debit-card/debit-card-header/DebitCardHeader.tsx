@@ -9,7 +9,10 @@ export const DebitCardHeader = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader title="Home" items={["Home", "Card", "Debit Card"]} />
+            <PageHeader
+              title="Debit Card"
+              items={["Home", "Card", "Debit Card"]}
+            />
           </div>
           <div className="hidden lg:block">
             <Image src={debitCard} alt="Personal Loan banner" />

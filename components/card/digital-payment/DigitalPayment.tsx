@@ -10,13 +10,13 @@ import { MdCreditScore, MdLocalAtm } from "react-icons/md";
 export const DigitalPayment = () => {
   return (
     <section>
-      <div className="section-gap container">
+      <div className="section-gap container max-sm:px-2">
         <div className="grid-cols-2 items-center justify-between lg:grid">
           <div>
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <SectionHeading title="Process and Manage Digital Payments" />
             </div>
-            <div className="mb-10">
+            <div className="mb-6 md:mb-7 lg:mb-10">
               <SectionText text="Proven, scalable and secure payment solutions for issuing, acquiring, processing and banking" />
             </div>
             <div className=" grid-cols-2 gap-6 space-y-5 sm:grid sm:space-y-0">

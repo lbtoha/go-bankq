@@ -21,8 +21,8 @@ export const PlanAction = () => {
     console.log();
   }, [value, month]);
   return (
-    <section>
-      <div className="container my-[120px] border border-[#CACCD1] bg-[#FAFAFC] px-[50px] py-[50px] md:px-[110px] md:py-[80px]">
+    <section className="section-gap max-sm:px-2">
+      <div className=" container rounded-md border border-[#CACCD1] bg-[#FAFAFC] px-5  py-5 md:px-[110px] md:py-[80px]">
         <div className="text-center">
           <div className="mb-6">
             <SectionHeading title="Put Your Plans into Action" />
@@ -30,12 +30,12 @@ export const PlanAction = () => {
           <div className="mx-auto max-w-[780px]">
             <SectionText text=" Personal loans typically range from $1,000 to $100,000, depending on the lender and the borrower's creditworthiness." />
           </div>{" "}
-          <p className="py-[40px] font-montserrat text-2xl font-semibold leading-[120%] md:my-[60px] md:text-[32px]">
+          <p className="my-10 font-montserrat text-2xl font-semibold leading-[120%] md:text-[32px] xl:my-[60px]">
             Personal Loan Amount:{" "}
             <span className="text-primary-color-1">${value[1]}</span>
           </p>
         </div>
-        <div className="mb-[60px]">
+        <div className="mb-10 xl:mb-[60px]">
           <RangeSlider
             className="single-thumb-green range-slider__range"
             id="range-slider-green"

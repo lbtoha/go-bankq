@@ -4,7 +4,7 @@ import serviceBanner from "@/public/images/service_banner.png";
 
 export const ServiceHeader = () => {
   return (
-    <section className="msx-lg:section-gap bg-primary-color-1 max-sm:ps-2">
+    <section className="max-lg:section-gap bg-primary-color-1 max-sm:ps-2">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

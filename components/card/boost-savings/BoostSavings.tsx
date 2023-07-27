@@ -13,24 +13,24 @@ export const BoostSavings = () => {
   const [toggle, setToggle] = useState(true);
   return (
     <section>
-      <div className="section-gap container">
+      <div className="section-gap container max-sm:px-2">
         <div className="grid lg:grid-cols-5 lg:gap-6 xxl:grid-cols-12">
           <div className="hidden md:col-span-2 lg:block xxl:col-span-5">
             <Image src={boostSavingsImage} alt="Boost Savings Image" />
           </div>
           <div className="lg:col-span-5 lg:col-start-3 xxl:col-span-12 xxl:col-start-8">
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <SectionHeading title="Boost your savings with the right credit card." />
             </div>
-            <div className="mb-10">
+            <div className="mb-5 md:mb-10">
               <SectionText text="All your needs covered with a full range of credit and debit cards ." />
             </div>
-            <div className="mb-10 grid grid-cols-2 items-center justify-between gap-[18px] rounded-md bg-[#E7E9EE]">
+            <div className="mb-5 grid grid-cols-2 items-center justify-between gap-[18px] rounded-md bg-[#E7E9EE] md:mb-10">
               <div
                 onClick={() => setToggle(!toggle)}
                 className={`${
                   toggle && `bg-white`
-                } my-[10px] ms-[10px] flex cursor-pointer items-center justify-center gap-4  rounded-md py-3 text-xl`}
+                } my-[10px] ms-[10px] flex cursor-pointer items-center justify-center gap-2 rounded-md  py-3 text-lg md:gap-4 md:text-xl`}
               >
                 <MdCreditScore
                   className={`${
@@ -43,7 +43,7 @@ export const BoostSavings = () => {
                 onClick={() => setToggle(!toggle)}
                 className={`${
                   toggle ? `` : `bg-white`
-                } my-[10px] me-[10px] flex cursor-pointer items-center justify-center gap-4  rounded-md py-3 text-xl`}
+                } my-[10px] me-[10px] flex cursor-pointer items-center justify-center gap-2 rounded-md  py-3 text-lg md:gap-4 md:text-xl`}
               >
                 <MdCreditScore
                   className={`${
@@ -54,13 +54,15 @@ export const BoostSavings = () => {
               </div>
             </div>
             {toggle ? (
-              <div className="md-5 md:mb-10 xl:mb-[60px] ">
+              <div className="mb-5 md:mb-10 xl:mb-[60px] ">
                 <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
                   Lifestyle Benefits:
                 </p>
-                <div className="space-y-[37px]">
+                <div className="space-y-4 md:space-y-6">
                   <div className="mt-6 flex items-center gap-5">
-                    <BsCheckCircle className="text-xl text-primary-color-1" />
+                    <span className="material-symbols-outlined text-xl text-primary-color-1">
+                      check_circle
+                    </span>
                     <div>
                       <p className="text-[#6F7278]">
                         Get cash backs and rewards that help you spend more
@@ -68,8 +70,10 @@ export const BoostSavings = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-6 flex items-center gap-5">
-                    <BsCheckCircle className="text-xl text-primary-color-1" />
+                  <div className=" flex items-center gap-5">
+                    <span className="material-symbols-outlined text-xl text-primary-color-1">
+                      check_circle
+                    </span>
                     <div>
                       <p className="text-[#6F7278]">
                         Travel better by earning unlimited 1.5x miles
@@ -79,13 +83,15 @@ export const BoostSavings = () => {
                 </div>
               </div>
             ) : (
-              <div className=" md-5 md:mb-10 xl:mb-[60px] ">
+              <div className=" mb-5 md:mb-10 xl:mb-[60px] ">
                 <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
                   Lifestyle Benefits:
                 </p>
-                <div className="space-y-[37px]">
+                <div className="space-y-4 md:space-y-6">
                   <div className="mt-6 flex items-center gap-5">
-                    <BsCheckCircle className="text-xl text-primary-color-1" />
+                    <span className="material-symbols-outlined text-xl text-primary-color-1">
+                      check_circle
+                    </span>
                     <div>
                       <p className="text-[#6F7278]">
                         Get cash backs and rewards that help you spend more
@@ -93,8 +99,10 @@ export const BoostSavings = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-6 flex items-center gap-5">
-                    <BsCheckCircle className="text-xl text-primary-color-1" />
+                  <div className=" flex items-center gap-5">
+                    <span className="material-symbols-outlined text-xl text-primary-color-1">
+                      check_circle
+                    </span>
                     <div>
                       <p className="text-[#6F7278]">
                         Travel better by earning unlimited 1.5x miles

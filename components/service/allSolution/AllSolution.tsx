@@ -9,8 +9,8 @@ export const AllSolution = () => {
   return (
     <section>
       <div className="section-gap horizontal-gap container">
-        <div className="grid items-center md:grid-cols-1 lg:grid-cols-12">
-          <div className="lg:col-span-5">
+        <div className="items-center md:grid-cols-1  lg:grid lg:grid-cols-12">
+          <div className="col-span-5">
             <SectionHeading title="All Solution In One Place" />
             <div className="space-y-[37px]">
               <div className="mt-6 flex items-center gap-5">
@@ -52,7 +52,7 @@ export const AllSolution = () => {
               </div>
             </div>
           </div>
-          <div className="-order-1 mb-4 hidden lg:col-span-full lg:col-start-7 lg:mb-0 lg:block">
+          <div className="col-start-7  col-end-13 mb-4 hidden lg:mb-0 lg:block">
             <Image src={solutionImage} alt="Service Solution" />
           </div>
         </div>

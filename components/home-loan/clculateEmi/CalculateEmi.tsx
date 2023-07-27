@@ -23,9 +23,9 @@ export const CalculateEmi = () => {
 
   return (
     <section className="dot-bg section-gap relative bg-primary-color-1">
-      <div className=" container">
+      <div className=" container max-sm:px-2">
         <div className="mx-auto mb-[60px] max-w-[480px]">
-          <p className="text-center font-montserrat text-[32px] font-semibold leading-[120%] text-[#FAFAFC]">
+          <p className="text-center font-montserrat text-2xl font-semibold leading-[120%] text-[#FAFAFC] md:text-[32px]">
             Taking a loan? Calculate your EMI
           </p>
         </div>
@@ -99,7 +99,7 @@ export const CalculateEmi = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <button className="border bg-primary-color-1 px-10 py-[15px]  font-medium text-white">
+              <button className="border bg-primary-color-1 px-10 py-[15px] font-medium text-white max-md:text-base">
                 Apply now
               </button>
             </div>

@@ -12,7 +12,7 @@ export const MuchEasier = () => {
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
-        <div className="mx-auto mb-10 max-w-[506px] max-sm:text-center md:mb-[60px]">
+        <div className="mx-auto mb-10 max-w-[506px] text-center max-sm:text-center md:mb-[60px]">
           <SectionHeading title="Make your card to much easier" />
         </div>
         <div className=" hidden justify-center md:flex">

@@ -8,7 +8,7 @@ import { Button } from "@/components/shared/Button";
 export const ImproveCost = () => {
   return (
     <section>
-      <div className="section-gap container">
+      <div className="section-gap container max-sm:px-2">
         <div className="grid-cols-2 items-center justify-between lg:grid">
           <div>
             <div className="mb-3 lg:mb-6">

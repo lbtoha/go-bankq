@@ -61,11 +61,6 @@ export const Banner = () => {
               className="animate-pulse"
             />
           </div>
-          {/* <Image
-            src={heroAnimation2}
-            alt="Hero Animation 2"
-            className="absolute right-[30%] top-[50%] hidden xl:block"
-          /> */}
         </div>
       </div>
     </section>

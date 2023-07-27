@@ -99,7 +99,7 @@ module.exports = {
     plugin(function ({ addUtilities, addComponents, e, config }) {
       const customComponent = {
         ".custom-transition": {
-          transition: "all 0.35s ease-in-out 0.1s",
+          transition: "all 0.35s ease-in-out",
         },
 
         ".dropdown-menu": {

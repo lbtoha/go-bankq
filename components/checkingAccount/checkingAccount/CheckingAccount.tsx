@@ -18,11 +18,11 @@ export const CheckingAccount = () => {
           </div>
           <div className="lg:col-span-12 lg:col-start-8">
             <SectionHeading title="Create checking account For your daily life " />
-            <div className="mb-10 mt-6">
+            <div className="mb-6 mt-6 lg:mb-10">
               <SectionText text="Minimum balance requirement: Many banks require you to maintain a minimum balance in your checking account in order to avoid fees." />
             </div>
-            <div>
-              <div className="mt-6 flex items-center gap-5">
+            <div className="space-y-4 lg:space-y-6">
+              <div className=" flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>
@@ -30,7 +30,7 @@ export const CheckingAccount = () => {
                   <p>Monthly maintenance fees</p>
                 </div>
               </div>
-              <div className="mt-6 flex items-center gap-5">
+              <div className=" flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>
@@ -38,7 +38,7 @@ export const CheckingAccount = () => {
                   <p>Overdraft fees </p>
                 </div>
               </div>
-              <div className="mt-6 flex items-center gap-5">
+              <div className=" flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>
@@ -46,7 +46,7 @@ export const CheckingAccount = () => {
                   <p>Debit cards </p>
                 </div>
               </div>
-              <div className="mt-6 flex items-center gap-5">
+              <div className=" flex items-center gap-5">
                 <Icon padding="p-2">
                   <AiOutlineCheck className="text-xl text-primary-color-1" />
                 </Icon>

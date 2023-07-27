@@ -7,8 +7,8 @@ import bankCard from "@/public/images/bankCard.png";
 
 export const BankCards = () => {
   return (
-    <section className="section-gap horizontal-gap bg-section-bg">
-      <div className="section-gap container">
+    <section className="section-gap bg-section-bg max-sm:px-2 ">
+      <div className=" container">
         <div className="items-center justify-between md:grid lg:grid-cols-12">
           <div className="col-span-5">
             <div className=" mb-3 w-max  bg-primary-color-2.2 p-5 md:p-[25px] lg:mb-10 ">

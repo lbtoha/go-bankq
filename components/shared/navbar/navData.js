@@ -79,6 +79,14 @@ export const navData = [
     dropdownItems: [
       {
         id: "card_credit",
+        dropdown_title: "Card",
+        parentUrl: "/card",
+        sbu_dropdown: false,
+        dropdownUrl: "/card",
+        sub_items: [],
+      },
+      {
+        id: "card_credit",
         dropdown_title: "Credit Card",
         parentUrl: "/card",
         sbu_dropdown: false,

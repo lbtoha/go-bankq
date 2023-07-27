@@ -10,7 +10,7 @@ export const PersonalLoanHeader = () => {
         <div className="flex items-center justify-between">
           <div>
             <PageHeader
-              title="Home"
+              title="Personal Loan"
               items={["Home", "Loan", "Personal Loan"]}
             />
           </div>

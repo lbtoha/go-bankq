@@ -9,7 +9,7 @@ export const CardHeader = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader title="Home" items={["Home", "Card"]} />
+            <PageHeader title="Card" items={["Home", "Card"]} />
           </div>
           <div className="hidden lg:block">
             <Image src={cardImage} alt="service banner" />

@@ -18,17 +18,19 @@ export const SmartSave = () => {
             <div className="mb-6">
               <SectionHeading title="Smart—save and spend with confidence" />
             </div>
-            <div className="mb-10">
+            <div className="mb-7 md:mb-10">
               <SectionText text="the bank account that gives you more control over your money—with a direct customer support hotline if you ever need help. Choose a Mastercard in your choice of 5 colors and organize your finances with 10 Spaces sub-accounts" />
             </div>
-            <div className=" mb-10 flex items-center justify-between rounded-md bg-primary-color-2.2 p-5">
-              <div className="flex items-center gap-10">
-                <div className="w-fit rounded-md bg-primary-color-2 p-5 text-[46px] text-primary-color-1">
-                  <MdSupportAgent />
+            <div className="mb-7 flex items-center justify-between rounded-md bg-primary-color-2.2 p-3 md:mb-10 md:p-5">
+              <div className="flex items-center gap-6 md:gap-10">
+                <div className="tex-3xl w-fit rounded-md bg-primary-color-2 p-3 text-primary-color-1 md:p-5 md:text-[46px]">
+                  <span className="material-symbols-outlined text-[35px] md:text-[46px] ">
+                    support_agent
+                  </span>
                 </div>
-                <p>Support</p>
+                <p className="text-xl font-semibold md:text-2xl">Support</p>
               </div>
-              <p>Available</p>
+              <p className="text-base text-primary-color-1">Available</p>
             </div>
             <Button text="Apply Credit card" url="/" />
           </div>

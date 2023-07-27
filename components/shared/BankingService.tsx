@@ -16,7 +16,7 @@ import {
 export const BankingService = () => {
   return (
     <section className="section-gap relative max-md:mx-3">
-      <div className="lg:container">
+      <div className="container">
         <div className="browse-set-container gap-4 md:px-5">
           <div className="browse-set-card  group mx-0 flex flex-col duration-500   lg:p-10  ">
             <h3 className=" text-[20px] font-bold leading-[120%] text-[#292C32] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px]">

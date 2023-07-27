@@ -76,7 +76,7 @@ export const Navbar = ({ cls = "" }) => {
           windowHeight > 50 && "header-active"
         } dot-bg relative bg-primary-color-1 text-white`}
       >
-        <div className="container">
+        <div className="container max-sm:px-2">
           <div className="flex items-center justify-between lg:hidden">
             <div className="py-5 ">
               <Link href="/">
@@ -282,7 +282,7 @@ export const Navbar = ({ cls = "" }) => {
                       {title}
                     </Link>
                     <ul
-                      className={`custom-class  absolute min-w-[200px] bg-primary-color-1 group-hover/nav-item:dropdown-menu group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
+                      className={`custom-class group-hover/nav-item:active-nav  custom-transition absolute min-w-[200px] bg-primary-color-1 group-hover/nav-item:dropdown-menu group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
                         dropdownId === id && "Todo"
                       }`}
                     >
@@ -366,7 +366,7 @@ export const Navbar = ({ cls = "" }) => {
               })}
             </ul>
             <div>
-              <button className="border bg-primary-color-2 px-3 py-[15px] text-lg font-medium text-[#292C32] hover:bg-slate-200  xxl:px-10 xxl:text-lg">
+              <button className="custom-transition border bg-primary-color-2 px-3 py-[15px] text-lg font-medium text-[#292C32] hover:bg-slate-200  xxl:px-10 xxl:text-lg">
                 Register Now
               </button>
             </div>
