@@ -6,7 +6,7 @@ import aboutBanner from "@/public/images/about_banner.png";
 
 export const AboutHeader = () => {
   return (
-    <section className="dot-bg max-lg:section-gap bg-primary-color-1 max-sm:px-2">
+    <section className="navbar-banner max-lg:section-gap  max-sm:px-2">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

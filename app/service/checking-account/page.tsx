@@ -6,7 +6,7 @@ import { CheckingAccountHeader } from "@/components/checkingAccount/checkingAcco
 import { CheckingSlider } from "@/components/checkingAccount/checkingSlider/CheckingSlider";
 import { SecurityAndPeace } from "@/components/checkingAccount/securityAndPeace/SecurityAndPeace";
 import { WorkStep } from "@/components/checkingAccount/workStep/WorkStep";
-import { OpenAccount } from "@/components/home/openAccount/OpenAccount";
+import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
 import { SaveWithUs } from "@/components/shared/SaveWithUs";
 
 export default function Checking() {
@@ -20,7 +20,7 @@ export default function Checking() {
       <SecurityAndPeace />
       <BankCards />
       <WorkStep />
-      <OpenAccount />
+      <OpenAccountSection />
       <CheckingSlider />
     </main>
   );

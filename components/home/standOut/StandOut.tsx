@@ -1,27 +1,25 @@
 import React from "react";
-import { titleFont } from "@/utils/fonts";
 import Image from "next/image";
 import feature from "@/public/images/feature.png";
-import { BsArrowUpRight, BsLaptop, BsLightbulb } from "react-icons/bs";
+import { BsLaptop, BsLightbulb } from "react-icons/bs";
 import { RiCustomerService2Line, RiSecurePaymentLine } from "react-icons/ri";
-import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export const StandOut = () => {
   return (
     <section className="horizontal-gap relative bg-[#055F5B] text-white">
       <div className="section-gap container">
-        <div className="md:grid-w md:grid- grid-cols-1 items-center sm:grid-cols-2 md:gap-6  xl:grid">
-          <div className="standOut-section-title relative">
+        <div className="items-center lg:grid lg:grid-cols-2  xl:grid  xl:grid-cols-12">
+          <div className="section-top-mark relative lg:grid-cols-1 xl:col-span-6 xl:col-start-1">
             <h3
-              className={`mb-5 mt-6 font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:text-[40px]`}
+              className={`mb-5 mt-10 font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:text-[40px]`}
             >
               What makes us stand out from the rest?
             </h3>
-            <div className="mt-[60px] grid-cols-2 md:grid md:gap-6 ">
+            <div className="mt-10 grid-cols-2 md:mt-[50px] md:grid md:gap-6 lg:mt-[60px] ">
               <div className="mb-9 gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <BsLightbulb className="text-xl" />
+                    <BsLightbulb className="text-xl text-primary-color-1" />
                   </div>
                   <span
                     className={`font-montserrat text-xl font-semibold leading-[130%]`}
@@ -37,7 +35,7 @@ export const StandOut = () => {
               <div className="mb-9 gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <RiSecurePaymentLine className="text-xl" />
+                    <RiSecurePaymentLine className="text-xl text-primary-color-1" />
                   </div>
                   <span
                     className={`font-montserrat text-xl font-semibold leading-[130%]`}
@@ -53,7 +51,7 @@ export const StandOut = () => {
               <div className="mb-9 gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <RiCustomerService2Line className="text-xl" />
+                    <RiCustomerService2Line className="text-xl text-primary-color-1" />
                   </div>
                   <span
                     className={`font-montserrat text-xl font-semibold leading-[130%]`}
@@ -69,7 +67,7 @@ export const StandOut = () => {
               <div className="mb-9 gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <BsLaptop className="text-xl" />
+                    <BsLaptop className="text-xl text-primary-color-1" />
                   </div>
                   <span
                     className={`font-montserrat text-xl font-semibold leading-[130%]`}
@@ -84,12 +82,12 @@ export const StandOut = () => {
               </div>
             </div>
           </div>
-          <div className="z-20  -order-1 hidden lg:ms-[125px] xl:block">
-            <Image src={feature} alt="Feature" />
+          <div className="  hidden  lg:block lg:grid-cols-1 xl:col-start-8 xl:col-end-13 ">
+            <Image src={feature} alt="Feature" className="w-full" />
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0 hidden h-3/4 w-1/4 bg-gray-50 opacity-10 xl:block"></div>
+      <div className="absolute bottom-0 right-0 hidden h-3/4 w-1/4 bg-gray-50 opacity-10 xl:block 3xl:hidden"></div>
     </section>
   );
 };

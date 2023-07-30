@@ -17,70 +17,70 @@ export const BankingService = () => {
   return (
     <section className="section-gap relative max-md:mx-3">
       <div className="container">
-        <div className="browse-set-container gap-4 md:px-5">
-          <div className="browse-set-card  group mx-0 flex flex-col duration-500   lg:p-10  ">
-            <h3 className=" text-[20px] font-bold leading-[120%] text-[#292C32] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px]">
+        <div className="browse-set-container gap-6 md:px-5">
+          <div className="browse-set-card  group mx-0 flex flex-col duration-500 ">
+            <h3 className="max-w-[526px] text-[20px] font-bold leading-[120%] text-[#292C32] sm:text-[25px] md:text-[30px] lg:text-[40px]">
               Browse our set of banking services and offerings
             </h3>
-            <div className="mt-[60px] flex gap-2 lg:gap-[35px]">
-              <button className="border bg-primary-color-2 px-3 py-[15px] text-sm font-medium text-[#292C32] hover:bg-slate-200 sm:text-lg  md:px-5  xl:px-10">
+            <div className="mt-8 flex gap-5 md:mt-10 lg:mt-[60px]  lg:gap-[35px]">
+              <button className="border bg-primary-color-2 px-3 py-[15px] text-sm font-medium text-[#292C32] hover:bg-slate-200 sm:text-lg md:px-5 xl:px-10">
                 Get Started
               </button>
               <Link href="/">
-                <button className="bg-gray-100 px-3 py-[15px] text-sm font-medium text-[#292C32] underline md:px-5 md:text-lg xl:px-10">
-                  Browser Feature
+                <button className="border  bg-gray-100    px-3 py-[15px] text-sm font-medium text-[#292C32] underline hover:bg-slate-200 sm:text-lg md:px-5 md:text-lg xl:px-10">
+                  Browse Feature
                 </button>
               </Link>
             </div>
           </div>
-          <div className="browse-set-card border-[var(--border-color)]) group mx-0 flex flex-col border p-10 shadow-lg transition-colors duration-500 hover:bg-[#FFD584] ">
+          <div className="browse-set-card border-[var(--border-color)]) shadow-[0 4px 24px 0 rgba(220, 165, 58, 0.36)] group mx-0 flex flex-col border px-5 py-10  transition-colors duration-500 hover:bg-[#FFD584] ">
             <CardYellow
               cardTitle="Checking Account"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
-                <MdPermIdentity className={`rounded-full `} />
-              </div>
+              <span className="material-symbols-outlined rounded-full bg-[#FFD584] bg-opacity-20 p-[10px]  text-5xl group-hover:bg-white group-hover:bg-opacity-20 md:text-[60px]">
+                person
+              </span>
             </CardYellow>
           </div>
-          <div className="browse-set-card border-[var(--border-color)]) group mx-0 flex flex-col border p-10 shadow-lg transition-colors duration-500 hover:bg-[#FFD584]">
+          <div className="browse-set-card border-[var(--border-color)]) shadow-[0 4px 24px 0 rgba(220, 165, 58, 0.36)] group mx-0 flex flex-col border px-5 py-10  transition-colors duration-500 hover:bg-[#FFD584] ">
             <CardYellow
               cardTitle="Credit cards"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
-                <MdCreditScore className={`rounded-full `} />
-              </div>
+              <span className="material-symbols-outlined rounded-full bg-[#FFD584] bg-opacity-20 p-[10px] text-5xl group-hover:bg-white group-hover:bg-opacity-20 md:text-[60px]">
+                credit_score
+              </span>
             </CardYellow>
           </div>
-          <div className="browse-set-card border-[var(--border-color)]) group mx-0 flex flex-col border p-10 shadow-lg transition-colors duration-500 hover:bg-[#FFD584]">
+          <div className="browse-set-card border-[var(--border-color)]) shadow-[0 4px 24px 0 rgba(220, 165, 58, 0.36)] group mx-0 flex flex-col border px-5 py-10  transition-colors duration-500 hover:bg-[#FFD584] ">
             <CardYellow
               cardTitle="Investments"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
-                <MdOutlineSavings className={`rounded-full `} />
-              </div>
+              <span className="material-symbols-outlined rounded-full bg-[#FFD584] bg-opacity-20 p-[10px] text-5xl group-hover:bg-white group-hover:bg-opacity-20 md:text-[60px]">
+                savings
+              </span>
             </CardYellow>
           </div>
-          <div className="browse-set-card border-[var(--border-color)]) group mx-0 flex flex-col border p-10 shadow-lg transition-colors duration-500 hover:bg-[#FFD584]">
+          <div className="browse-set-card border-[var(--border-color)]) shadow-[0 4px 24px 0 rgba(220, 165, 58, 0.36)] group mx-0 flex flex-col border px-5 py-10  transition-colors duration-500 hover:bg-[#FFD584] ">
             <CardYellow
-              cardTitle="Wealth management"
+              cardTitle="Wealth manage"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
-                <MdOutlineManageHistory className={`rounded-full `} />
-              </div>
+              <span className="material-symbols-outlined rounded-full bg-[#FFD584] bg-opacity-20 p-[10px] text-5xl group-hover:bg-white group-hover:bg-opacity-20 md:text-[60px]">
+                manage_history
+              </span>
             </CardYellow>
           </div>
-          <div className="browse-set-card border-[var(--border-color)]) group mx-0 flex flex-col border p-10 shadow-lg transition-colors duration-500 hover:bg-[#FFD584]">
+          <div className="browse-set-card border-[var(--border-color)]) shadow-[0 4px 24px 0 rgba(220, 165, 58, 0.36)] group mx-0 flex flex-col border px-5 py-10  transition-colors duration-500 hover:bg-[#FFD584] ">
             <CardYellow
               cardTitle="Loans and credits"
               cardBody="Beyond Banking Basics: Exploring Specialized Services for High-Net-Worth Clients"
             >
-              <div className="w-max rounded-full bg-primary-color-2 p-4 group-hover:bg-gray-100">
-                <MdOutlineRealEstateAgent className={`rounded-full `} />
-              </div>
+              <span className="material-symbols-outlined rounded-full bg-[#FFD584] bg-opacity-20 p-[10px] text-5xl group-hover:bg-white group-hover:bg-opacity-20 md:text-[60px]">
+                real_estate_agent
+              </span>
             </CardYellow>
           </div>
         </div>

@@ -41,12 +41,12 @@ export const CompareAutoFinancing = () => {
           <div className="md:max-w-[627px]">
             <SectionHeading title="Compare your auto financing options." />
           </div>
-          <div className="mb-[70px] mt-6 max-w-[847px]">
+          <div className="mb-7 mt-6 max-w-[847px] md:mb-10 lg:mb-[60px] xl:mb-[70px]">
             <SectionText text="Whether you’re buying a new or used car, refinancing your current loan or leasing a vehicle, GO Bank has options for your financing journey." />
           </div>
         </div>
 
-        <div className="grid items-center gap-3 lg:grid-cols-2 xl:grid-cols-3 xl:gap-6">
+        <div className="grid items-center gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
           {cardeData.map(({ title, text, apr, month }, index) => (
             <ComponentFinancialCard
               key={index}

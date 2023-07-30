@@ -3,7 +3,7 @@ import React from "react";
 import educationLoanImage from "@/public/images/education_loan.png";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
-import { Icon } from "@/components/shared/Icon";
+import { Icon, IconLightBg } from "@/components/shared/Icon";
 import { MdOutlineSecurity } from "react-icons/md";
 
 export const HelpStudent = () => {
@@ -23,9 +23,7 @@ export const HelpStudent = () => {
           <div className="grid items-center justify-between gap-3 max-md:space-y-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-6">
             <div className="px-2 text-center lg:px-5">
               <div className="mb-5 flex justify-center">
-                <Icon padding="p-2">
-                  <MdOutlineSecurity className="text-xl text-primary-color-1" />
-                </Icon>
+                <IconLightBg iconName="arming_countdown" />
               </div>
               <p>
                 <span className="font-semibold text-[#292C32]">
@@ -36,9 +34,7 @@ export const HelpStudent = () => {
             </div>
             <div className="px-2 text-center lg:px-5">
               <div className="mb-5 flex justify-center">
-                <Icon padding="p-2">
-                  <MdOutlineSecurity className="text-xl text-primary-color-1" />
-                </Icon>
+                <IconLightBg iconName="arming_countdown" />
               </div>
               <p>
                 <span className="font-semibold text-[#292C32]">
@@ -49,9 +45,7 @@ export const HelpStudent = () => {
             </div>
             <div className="px-2 text-center lg:px-5">
               <div className="mb-5 flex justify-center">
-                <Icon padding="p-2">
-                  <MdOutlineSecurity className="text-xl text-primary-color-1" />
-                </Icon>
+                <IconLightBg iconName="arming_countdown" />
               </div>
               <p>
                 <span className="font-semibold text-[#292C32]">

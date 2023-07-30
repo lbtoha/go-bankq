@@ -19,7 +19,7 @@ export const Banner = () => {
     >
       <div className="container max-md:pb-14">
         <h1
-          className={`main-heading text-center font-montserrat text-2xl  font-bold text-white sm:text-3xl md:text-5xl lg:text-7xl `}
+          className={`main-heading text-center font-montserrat  text-2xl font-bold text-white sm:text-3xl md:text-5xl lg:text-7xl`}
         >
           All <span className="custom text-[#E0F300]">Banking</span> Solution{" "}
           <br /> In One Place{" "}
@@ -46,8 +46,8 @@ export const Banner = () => {
             ></Image>
           </RightCardAnimation>
         </div>
-        <div className="banner-objects">
-          <div className="banner-objects__left absolute left-[15%] md:left-[15%] md:top-[45%] ">
+        <div className="banner-objects -z-20">
+          <div className="banner-objects__left absolute left-[15%]  md:left-[15%] md:top-[45%]">
             <Image
               className="hidden w-[25%]  animate-previewShape md:block lg:w-[150px]"
               src={leftArrow}

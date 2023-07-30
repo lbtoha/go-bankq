@@ -7,10 +7,12 @@ export const Explore = () => {
   return (
     <section className="">
       <div className="section-gap horizontal-gap container">
-        <div className="mx-auto mb-[60px] text-center  xl:max-w-[791px]">
+        <div className="mx-auto mb-10 max-w-[791px] text-center  lg:mb-[60px]">
           <SectionHeading title="Explore roles at GOBank offices around the world" />
         </div>
-        <Image src={exploreImage} alt="Explore Image" />
+        <div className="flex items-center justify-center">
+          <Image src={exploreImage} alt="Explore Image" />
+        </div>
       </div>
     </section>
   );

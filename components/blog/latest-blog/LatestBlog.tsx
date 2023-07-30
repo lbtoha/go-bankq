@@ -12,6 +12,7 @@ import { RiMessage2Line } from "react-icons/ri";
 import articleAuthor from "@/public/images/article_author.png";
 
 import ReactPaginate from "react-paginate";
+import Link from "next/link";
 
 export const LatestBlog = () => {
   const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
@@ -50,11 +51,12 @@ export const LatestBlog = () => {
                 <span className="text-sm text-[#292C32]">06 comments</span>
               </span>
             </div>
-            <p
+            <Link
+              href="/"
               className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
             >
               The Importance of Choosing the Right Bank for Your Financial Needs
-            </p>
+            </Link>
 
             <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
               Banks have been around for centuries, and their role in evolved
@@ -82,15 +84,18 @@ export const LatestBlog = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2 text-primary-color-1">
                 <RiMessage2Line />
-                <span className="text-sm text-[#292C32]">06 comments</span>
+                <Link href="/" className="text-sm text-[#292C32]">
+                  06 comments
+                </Link>
               </span>
             </div>
-            <p
+            <Link
+              href="/"
               className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
             >
               Credit Scores Unveiled Understanding the Key to Financial
               Opportunities
-            </p>
+            </Link>
 
             <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
               Banks have been around for centuries, and their role in evolved
@@ -120,14 +125,17 @@ export const LatestBlog = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2 text-primary-color-1">
                 <RiMessage2Line />
-                <span className="text-sm text-[#292C32]">06 comments</span>
+                <Link href="/" className="text-sm text-[#292C32]">
+                  06 comments
+                </Link>
               </span>
             </div>
-            <p
+            <Link
+              href="/"
               className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
             >
               Nurturing and Growing Your Assets
-            </p>
+            </Link>
 
             <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
               Banks have been around for centuries, and their role in evolved
@@ -155,14 +163,17 @@ export const LatestBlog = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2 text-primary-color-1">
                 <RiMessage2Line />
-                <span className="text-sm text-[#292C32]">06 comments</span>
+                <Link href="/" className="text-sm text-[#292C32]">
+                  06 comments
+                </Link>
               </span>
             </div>
-            <p
+            <Link
+              href="/"
               className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
             >
               Tips and Tricks for Financial Success
-            </p>
+            </Link>
 
             <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
               Banks have been around for centuries, and their role in evolved
@@ -190,14 +201,17 @@ export const LatestBlog = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2 text-primary-color-1">
                 <RiMessage2Line />
-                <span className="text-sm text-[#292C32]">06 comments</span>
+                <Link href="/" className="text-sm text-[#292C32]">
+                  06 comments
+                </Link>
               </span>
             </div>
-            <p
+            <Link
+              href="/"
               className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
             >
               Revolutionizing the Banking Industry
-            </p>
+            </Link>
 
             <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
               Banks have been around for centuries, and their role in evolved

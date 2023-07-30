@@ -3,8 +3,8 @@ import { CardHeader } from "@/components/card/card-header/CardHeader";
 import { ChooseCard } from "@/components/card/choose-card/ChooseCard";
 import { DigitalPayment } from "@/components/card/digital-payment/DigitalPayment";
 import { ImproveCost } from "@/components/card/improve-cost/ImproveCost";
-import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
+import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 
 export default function Service() {
   return (
@@ -15,7 +15,7 @@ export default function Service() {
       <ImproveCost />
       <OpenAccountSection />
       <BoostSavings />
-      <OurClientSay />
+      <OurClientSaySection />
     </main>
   );
 }

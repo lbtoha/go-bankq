@@ -5,7 +5,7 @@ import blogImage from "@/public/images/blog_banner.png";
 
 export const BlogHeader = () => {
   return (
-    <section className="dot-bg max-lg:section-gap bg-primary-color-1 max-sm:px-2">
+    <section className=" max-lg:section-gap navbar-banner max-sm:px-2">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

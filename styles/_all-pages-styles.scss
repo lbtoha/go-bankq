@@ -1,12 +1,12 @@
-:root {
-  --primary-color-2: #ffd584;
-}
-
 // ******************                         ******************
 // ****************** Home Page Styles Start  ******************
 // ******************                         ******************
 
 // ======= Navbar Section Styles Start ============
+
+html {
+  scroll-padding-top: 80px;
+}
 
 .header-active {
   position: fixed;
@@ -46,12 +46,30 @@
         transition: all 0.35s ease-in-out;
       }
     }
-    .active-nav::before {
-      position: absolute;
-      top: 60%;
-      opacity: 1;
-      width: 2px;
-      height: 20px;
+
+    .active-nav-hover {
+      &::before {
+        position: absolute;
+        top: 60%;
+        opacity: 0;
+        width: 2px;
+        height: 20px;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .active-nav {
+      &::before {
+        position: absolute;
+        top: 60%;
+        opacity: 1;
+        width: 2px;
+        height: 20px;
+      }
     }
 
     .dropdown-icon {
@@ -72,6 +90,17 @@
   }
 }
 
+.navbar-banner {
+  background: url(../public//images/inner_banner.png), #055f5b;
+  background-position: center, auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dot-bg {
+  background-image: url("../public/images/feature_dot.png");
+}
+
 // ======= Navbar Section Styles End ============
 
 // ======= Banner Section Styles Start ============
@@ -81,8 +110,11 @@
     background: url("../public//images/hero_bg_dot.png"),
       url("../public//images/hero_bg.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position:
+      center bottom,
+      center;
     background-size: auto, cover;
+    height: 100%;
   }
 }
 .main-heading {
@@ -92,52 +124,83 @@
 .card {
   margin-top: 20px;
 
-  &__left {
-    left: 23%;
-    transform-origin: left bottom;
-    bottom: -20%;
-    position: absolute;
-    transition: 1s;
-    z-index: -1;
-  }
-
-  &__right {
-    right: 22%;
-    transform-origin: left bottom;
-    bottom: 0%;
-    position: absolute;
-    transition: 1s;
-    z-index: -1;
-  }
-
-  @media only screen and (max-width: 1023px) {
+  @media (min-width: 768px) {
     &__left {
-      left: 17%;
-      bottom: -25%;
-      width: 250px;
+      left: 13%;
+      transform-origin: left bottom;
+      bottom: -18%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
     }
 
     &__right {
-      right: 15%;
-      bottom: 0%;
-      width: 250px;
+      right: 12%;
+      transform-origin: left bottom;
+      bottom: -4%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
     }
   }
 
-  @media only screen and (max-width: 767px) {
+  @media (min-width: 992px) {
     &__left {
-      left: 17%;
-      bottom: -25%;
-      width: 200px;
-    }
-    &__mobile {
-      width: 250px;
+      left: 15%;
+      transform-origin: left bottom;
+      bottom: -20%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
     }
 
     &__right {
-      right: 15%;
-      bottom: 0%;
-      width: 200px;
+      right: 14%;
+      transform-origin: left bottom;
+      bottom: -6%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__left {
+      left: 20%;
+      transform-origin: left bottom;
+      bottom: -20%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
+    }
+
+    &__right {
+      right: 19%;
+      transform-origin: left bottom;
+      bottom: -6%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    &__left {
+      left: 25%;
+      transform-origin: left bottom;
+      bottom: -20%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
+    }
+
+    &__right {
+      right: 23%;
+      transform-origin: left bottom;
+      bottom: -6%;
+      position: absolute;
+      transition: 1s;
+      z-index: -1;
     }
   }
 
@@ -214,23 +277,38 @@
   justify-items: center;
 }
 
-// standOut section title
-.standOut-section-title {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    background-color: #fff;
-    height: 1px;
+//  section top mark
+@media (min-width: 992px) {
+  .section-top-mark {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      background-color: #fff;
+      height: 1px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .section-top-mark-black {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      background-color: #000;
+      height: 1px;
+    }
   }
 }
 
-// countdown section
-.countdown-section {
-  background-image: url("../public/images/countdown_bg.png");
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
+@media (min-width: 768px) {
+  // countdown section
+  .countdown-section {
+    background-image: url("../public/images/countdown_bg.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 // credit card
@@ -265,6 +343,17 @@
 }
 
 .card-arrow {
+  &__left::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: -15px;
+    border: 1px solid var(--primary-color-2);
+    z-index: 1;
+    border-radius: 100%;
+  }
   &__left:hover::after {
     content: "";
     position: absolute;
@@ -276,6 +365,19 @@
     z-index: 1;
     border-radius: 100%;
   }
+
+  &__right::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: -15px;
+    border: 1px solid var(--primary-color-2);
+    z-index: 1;
+    border-radius: 100%;
+  }
+
   &__right:hover:after {
     content: "";
     position: absolute;
@@ -370,7 +472,8 @@
     }
 
     .card-right {
-      background-color: #ffd584;
+      // background-color: #ffd584;
+      // background-position: 0.2;
       &::before {
         content: "";
         position: absolute;

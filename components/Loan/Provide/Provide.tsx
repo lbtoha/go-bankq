@@ -20,11 +20,11 @@ export const Provide = () => {
                 <AiOutlineBank className=" text-2xl md:text-[32px] xl:text-[50px]" />
               </div>
               <h3
-                className={`font-montserrat text-xl font-semibold leading-[130%] text-sub-title-color md:text-[24px]`}
+                className={`max-w-[434px] font-montserrat text-xl font-semibold leading-[130%] text-sub-title-color md:text-[24px]`}
               >
                 Whatever the occasion or requirement,
               </h3>
-              <p className="mt-3 text-lg leading-[150%] text-[#494A4D] md:mt-6 ">
+              <p className="mt-3 text-base leading-[150%] text-[#494A4D] md:mt-6 md:text-lg ">
                 make a smart financial choice with City Bank Personal Loan to
                 fulfill all your dreams, reach new heights and make your day to
                 day journey of life joyful.

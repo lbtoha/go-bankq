@@ -3,14 +3,13 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import Image from "next/image";
 import React, { useRef } from "react";
 import client from "@/public/images/client.png";
-import { SectionText } from "@/components/shared/SectionText";
-import { SliderNavigation } from "@/components/shared/SliderNavigation";
 import star from "@/public/images/testimonial_vector.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import arrowLeft from "@/public/images/arrow_left.png";
 import arrowRight from "@/public/images/arrow_right.png";
+import testimonialVector2 from "@/public/images/testimonial_vector2.png";
 import { MutableRefObject } from "react";
 
 type SliderRefType = MutableRefObject<Slider | null>;
@@ -35,29 +34,29 @@ export const OurClientSaySection = () => {
   };
 
   return (
-    <section className="our-client-section section-gap bg-[#F9F9FB]">
+    <section className="our-client-section section-gap relative bg-[#F9F9FB]">
       <div className="container  max-sm:w-3/4">
-        <div className="mb-5 text-center md:mb-10 xl:mb-[60px]">
+        <div className="mb-10 text-center xl:mb-[60px]">
           <SectionHeading title="What Our Client's Say" />
         </div>
         <Slider ref={sliderRef} {...settings}>
           <div>
-            <div className=" grid-cols-2 items-center md:grid md:gap-10">
+            <div className="grid-cols-2 items-center justify-items-center md:grid md:gap-10">
               <div className="items-center justify-center max-md:flex lg:relative lg:mb-5  lg:ps-[94px]">
                 <Image src={client} alt="Client" className="max-sm:w-2/3" />
                 <div className="hidden lg:block">
                   <Image
                     src={star}
                     alt="Star"
-                    className="absolute left-[2%] top-0 -z-10 "
+                    className="spin-slow absolute left-[2%] top-0 -z-10 animate-spin-slow"
                   />
                 </div>
               </div>
-              <div className="">
-                <span className="material-symbols-outlined rotate-180 text-[#055F5B]">
+              <div className="max-lg:mt-10">
+                <span className="material-symbols-outlined rotate-180 text-5xl text-[#055F5B] md:text-[60px]">
                   format_quote
                 </span>
-                <div className="mt-3">
+                <div className="md:mt-5">
                   <p className=" text-lg leading-[150%] text-[#6F7278] ">
                     Capital One has a great website and mobile app that are easy
                     to use and provide a lot of helpful features. I also
@@ -65,7 +64,7 @@ export const OurClientSaySection = () => {
                     services{" "}
                   </p>
                 </div>
-                <div>
+                <div className="border-s border-primary-color-2 ps-5">
                   <p className=" mt-8 text-lg text-[#292C32] md:mt-10 xl:mt-[60px]">
                     Jon Copper
                   </p>
@@ -77,22 +76,22 @@ export const OurClientSaySection = () => {
             </div>
           </div>
           <div>
-            <div className=" grid-cols-2 items-center md:grid md:gap-10">
-              <div className="relative items-center justify-center max-lg:mb-5 max-md:flex  lg:ps-[94px]">
+            <div className="grid-cols-2 items-center justify-items-center md:grid md:gap-10">
+              <div className="items-center justify-center max-md:flex lg:relative lg:mb-5  lg:ps-[94px]">
                 <Image src={client} alt="Client" className="max-sm:w-2/3" />
                 <div className="hidden lg:block">
                   <Image
                     src={star}
                     alt="Star"
-                    className="absolute left-[2%] top-0 -z-10 "
+                    className="spin-slow absolute left-[2%] top-0 -z-10 animate-spin-slow"
                   />
                 </div>
               </div>
-              <div className="">
-                <span className="material-symbols-outlined rotate-180 text-[#055F5B]">
+              <div className="max-lg:mt-10">
+                <span className="material-symbols-outlined rotate-180 text-5xl text-[#055F5B] md:text-[60px]">
                   format_quote
                 </span>
-                <div className="mt-3">
+                <div className="md:mt-5">
                   <p className=" text-lg leading-[150%] text-[#6F7278] ">
                     Capital One has a great website and mobile app that are easy
                     to use and provide a lot of helpful features. I also
@@ -100,7 +99,7 @@ export const OurClientSaySection = () => {
                     services{" "}
                   </p>
                 </div>
-                <div>
+                <div className="border-s border-primary-color-2 ps-5">
                   <p className=" mt-8 text-lg text-[#292C32] md:mt-10 xl:mt-[60px]">
                     Jon Copper
                   </p>
@@ -113,7 +112,7 @@ export const OurClientSaySection = () => {
           </div>
         </Slider>
 
-        <div className="mt-5 flex  items-center justify-center  gap-[41px]  md:mt-10 xl:mt-[60px]">
+        <div className="mt-10 flex items-center  justify-center xl:mt-[60px]">
           <button onClick={previous} className="card-arrow__left relative">
             <Image
               src={arrowLeft}
@@ -129,6 +128,13 @@ export const OurClientSaySection = () => {
             />
           </button>
         </div>
+      </div>
+      <div className="absolute right-[10%] top-[15%] z-40 hidden md:block">
+        <Image
+          src={testimonialVector2}
+          alt="right Arrow"
+          className="animate-pulse"
+        />
       </div>
     </section>
   );

@@ -9,8 +9,35 @@ import { MdOutlineAssignmentTurnedIn } from "react-icons/md";
 import { VscSend } from "react-icons/vsc";
 import workCardImage from "@/public/images/work_step_card.png";
 import workVectorImage from "@/public/images/work_step_vector.png";
+import WorkStepCard from "./WorkStepCard";
 
 export const WorkStep = () => {
+  const cardData = [
+    {
+      id: 11001,
+      iconName: "description",
+      title: "Fill the from",
+      bodyText: "There are several types of bank cards, including debit cards.",
+    },
+    {
+      id: 11002,
+      iconName: "contact_page",
+      title: "Get Pre-qualified",
+      bodyText: "There are several types of bank cards, including debit cards.",
+    },
+    {
+      id: 11003,
+      iconName: "send",
+      title: "Send Documents",
+      bodyText: "There are several types of bank cards, including debit cards.",
+    },
+    {
+      id: 11004,
+      iconName: "assignment_turned_in",
+      title: "Get Accounts",
+      bodyText: "There are several types of bank cards, including debit cards.",
+    },
+  ];
   return (
     <section className="work-step-section relative">
       <div className="section-gap horizontal-gap container">
@@ -18,50 +45,14 @@ export const WorkStep = () => {
           <SectionHeading title="Our Work Step" />
         </div>
         <div className="grid items-center gap-6 md:grid-cols-2  xl:grid-cols-4 ">
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
-            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
-              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
-            </div>
-            <h3
-              className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
-            >
-              Fill the from
-            </h3>
-            <SectionText text="There are several types of bank cards, including debit cards." />
-          </div>
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
-            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
-              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
-            </div>
-            <h3
-              className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
-            >
-              Fill the from
-            </h3>
-            <SectionText text="There are several types of bank cards, including debit cards." />
-          </div>
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
-            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
-              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
-            </div>
-            <h3
-              className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
-            >
-              Fill the from
-            </h3>
-            <SectionText text="There are several types of bank cards, including debit cards." />
-          </div>
-          <div className="work-card rounded-xl bg-primary-color-2.1 px-6 py-10 md:px-[32px] md:py-[60px] xl:even:mt-[80px]">
-            <div className="mb-5 w-max  bg-primary-color-2.2 p-5 md:mb-10 md:p-[25px] ">
-              <BsFileText className="text-4xl text-primary-color-1 md:text-[50px]" />
-            </div>
-            <h3
-              className={`my-5 font-montserrat text-[24px] font-semibold leading-[130%] text-[#494A4D]`}
-            >
-              Fill the from
-            </h3>
-            <SectionText text="There are several types of bank cards, including debit cards." />
-          </div>
+          {cardData.map(({ id, iconName, title, bodyText }) => (
+            <WorkStepCard
+              key={id}
+              iconName={iconName}
+              title={title}
+              bodyText={bodyText}
+            />
+          ))}
         </div>
       </div>
       <div className="hidden xl:block">
@@ -73,7 +64,7 @@ export const WorkStep = () => {
         <Image
           src={workVectorImage}
           alt="Vector"
-          className="absolute right-[5%] top-[30%] animate-pulse"
+          className="absolute right-[5%] top-[20%] animate-pulse"
         />
       </div>
     </section>

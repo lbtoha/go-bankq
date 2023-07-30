@@ -8,7 +8,7 @@ export const ApplyForLoan = () => {
     <section className="overflow-hidden">
       <div className="section-gap container ">
         <div className="items-center xl:grid xl:grid-cols-12 ">
-          <div className="col-span-6 bg-section-bg pb-20">
+          <div className="border-[rgba(25, 27, 26, 0.10)] col-span-6 border bg-section-bg pb-10 md:pb-14 lg:pb-20">
             <div className="px-10 pt-[58px]  ">
               <p className="mb-[60px] font-montserrat text-2xl font-semibold leading-[130%]">
                 Apply for a Loan
@@ -16,7 +16,7 @@ export const ApplyForLoan = () => {
               <Form />
             </div>
           </div>
-          <div className=" col-start-8 col-end-13  hidden xl:block">
+          <div className=" col-start-8 col-end-13 hidden xl:block">
             <div className="full-width-image">
               <Image src={forLoan} alt="For Loan Image" />
             </div>

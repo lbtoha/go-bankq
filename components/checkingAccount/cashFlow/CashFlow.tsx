@@ -21,14 +21,14 @@ export const CashFlow = () => {
         <div className="grid-cols-12 items-center lg:grid">
           <div className="col-span-6">
             <SectionHeading title="Cash flow at your fingertips with GOBANK Debit Card" />
-            <div className="mt-6">
+            <div className="mt-6 pb-8">
               <SectionText text="If you spend more money than you have in your checking account, you may be charged an overdraft fee.  Some banks offer overdraft protection services to help you avoid overdraft fees." />
             </div>
-            <div className="mt-8 grid justify-items-center space-y-4 md:mt-10 md:grid-cols-3 md:space-y-0 lg:mt-[64px]">
+            <div className="grid justify-items-center space-y-4 border-[#E7E9EE]  md:grid-cols-3 md:space-y-0 md:border-t md:pt-8">
               <div className="flex flex-col items-center space-y-6 ">
-                <div className="flex h-[127px] w-[127px] items-center justify-center rounded-full border-8 border-primary-color-1">
+                <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full border-4 border-primary-color-1 md:h-[127px] md:w-[127px] md:border-8">
                   <p
-                    className={`font-montserrat text-[40px] font-bold text-primary-color-1 `}
+                    className={`font-montserrat text-4xl font-bold text-primary-color-1 md:text-[40px] `}
                   >
                     <CountUp start={0} end={90} enableScrollSpy>
                       {({ countUpRef }) => (
@@ -41,15 +41,15 @@ export const CashFlow = () => {
                   </p>
                 </div>
                 <p
-                  className={`text-center font-montserrat text-2xl font-semibold text-black`}
+                  className={`text-center font-montserrat text-xl font-semibold text-black md:text-2xl`}
                 >
                   Satisfied User
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-6">
-                <div className="flex h-[127px] w-[127px] items-center justify-center rounded-full border-8 border-primary-color-1">
+                <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full border-4 border-primary-color-1 md:h-[127px] md:w-[127px] md:border-8">
                   <p
-                    className={`font-montserrat text-[40px] font-bold text-primary-color-1 `}
+                    className={`font-montserrat text-4xl font-bold text-primary-color-1 md:text-[40px] `}
                   >
                     <CountUp start={0} end={20} enableScrollSpy>
                       {({ countUpRef }) => (
@@ -62,15 +62,15 @@ export const CashFlow = () => {
                   </p>
                 </div>
                 <p
-                  className={`text-center font-montserrat text-2xl font-semibold text-black`}
+                  className={`text-center font-montserrat text-xl font-semibold text-black md:text-2xl`}
                 >
                   Years of Business
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-6">
-                <div className="flex h-[127px] w-[127px] items-center justify-center rounded-full border-8 border-primary-color-1">
+                <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full border-4 border-primary-color-1 md:h-[127px] md:w-[127px] md:border-8">
                   <p
-                    className={`font-montserrat text-[40px] font-bold text-primary-color-1 `}
+                    className={`font-montserrat text-4xl font-bold text-primary-color-1 md:text-[40px] `}
                   >
                     <CountUp start={0} end={5} enableScrollSpy>
                       {({ countUpRef }) => (
@@ -83,7 +83,7 @@ export const CashFlow = () => {
                   </p>
                 </div>
                 <p
-                  className={`text-center font-montserrat text-2xl font-semibold text-black`}
+                  className={`text-center font-montserrat text-xl font-semibold text-black md:text-2xl`}
                 >
                   Awards
                 </p>

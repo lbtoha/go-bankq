@@ -1,13 +1,18 @@
-import { ReactNode } from "react";
-import { BsArrowUpRight } from "react-icons/bs";
-
-type Prop = {
-  children: ReactNode;
-  padding: string;
+type Props = {
+  iconName: string;
+};
+export const IconLightBg = ({ iconName }: Props) => {
+  return (
+    <span className="material-symbols-outlined w-max rounded-full bg-[#FFD584] bg-opacity-40 p-2 text-[24px] text-primary-color-1">
+      {iconName}
+    </span>
+  );
 };
 
-export const Icon = ({ children: icon, padding = "p-4" }: Prop) => {
+export const IconDarkBg = ({ iconName }: Props) => {
   return (
-    <div className={`bg-[#FFD584] w-max ${padding} rounded-full`}>{icon}</div>
+    <span className="material-symbols-outlined w-max rounded-full bg-[#FFD584] p-2 text-[24px] text-primary-color-1">
+      {iconName}
+    </span>
   );
 };

@@ -1,9 +1,5 @@
 @forward "./all-pages-styles";
 
-.dot-bg {
-  background-image: url("../public/images/feature_dot.png");
-}
-
 .py-60px {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -17,7 +13,7 @@
 
 // range Slider yellow
 #range-slider-yellow .range-slider__range {
-  background: #ffbf00;
+  background: #ffd584;
   transition: height 0.3s;
 }
 
@@ -26,7 +22,7 @@
 }
 
 .single-thumb .range-slider__thumb[data-upper] {
-  background: #ffbf00;
+  background: #ffd584;
 }
 
 // range Slider green
@@ -321,8 +317,9 @@ ul.pagination li.disabled a {
   min-width: max-content;
 }
 
-// @media (min-width: 576px) {
-// }
+.slick-list .slick-track {
+  margin: 0 auto;
+}
 
 // @media (min-width: 768px) {
 // }
@@ -334,4 +331,19 @@ ul.pagination li.disabled a {
 // }
 
 // @media (min-width: 1400px) {
+// }
+
+@media (max-width: 576px) {
+  .space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: calc(1.3rem * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+
+// .slick-slide {
+//   margin: 0 10px;
+// }
+
+// /* the parent */
+// .slick-list {
+//   margin: 0 -10px;
 // }

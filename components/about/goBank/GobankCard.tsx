@@ -12,7 +12,7 @@ type Props = {
 export const GobankCard = ({ title, subText, children }: Props) => {
   return (
     <div className="flex flex-col items-center ">
-      <div className="w-fit rounded-full bg-[#FFD584]  bg-opacity-20 p-5">
+      <div className="w-fit rounded-full bg-[#FFD584]  bg-opacity-20 p-4 md:p-5">
         <div className="rounded-full bg-[#FFD584] p-3">{children}</div>
       </div>
       <h3

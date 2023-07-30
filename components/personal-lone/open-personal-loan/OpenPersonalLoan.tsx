@@ -9,7 +9,7 @@ export const OpenPersonalLoan = () => {
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
-        <div className="grid items-center justify-between md:grid-cols-5 md:gap-6 xl:grid-cols-12 xl:gap-0">
+        <div className="grid items-center justify-between max-xl:gap-6 md:grid-cols-5 xl:grid-cols-12 ">
           <div className="hidden md:col-span-2 md:block xl:col-span-5">
             <Image src={personalLoan} alt="Next Car Image" />
           </div>
@@ -17,7 +17,7 @@ export const OpenPersonalLoan = () => {
             <div className="mb-6">
               <SectionHeading title="Personal loans are often " />
             </div>
-            <div className="mb-10">
+            <div className="mb-7 xl:mb-10">
               <SectionText text="Similar to home loans, you can begin by getting preapproved for a car loan. This involves providing basic financial information to a lender, who will then give you an estimate of how much you can afford to borrow and what interest rate you may qualify for." />
             </div>
             <Button text="Apply now" url="/" />

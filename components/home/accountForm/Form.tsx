@@ -49,7 +49,7 @@ export const Form = () => {
         <input
           className="border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg max-md:mb-5 max-md:w-full"
           type="tel"
-          placeholder="Mobile number"
+          placeholder="Phone"
           {...register("mobileNumber", {
             required: true,
             minLength: 6,
@@ -73,7 +73,7 @@ export const Form = () => {
         />
       </div>
 
-      <div className="  md:mb-10 ">
+      <div className="md:mb-10 ">
         <input
           className="w-full border-b border-slate-300 bg-transparent pb-5 text-[#A0A2A7] outline-none placeholder:text-lg 
           max-md:mb-5"
@@ -83,7 +83,7 @@ export const Form = () => {
         />
       </div>
       <button
-        className="mt-10 border bg-primary-color-2 px-10  py-[15px] font-medium text-[#292C32]"
+        className=" border bg-primary-color-2 px-10  py-[15px] font-medium text-[#292C32]"
         type="submit"
       >
         Get Started

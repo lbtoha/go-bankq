@@ -72,13 +72,13 @@ export const Navbar = ({ cls = "" }) => {
   return (
     <>
       <header
-        className={`navbar ${
+        className={`navbar navbar-banner   ${
           windowHeight > 50 && "header-active"
-        } dot-bg relative bg-primary-color-1 text-white`}
+        } relative  text-white`}
       >
         <div className="container max-sm:px-2">
-          <div className="flex items-center justify-between lg:hidden">
-            <div className="py-5 ">
+          <div className="flex items-center justify-between xl:hidden">
+            <div className="py-5">
               <Link href="/">
                 <Image
                   src={Logo}
@@ -91,7 +91,7 @@ export const Navbar = ({ cls = "" }) => {
             </div>
             <div
               className={
-                `nav__items overflow-auto px-10 font-semibold lg:hidden` +
+                `nav__items h-screen overflow-auto px-10 font-semibold lg:hidden` +
                 `invisible fixed bottom-0 left-0 top-0 z-[1045] flex w-full max-w-full -translate-x-full flex-col border-none bg-[url("/images/banner/bannerBg.png")] bg-cover bg-clip-padding bg-no-repeat text-white shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none`
               }
               id="offcanvasExample"
@@ -99,16 +99,18 @@ export const Navbar = ({ cls = "" }) => {
               data-te-offcanvas-init
             >
               <div className="">
-                <div className="flex items-center justify-between">
+                <div className="flex items-end justify-between gap-5">
                   <Link href="/">
                     <Image src={Logo} width={213} height={40} alt="Logo" />
                   </Link>
                   <button
                     onClick={() => setActive(false)}
                     data-te-offcanvas-dismiss
-                    className="mt-4 rounded-full border-2 border-primary-color-2 p-3"
+                    className="mt-4 rounded-full border-2 border-primary-color-2 p-2 max-sm:px-2 md:p-3"
                   >
-                    <AiOutlineClose className={"text-right text-3xl"} />
+                    <AiOutlineClose
+                      className={"text-right text-xl  md:text-3xl"}
+                    />
                   </button>
                 </div>
               </div>
@@ -246,13 +248,13 @@ export const Navbar = ({ cls = "" }) => {
             >
               <AiOutlineMenu
                 onClick={() => setActive(!active)}
-                className={` text-3xl `}
+                className={`text-3xl `}
               />
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="dot-bg hidden items-center justify-between lg:flex">
+          <div className="hidden items-center justify-between xl:flex">
             <div className="block">
               <Link href="/">
                 <Image src={Logo} width={213} height={40} alt="Logo" />
@@ -354,8 +356,8 @@ export const Navbar = ({ cls = "" }) => {
                   >
                     <Link
                       onClick={() => handleActiveItem(url)}
-                      className={` py-10 hover:text-primary-color-2 ${
-                        activeNav == url && "active-nav text-primary-color-2"
+                      className={`active-nav-hover py-10 hover:text-primary-color-2 ${
+                        pathname == url && "active-nav text-primary-color-2"
                       }`}
                       href={`${url}`}
                     >

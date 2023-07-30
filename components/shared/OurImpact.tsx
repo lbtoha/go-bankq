@@ -16,7 +16,7 @@ export const OurImpact = () => {
     <section className="countdown-section section-gap px-3  xl:px-0">
       <div className="container">
         <h3
-          className={`mb-[60px]  text-center font-montserrat text-[25px] font-bold  leading-[120%] md:text-[35px] lg:text-[40px]`}
+          className={`mb-10 text-center  font-montserrat text-[25px] font-bold leading-[120%]  md:mb-[60px] md:text-[35px] lg:text-[40px]`}
         >
           Our impact in numbers
         </h3>

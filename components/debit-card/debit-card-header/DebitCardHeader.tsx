@@ -5,7 +5,7 @@ import debitCard from "@/public/images/debit_banner.png";
 
 export const DebitCardHeader = () => {
   return (
-    <section className="dot-bg max-lg:section-gap header-section-space bg-primary-color-1">
+    <section className="navbar-banner max-lg:section-gap header-section-space">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

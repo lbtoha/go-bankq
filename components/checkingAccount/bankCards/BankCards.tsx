@@ -11,11 +11,11 @@ export const BankCards = () => {
       <div className=" container">
         <div className="items-center justify-between md:grid lg:grid-cols-12">
           <div className="col-span-5">
-            <div className=" mb-3 w-max  bg-primary-color-2.2 p-5 md:p-[25px] lg:mb-10 ">
-              <BsCreditCard2Back className="text-4xl text-primary-color-1 md:text-[50px]" />
-            </div>
+            <span className="material-symbols-outlined mb-6 w-max bg-primary-color-2.2 p-5 text-4xl  text-primary-color-1 md:p-[25px] md:text-[50px] lg:mb-10 ">
+              account_balance
+            </span>
             <SectionHeading title="Bank cards often come with security features such as a PIN" />
-            <div className="mt-6">
+            <div className="mt-4 lg:mt-6">
               <SectionText text="Bank cards may come with fees such as annual fees, transaction fees, foreign transaction fees, and ATM withdrawal fees. Make sure you understand the fees associated with your bank card before using it." />
             </div>
           </div>

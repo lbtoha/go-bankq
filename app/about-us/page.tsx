@@ -6,7 +6,7 @@ import { GoBank } from "@/components/about/goBank/GoBank";
 import { ImpactNumber } from "@/components/about/impactNumber/ImpactNumber";
 import { MissionAndVision } from "@/components/about/missionAndVision/MissionAndVision";
 import { OurValues } from "@/components/about/ourValues/OurValues";
-import { OurClientSay } from "@/components/home/ourClientSay/OurClientSay";
+import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 
 export default function About() {
   return (
@@ -19,7 +19,7 @@ export default function About() {
       <Explore />
       <AboutBrand />
       <AboutOpenAccount />
-      <OurClientSay />
+      <OurClientSaySection />
     </main>
   );
 }

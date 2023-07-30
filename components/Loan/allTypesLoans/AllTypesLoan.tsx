@@ -10,6 +10,7 @@ import arrowLeft from "@/public/images/arrow_left.png";
 import arrowRight from "@/public/images/arrow_right.png";
 import Image from "next/image";
 import { MutableRefObject } from "react";
+import AllTypesLoanCard from "./AllTypesLoanCard";
 
 type SliderRefType = MutableRefObject<Slider | null>;
 
@@ -22,20 +23,78 @@ export const AllTypesLoan = () => {
     sliderRef.current?.slickPrev();
   };
 
+  const allTypesLoanData = [
+    {
+      id: 11220001,
+      iconName: "real_estate_agent",
+      title: "Home Loan",
+      bodyText:
+        "These loans allow you to borrow against the equity in your home.",
+      url: "/",
+    },
+    {
+      id: 11220002,
+      iconName: "person",
+      title: "Personal Loan",
+      bodyText:
+        "These loans allow you to borrow against the equity in your home.",
+      url: "/",
+    },
+    {
+      id: 11220003,
+      iconName: "cases",
+      title: "Business Loan",
+      bodyText:
+        "These loans allow you to borrow against the equity in your home.",
+      url: "/",
+    },
+    {
+      id: 11220004,
+      iconName: "directions_car",
+      title: "Car Loan",
+      bodyText:
+        "These loans allow you to borrow against the equity in your home.",
+      url: "/",
+    },
+    {
+      id: 11220005,
+      iconName: "cases",
+      title: "Business Loan",
+      bodyText:
+        "These loans allow you to borrow against the equity in your home.",
+      url: "/",
+    },
+    {
+      id: 11220006,
+      iconName: "school",
+      title: "Education Loan",
+      bodyText:
+        "These loans allow you to borrow against the equity in your home.",
+      url: "/",
+    },
+  ];
+
   const settings = {
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     // autoplay: true,
     speed: 1000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     // centerMode: true,
-    centerPadding: "40px",
+    // centerPadding: "40px",
+
     responsive: [
       {
+        breakpoint: 320,
+
+        settings: { slidesToShow: 1, slidesToScroll: 1, centerMargin: "40px" },
+      },
+      {
         breakpoint: 576,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+
+        settings: { slidesToShow: 1, slidesToScroll: 1, centerPadding: "40px" },
       },
       {
         breakpoint: 768,
@@ -49,8 +108,13 @@ export const AllTypesLoan = () => {
         breakpoint: 1024,
         settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
+
       {
         breakpoint: 1200,
+        settings: { slidesToShow: 3, slidesToScroll: 2 },
+      },
+      {
+        breakpoint: 1500,
         settings: { slidesToShow: 4, slidesToScroll: 2 },
       },
     ],
@@ -61,110 +125,21 @@ export const AllTypesLoan = () => {
         <div>
           <SectionHeading title="Our all types of loans" />
 
-          <div className="mt-[30px] w-full lg:w-[90vw] xl:mt-[60px]">
+          <div className="mt-[30px] w-full xl:mt-[60px] 4xl:w-[90vw]">
             <Slider ref={sliderRef} {...settings}>
-              <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
-                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
-                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
-                      real_estate_agent
-                    </span>
-                  </div>
-                  <h3
-                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
-                  >
-                    Home Loan
-                  </h3>
-                  <div className="mb-5 md:mb-10">
-                    <SectionText text="These loans allow you to borrow against the equity in your home." />
-                  </div>
-                  <p className="text-base leading-[150%] text-primary-color-1 underline">
-                    Learn more
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
-                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
-                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
-                      person
-                    </span>
-                  </div>
-                  <h3
-                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
-                  >
-                    Personal Loan
-                  </h3>
-                  <div className="mb-5 md:mb-10">
-                    <SectionText text="These loans allow you to borrow against the equity in your home." />
-                  </div>
-                  <p className="text-base leading-[150%] text-primary-color-1 underline">
-                    Learn more
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
-                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
-                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
-                      directions_car
-                    </span>
-                  </div>
-                  <h3
-                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
-                  >
-                    Car Loan
-                  </h3>
-                  <div className="mb-5 md:mb-10">
-                    <SectionText text="These loans allow you to borrow against the equity in your home." />
-                  </div>
-                  <p className="text-base leading-[150%] text-primary-color-1 underline">
-                    Learn more
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
-                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
-                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
-                      cases
-                    </span>
-                  </div>
-                  <h3
-                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
-                  >
-                    Business Loan
-                  </h3>
-                  <div className="mb-5 md:mb-10">
-                    <SectionText text="These loans allow you to borrow against the equity in your home." />
-                  </div>
-                  <p className="text-base leading-[150%] text-primary-color-1 underline">
-                    Learn more
-                  </p>
-                </div>
-              </div>
-              <div className="">
-                <div className="border-with-gray-bg group  rounded-xl p-4 even:mt-[80px] hover:bg-primary-color-2 sm:me-4 md:p-[30px]">
-                  <div className="w-max rounded-full bg-[#E7E9EE] p-[15px] group-hover:bg-primary-color-2.2 md:mb-10">
-                    <span className="material-symbols-outlined text-3xl text-primary-color-1 md:text-[50px]">
-                      school
-                    </span>
-                  </div>
-                  <h3
-                    className={`mb-3 mt-5 font-montserrat text-xl font-semibold leading-[130%] text-[#494A4D] md:mt-10 md:text-[24px] `}
-                  >
-                    Education Loan
-                  </h3>
-                  <div className="mb-5 md:mb-10">
-                    <SectionText text="These loans allow you to borrow against the equity in your home." />
-                  </div>
-                  <p className="text-base leading-[150%] text-primary-color-1 underline">
-                    Learn more
-                  </p>
-                </div>
-              </div>
+              {allTypesLoanData.map(
+                ({ id, iconName, title, bodyText, url }) => (
+                  <AllTypesLoanCard
+                    key={id}
+                    iconName={iconName}
+                    title={title}
+                    bodyText={bodyText}
+                    url={url}
+                  />
+                ),
+              )}
             </Slider>
-            <div className=" mt-10 flex items-center  gap-[41px] md:mt-20 lg:mt-[120px]">
+            <div className=" ms-5 mt-10 flex items-center  md:mt-20 lg:mt-[120px]">
               <button className="card-arrow__left relative" onClick={previous}>
                 <Image
                   src={arrowLeft}

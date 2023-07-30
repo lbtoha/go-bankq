@@ -92,6 +92,7 @@ module.exports = {
         previewShapeY: "previewShapeY 15s linear infinite",
         previewShape: "previewShape 5s infinite",
         pulse: "pulse 5s linear infinite",
+        "spin-slow": "spin 4s linear infinite",
       },
     },
   },

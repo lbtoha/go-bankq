@@ -5,7 +5,7 @@ import educationLoanImage from "@/public/images/education_loan_banner.png";
 
 export const EducationLoanHeader = () => {
   return (
-    <section className="dot-bg max-lg:section-gap bg-primary-color-1 max-sm:px-2">
+    <section className="navbar-banner max-lg:section-gap max-sm:px-2">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

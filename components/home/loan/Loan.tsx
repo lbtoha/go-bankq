@@ -23,7 +23,7 @@ export const Loan = () => {
   };
 
   return (
-    <section className="loan-section relative ">
+    <section className="loan-section relative">
       <Link
         onClick={scrollSmooth}
         href={"#loan"}
@@ -38,7 +38,7 @@ export const Loan = () => {
         className="custom-transition grid-cols-12 justify-between lg:container max-lg:px-2 lg:grid"
       >
         <div className="col-start-1 col-end-7 ">
-          <h4 className="loan-section__sub-heading mb-4 text-lg font-normal">
+          <h4 className="loan-section__sub-heading mb-5 text-lg font-normal md:mb-10">
             Banking Solution __
           </h4>
           <div>
@@ -51,13 +51,13 @@ export const Loan = () => {
             />
           </div>
         </div>
-        <div className=" relative col-start-8 col-end-13 mt-10 max-lg:mb-5">
-          <div className="w-max rounded-full bg-primary-color-2 p-2 text-primary-color-1 md:p-3">
+        <div className=" relative col-start-8 col-end-13 mt-10 max-lg:mb-10">
+          <div className="w-max rounded-full bg-primary-color-2.2 p-2 text-primary-color-1 md:p-3">
             <BsArrowUpRight className="text-lg lg:text-xl" />
           </div>
           <div>
             <h3
-              className={`mb-5 mt-6 font-montserrat text-[20px] font-bold leading-[120%]  md:text-[30px] lg:text-[30px] xxl:text-[40px]`}
+              className={`mb-5 mt-6 max-w-[414px] font-montserrat text-[20px] font-bold leading-[120%] md:text-[30px] lg:text-[30px] xxl:text-[40px]`}
             >
               Loans, minus the paperwork and haggling.
             </h3>

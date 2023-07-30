@@ -20,26 +20,23 @@ export const BrandSlider = () => {
     speed: 1000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    centerMode: true,
+    centerMode: false,
     responsive: [
       {
-        breakpoint: 320,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
-      },
-      {
-        breakpoint: 400,
+        breakpoint: 576,
         settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
+
       {
         breakpoint: 768,
-        settings: { slidesToShow: 3, slidesToScroll: 2 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
-        breakpoint: 800,
-        settings: { slidesToShow: 4, slidesToScroll: 3 },
+        breakpoint: 992,
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
-        breakpoint: 1300,
+        breakpoint: 1200,
         settings: { slidesToShow: 6, slidesToScroll: 3 },
       },
     ],
@@ -50,7 +47,7 @@ export const BrandSlider = () => {
       {...settings}
       className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-cover bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
     >
-      <div className="mx-auto flex items-center">
+      <div>
         <Image
           src={sponsor1}
           alt="Our Mission Image1"

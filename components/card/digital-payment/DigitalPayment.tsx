@@ -3,7 +3,7 @@ import { SectionText } from "@/components/shared/SectionText";
 import Image from "next/image";
 import React from "react";
 import digitalPaymentImage from "@/public/images/digital_payments.png";
-import { Icon } from "@/components/shared/Icon";
+import { Icon, IconDarkBg } from "@/components/shared/Icon";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { MdCreditScore, MdLocalAtm } from "react-icons/md";
 
@@ -22,10 +22,7 @@ export const DigitalPayment = () => {
             <div className=" grid-cols-2 gap-6 space-y-5 sm:grid sm:space-y-0">
               <div>
                 <div className="mb-3 flex items-center gap-4">
-                  <Icon padding="p-2">
-                    {" "}
-                    <MdCreditScore className="text-xl text-primary-color-1" />
-                  </Icon>
+                  <IconDarkBg iconName="local_atm" />
                   <span className="font-montserrat text-xl font-semibold">
                     Credit card
                   </span>
@@ -34,10 +31,7 @@ export const DigitalPayment = () => {
               </div>
               <div>
                 <div className="mb-3 flex items-center gap-4">
-                  <Icon padding="p-2">
-                    {" "}
-                    <MdLocalAtm className="text-xl text-primary-color-1" />
-                  </Icon>
+                  <IconDarkBg iconName="credit_score" />
                   <span className="font-montserrat text-xl font-semibold">
                     Debit card
                   </span>

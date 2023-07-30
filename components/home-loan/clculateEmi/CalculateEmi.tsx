@@ -23,16 +23,16 @@ export const CalculateEmi = () => {
 
   return (
     <section className="dot-bg section-gap relative bg-primary-color-1">
-      <div className=" container max-sm:px-2">
-        <div className="mx-auto mb-[60px] max-w-[480px]">
+      <div className="container max-sm:px-2">
+        <div className="mx-auto mb-7 max-w-[480px] md:mb-10 lg:mb-[60px]">
           <p className="text-center font-montserrat text-2xl font-semibold leading-[120%] text-[#FAFAFC] md:text-[32px]">
             Taking a loan? Calculate your EMI
           </p>
         </div>
         <div className="grid grid-cols-1 items-center lg:grid-cols-12">
-          <div className="max-md:mb-4 lg:col-start-2 lg:col-end-7">
+          <div className="max-lg:mb-10 lg:col-start-2 lg:col-end-7">
             <div>
-              <p className="mb-5 text-2xl leading-[150%] text-[#FAFAFC] ">
+              <p className="mb-4 text-xl leading-[150%] text-[#FAFAFC] md:mb-6 md:text-2xl ">
                 Loan Amount:{" "}
                 <span className="font-bold text-[#FFD584]">${value[1]}</span>
               </p>
@@ -48,7 +48,7 @@ export const CalculateEmi = () => {
               />
             </div>
             <div>
-              <p className="mb-5 mt-[60px] text-2xl leading-[150%] text-[#FAFAFC]">
+              <p className="mb-4 mt-7 text-xl leading-[150%] text-[#FAFAFC] md:mb-6 md:mt-10 md:text-2xl lg:mt-[60px]">
                 Month:{" "}
                 <span className="font-bold text-[#FFD584]">{month[1]}</span>
               </p>
@@ -63,18 +63,18 @@ export const CalculateEmi = () => {
                 onInput={setMonth}
               />
             </div>
-            <p className="mt-[10px] text-base leading-[150%] text-[#E7E9EE]">
+            <p className="mt-[15px] text-base leading-[150%] text-[#E7E9EE]">
               5% interest rate
             </p>
           </div>
-          <div className="rounded-md bg-primary-color-2 py-[30px] lg:col-start-8 lg:col-end-12">
-            <p className="Text-[20px] text-center leading-[150%] text-[#292C32]">
+          <div className="z-20 rounded-md bg-primary-color-2 py-[30px] lg:col-start-8 lg:col-end-12">
+            <p className="text-center text-[20px] leading-[150%] text-[#292C32]">
               Your Total Amount
             </p>
-            <p className="mt-5 text-center font-montserrat text-[52px] font-semibold leading-[120%] text-primary-color-1">
+            <p className="mt-5 text-center font-montserrat text-4xl font-semibold leading-[120%] text-primary-color-1 md:text-[40px] lg:text-[52px]">
               ${totalAmount}
             </p>
-            <div className="mx-[30px] my-[30px]  border-b border-t border-gray-300 py-[18px]">
+            <div className="mx-[30px] my-[30px]  border-b border-t border-[#292C32] border-opacity-20 py-[18px]">
               <div className="flex items-center justify-evenly text-center">
                 <div>
                   <p className="text-base leading-[150%] text-[#292C32]">

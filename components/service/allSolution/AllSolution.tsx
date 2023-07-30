@@ -2,8 +2,7 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import Image from "next/image";
 import React from "react";
 import solutionImage from "@/public/images/service_solution.png";
-import { Icon } from "@/components/shared/Icon";
-import { MdOutlineSecurity } from "react-icons/md";
+import { IconLightBg } from "@/components/shared/Icon";
 
 export const AllSolution = () => {
   return (
@@ -11,14 +10,14 @@ export const AllSolution = () => {
       <div className="section-gap horizontal-gap container">
         <div className="items-center md:grid-cols-1  lg:grid lg:grid-cols-12">
           <div className="col-span-5">
-            <SectionHeading title="All Solution In One Place" />
-            <div className="space-y-[37px]">
+            <div className="mb-6 max-w-[416px]">
+              <SectionHeading title="All Solution In One Place" />
+            </div>
+            <div className="space-y-5 lg:space-y-9">
               <div className="mt-6 flex items-center gap-5">
-                <Icon padding="p-2">
-                  <MdOutlineSecurity className="text-xl text-primary-color-1" />
-                </Icon>
+                <IconLightBg iconName="arming_countdown" />
                 <div>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <span className="font-semibold text-[#292C32]">
                       Loan Facilities{" "}
                     </span>
@@ -27,22 +26,18 @@ export const AllSolution = () => {
                 </div>
               </div>
               <div className="mt-6 flex items-center gap-5">
-                <Icon padding="p-2">
-                  <MdOutlineSecurity className="text-xl text-primary-color-1" />
-                </Icon>
+                <IconLightBg iconName="arming_countdown" />
                 <div>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <span className="font-semibold text-[#292C32]">Card </span>
                     Beyond Banking Basics Exploring Specialized
                   </p>
                 </div>
               </div>
               <div className="mt-6 flex items-center gap-5">
-                <Icon padding="p-2">
-                  <MdOutlineSecurity className="text-xl text-primary-color-1" />
-                </Icon>
+                <IconLightBg iconName="arming_countdown" />
                 <div>
-                  <p>
+                  <p className="text-base md:text-lg">
                     <span className="font-semibold text-[#292C32]">
                       Finanace and banking{" "}
                     </span>
