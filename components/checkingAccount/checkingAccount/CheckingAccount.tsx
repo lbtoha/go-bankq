@@ -4,7 +4,7 @@ import Image from "next/image";
 import client from "@/public/images/client.png";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
-import { Icon, IconLightBg } from "@/components/shared/Icon";
+import { IconLightBg } from "@/components/shared/Icon";
 import { MdOutlineSecurity } from "react-icons/md";
 import { AiOutlineCheck } from "react-icons/ai";
 

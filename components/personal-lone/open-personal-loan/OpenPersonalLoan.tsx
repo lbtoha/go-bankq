@@ -9,11 +9,11 @@ export const OpenPersonalLoan = () => {
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
-        <div className="grid items-center justify-between max-xl:gap-6 md:grid-cols-5 xl:grid-cols-12 ">
-          <div className="hidden md:col-span-2 md:block xl:col-span-5">
+        <div className="grid-cols-12 items-center justify-between max-xl:gap-6 md:grid ">
+          <div className="hidden md:col-start-1 md:col-end-5 md:block xl:col-span-5">
             <Image src={personalLoan} alt="Next Car Image" />
           </div>
-          <div className="md:col-span-5 md:col-start-3 xl:col-span-12 xl:col-start-8">
+          <div className="md:col-start-5 md:col-end-13 xl:col-span-12 xl:col-start-8">
             <div className="mb-6">
               <SectionHeading title="Personal loans are often " />
             </div>

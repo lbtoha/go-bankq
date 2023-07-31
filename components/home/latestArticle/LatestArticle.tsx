@@ -24,7 +24,7 @@ export const LatestArticle = () => {
             has evolved over time.
           </p>
         </div>
-        <div className="gap-6 max-md:space-y-5 md:grid md:grid-cols-2 lg:grid-cols-3 ">
+        <div className="gap-6 max-md:space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 ">
           <ArticleCard
             imageThumb={block}
             title="The Importance of Choosing the Right"
@@ -32,6 +32,8 @@ export const LatestArticle = () => {
             authorImage={articleAuthor}
             authorName="Jon Haroson"
             publishedDate="21 April 2023"
+            readingTime={2}
+            background="dark"
           />
           <ArticleCard
             imageThumb={block2}
@@ -40,6 +42,8 @@ export const LatestArticle = () => {
             authorImage={articleAuthor2}
             authorName="Jon Haroson"
             publishedDate="21 April 2023"
+            readingTime={2}
+            background="dark"
           />
           <ArticleCard
             imageThumb={block3}
@@ -48,9 +52,11 @@ export const LatestArticle = () => {
             authorImage={articleAuthor3}
             authorName="Jon Haroson"
             publishedDate="21 April 2023"
+            readingTime={2}
+            background="dark"
           />
         </div>
-        <div className="mt-[60px] text-center">
+        <div className="mt-8 text-center  md:mt-10 lg:mt-[60px]">
           <Button text="See more" url="/" />
         </div>
       </div>

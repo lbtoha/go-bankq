@@ -15,7 +15,7 @@ export const CardYellow = ({ cardTitle, cardBody, children }: Props) => {
       <h4 className="mt-7 text-xl font-medium leading-[120%] text-[#191B1A] sm:text-2xl md:mt-10 md:text-2xl ">
         {cardTitle}
       </h4>
-      <p className="mb-8 mt-4 flex flex-col text-base leading-[150%]  text-[#6F7278] group-hover:text-[#292C32] md:mb-[60px] md:mt-5">
+      <p className="mb-8 mt-4 flex flex-col text-base leading-[150%]  text-[#6F7278] group-hover:text-[#292C32] md:mt-5 xxl:mb-[60px]">
         {cardBody}
       </p>
       <Link href="/">

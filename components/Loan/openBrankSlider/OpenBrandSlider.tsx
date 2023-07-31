@@ -4,7 +4,7 @@ import React from "react";
 export const OpenBrandSlider = () => {
   return (
     <section>
-      <BrandSlider />
+      <BrandSlider bgColor={null} />
     </section>
   );
 };

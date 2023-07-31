@@ -9,9 +9,9 @@ export const ImproveCost = () => {
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
-        <div className="grid-cols-2 items-center justify-between lg:grid">
+        <div className="grid-cols-2 items-center justify-between gap-6 lg:grid">
           <div>
-            <div className="mb-3 lg:mb-6">
+            <div className="mb-3 max-w-[636px] lg:mb-6">
               <SectionHeading title="Improve Cost to Income speed and agility for your Credit Card Programs" />
             </div>
             <div className=" mb-5 lg:mb-10">

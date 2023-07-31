@@ -51,7 +51,7 @@ export const CreditCard = () => {
                 <div className="mb-4 ms-6 mt-10 flex items-center gap-10 md:mt-[60px] lg:mt-[97px]">
                   <button
                     onClick={previous}
-                    className="card-arrow__left relative"
+                    className="card-arrow__left relative outline-none"
                   >
                     <Image
                       src={arrowLeft}
@@ -59,7 +59,10 @@ export const CreditCard = () => {
                       className="relative z-[2]"
                     />
                   </button>
-                  <button onClick={next} className="card-arrow__right relative">
+                  <button
+                    onClick={next}
+                    className="card-arrow__right relative outline-none"
+                  >
                     <Image
                       src={arrowRight}
                       alt="Arrow Right"

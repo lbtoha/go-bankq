@@ -10,11 +10,11 @@ export const SmartSave = () => {
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
-        <div className="grid-cols-12 items-center justify-between md:grid md:max-lg:gap-5">
-          <div className="hidden md:col-span-4 md:block lg:col-span-5">
+        <div className="grid-cols-12 items-center justify-between  md:grid">
+          <div className="hidden max-md:me-6 md:col-start-1 md:col-end-5 md:block lg:col-start-1 lg:col-end-6">
             <Image src={smartSave} alt="Smart Save" />
           </div>
-          <div className="md:col-span-12 md:col-start-5 lg:col-span-12 lg:col-start-8">
+          <div className="md:col-start-5 md:col-end-13 lg:col-start-8 lg:col-end-13">
             <div className="mb-6">
               <SectionHeading title="Smart—save and spend with confidence" />
             </div>

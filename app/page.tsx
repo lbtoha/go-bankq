@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <Banner />
       <Loan />
-      <BrandSlider />
+      <BrandSlider bgColor={null} />
       <BankingService />
       <StandOut />
       <OurImpact />

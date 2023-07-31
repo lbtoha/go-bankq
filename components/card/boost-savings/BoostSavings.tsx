@@ -5,7 +5,6 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
 import { MdCreditScore } from "react-icons/md";
 import { BsCheckCircle } from "react-icons/bs";
-import { Icon } from "@/components/shared/Icon";
 import { useState } from "react";
 import { Button } from "@/components/shared/Button";
 
@@ -14,11 +13,11 @@ export const BoostSavings = () => {
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
-        <div className="grid lg:grid-cols-5 lg:gap-6 xxl:grid-cols-12">
+        <div className="grid lg:grid-cols-5 lg:gap-8 xxl:grid-cols-12">
           <div className="hidden md:col-span-2 lg:block xxl:col-span-5">
             <Image src={boostSavingsImage} alt="Boost Savings Image" />
           </div>
-          <div className="lg:col-span-5 lg:col-start-3 xxl:col-span-12 xxl:col-start-8">
+          <div className="lg:col-start-3 lg:col-end-6 xxl:col-span-12 xxl:col-start-8">
             <div className="mb-4 md:mb-6">
               <SectionHeading title="Boost your savings with the right credit card." />
             </div>
@@ -54,17 +53,17 @@ export const BoostSavings = () => {
               </div>
             </div>
             {toggle ? (
-              <div className="mb-5 md:mb-10 xl:mb-[60px] ">
+              <div className="mb-5 md:mb-10 xl:mb-10 ">
                 <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
                   Lifestyle Benefits:
                 </p>
-                <div className="space-y-4 md:space-y-6">
+                <div className="space-y-2 md:space-y-3">
                   <div className="mt-6 flex items-center gap-5">
                     <span className="material-symbols-outlined text-xl text-primary-color-1">
                       check_circle
                     </span>
                     <div>
-                      <p className="text-[#6F7278]">
+                      <p className="text-base text-[#6F7278] md:text-lg">
                         Get cash backs and rewards that help you spend more
                         without burning through your funds
                       </p>
@@ -75,7 +74,7 @@ export const BoostSavings = () => {
                       check_circle
                     </span>
                     <div>
-                      <p className="text-[#6F7278]">
+                      <p className="text-base text-[#6F7278] md:text-lg">
                         Travel better by earning unlimited 1.5x miles
                       </p>
                     </div>
@@ -83,17 +82,17 @@ export const BoostSavings = () => {
                 </div>
               </div>
             ) : (
-              <div className=" mb-5 md:mb-10 xl:mb-[60px] ">
+              <div className=" mb-5 md:mb-10 xl:mb-10 ">
                 <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
                   Lifestyle Benefits:
                 </p>
-                <div className="space-y-4 md:space-y-6">
+                <div className="space-y-4 md:space-y-3">
                   <div className="mt-6 flex items-center gap-5">
                     <span className="material-symbols-outlined text-xl text-primary-color-1">
                       check_circle
                     </span>
                     <div>
-                      <p className="text-[#6F7278]">
+                      <p className="text-base text-[#6F7278] md:text-lg">
                         Get cash backs and rewards that help you spend more
                         without burning through your funds
                       </p>
@@ -104,7 +103,7 @@ export const BoostSavings = () => {
                       check_circle
                     </span>
                     <div>
-                      <p className="text-[#6F7278]">
+                      <p className="text-base text-[#6F7278] md:text-lg">
                         Travel better by earning unlimited 1.5x miles
                       </p>
                     </div>

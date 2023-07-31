@@ -113,18 +113,24 @@ export const OurClientSaySection = () => {
         </Slider>
 
         <div className="mt-10 flex items-center  justify-center xl:mt-[60px]">
-          <button onClick={previous} className="card-arrow__left relative">
+          <button
+            onClick={previous}
+            className="card-arrow__left relative focus-visible:invisible"
+          >
             <Image
               src={arrowLeft}
               alt="Arrow Left"
-              className="relative z-[2]"
+              className="relative z-[2] focus-visible:invisible"
             />
           </button>
-          <button onClick={next} className="card-arrow__right relative">
+          <button
+            onClick={next}
+            className="card-arrow__right relative focus-visible:invisible"
+          >
             <Image
               src={arrowRight}
               alt="Arrow Right"
-              className="relative z-[2] mx-10"
+              className="relative z-[2] mx-10 focus-visible:invisible"
             />
           </button>
         </div>

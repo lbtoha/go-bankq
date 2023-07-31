@@ -4,7 +4,6 @@ import { CreditCardLimit } from "@/components/credit-card/credit-card-limit/Cred
 import { GetCreditCard } from "@/components/credit-card/get-credit-card/GetCreditCard";
 import { SmartSave } from "@/components/credit-card/smart-save/SmartSave";
 import { BrandSlider } from "@/components/shared/BrandSlider";
-import { BrandSliderColor } from "@/components/shared/BrandSliderColor";
 import { Faq } from "@/components/shared/Faq";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
 import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
@@ -16,9 +15,7 @@ export default function CreditCard() {
       <SmartSave />
       <GetCreditCard />
       <ChooseYourCard />
-      <div className="bg-primary-2">
-        <BrandSlider />
-      </div>
+      <BrandSlider bgColor="bg" />
       <CreditCardLimit />
       <OpenAccountSection />
       <OurClientSaySection />

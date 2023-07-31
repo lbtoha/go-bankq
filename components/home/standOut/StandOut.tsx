@@ -6,17 +6,17 @@ import { RiCustomerService2Line, RiSecurePaymentLine } from "react-icons/ri";
 
 export const StandOut = () => {
   return (
-    <section className="horizontal-gap relative bg-[#055F5B] text-white">
+    <section className=" relative bg-[#055F5B] text-white max-sm:px-2">
       <div className="section-gap container">
         <div className="items-center lg:grid lg:grid-cols-2  xl:grid  xl:grid-cols-12">
           <div className="section-top-mark relative lg:grid-cols-1 xl:col-span-6 xl:col-start-1">
             <h3
-              className={`mb-5 mt-10 font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:text-[40px]`}
+              className={`font-montserrat text-[25px] font-bold leading-[120%] text-white md:text-[35px] lg:mt-10 lg:text-[40px]`}
             >
               What makes us stand out from the rest?
             </h3>
-            <div className="mt-10 grid-cols-2 md:mt-[50px] md:grid md:gap-6 lg:mt-[60px] ">
-              <div className="mb-9 gap-6">
+            <div className="mt-8  grid-cols-2 max-md:space-y-7 md:grid md:gap-x-6 md:gap-y-5 lg:mt-[50px] xl:mt-[60px] ">
+              <div className="gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
                     <BsLightbulb className="text-xl text-primary-color-1" />
@@ -27,12 +27,12 @@ export const StandOut = () => {
                     Innovation
                   </span>
                 </div>
-                <p className="text-lg font-normal leading-[150%]">
+                <p className="text-base font-normal leading-[150%] md:text-lg">
                   In today&apos;s digital age, customers have high expectations
                   when it come.
                 </p>
               </div>
-              <div className="mb-9 gap-6">
+              <div className="gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
                     <RiSecurePaymentLine className="text-xl text-primary-color-1" />
@@ -43,12 +43,12 @@ export const StandOut = () => {
                     Security
                   </span>
                 </div>
-                <p className="text-lg font-normal leading-[150%]">
+                <p className="text-base font-normal leading-[150%] md:text-lg">
                   In today&apos;s digital age, customers have high expectations
                   when it come.
                 </p>
               </div>
-              <div className="mb-9 gap-6">
+              <div className="gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
                     <RiCustomerService2Line className="text-xl text-primary-color-1" />
@@ -59,12 +59,12 @@ export const StandOut = () => {
                     Service
                   </span>
                 </div>
-                <p className="text-lg font-normal leading-[150%]">
+                <p className="text-base font-normal leading-[150%] md:text-lg">
                   In today&apos;s digital age, customers have high expectations
                   when it come.
                 </p>
               </div>
-              <div className="mb-9 gap-6">
+              <div className="gap-6">
                 <div className="mb-[13px] flex items-center gap-4">
                   <div className="w-max rounded-full bg-primary-color-2 p-2">
                     <BsLaptop className="text-xl text-primary-color-1" />
@@ -75,7 +75,7 @@ export const StandOut = () => {
                     Technology
                   </span>
                 </div>
-                <p className="text-lg font-normal leading-[150%]">
+                <p className="text-base font-normal leading-[150%] md:text-lg">
                   In today&apos;s digital age, customers have high expectations
                   when it come.
                 </p>

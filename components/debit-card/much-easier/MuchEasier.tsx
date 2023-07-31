@@ -1,12 +1,10 @@
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import Image from "next/image";
 import madeYourCardImage from "@/public/images/make_your_card.png";
-
 import card1 from "@/public/images/card_filter.png";
 import card2 from "@/public/images/card_filter2.png";
 import card3 from "@/public/images/card_filter3.png";
-import Link from "next/link";
-import { AllCards } from "@/components/shared/AllCards";
+import { BankCard } from "@/components/shared/BankCard";
 
 export const MuchEasier = () => {
   return (
@@ -19,7 +17,11 @@ export const MuchEasier = () => {
           <Image src={madeYourCardImage} alt="Make your card Image" />
         </div>
         <div className="mt-10 md:mt-[120px]">
-          <AllCards />
+          <div className="grid justify-items-center gap-6 max-md:space-y-5 md:grid-cols-3">
+            <BankCard cardImage={card1} btnUrl="/" />
+            <BankCard cardImage={card2} btnUrl="/" />
+            <BankCard cardImage={card3} btnUrl="/" />
+          </div>
         </div>
       </div>
     </section>

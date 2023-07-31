@@ -10,7 +10,6 @@ export const PlanAction = () => {
   const [value, setValue] = useState<number[]>([0, 1250]);
   const [month, setMonth] = useState<number>(3);
   const [monthlyAmount, setMonthlyAmount] = useState<number>(0);
-  const [emi, setEmi] = useState<number>(0);
 
   useEffect(() => {
     const totalInterest: number = value[1] * 0.0799;
@@ -18,8 +17,8 @@ export const PlanAction = () => {
     const monthlyPay = totalPay / month;
     const roundedAmount: number = Math.round(monthlyPay);
     setMonthlyAmount(roundedAmount);
-    console.log();
   }, [value, month]);
+
   return (
     <section className="section-gap max-sm:px-2">
       <div className=" container rounded-md border border-[#CACCD1] bg-[#FAFAFC] px-5  py-5 md:px-[110px] md:py-[80px]">

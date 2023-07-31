@@ -6,12 +6,15 @@ import sponsor3 from "@/public/images/sponsor_logo3.png";
 import sponsor4 from "@/public/images/sponsor_logo4.png";
 import sponsor5 from "@/public/images/sponsor_logo5.png";
 import sponsor6 from "@/public/images/sponsor_logo6.png";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const BrandSlider = () => {
+type Prop = {
+  bgColor: "bg" | null;
+};
+
+export const BrandSlider = ({ bgColor }: Prop) => {
   var settings = {
     infinite: true,
     slidesToShow: 6,
@@ -45,7 +48,11 @@ export const BrandSlider = () => {
   return (
     <Slider
       {...settings}
-      className={` overflow-hidden  bg-[url("/images/sponsor-slider.png")] bg-cover bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
+      className={` overflow-hidden  ${
+        bgColor
+          ? "bg-primary-color-2"
+          : 'bg-[url("/images/sponsor-slider.png")]'
+      } bg-cover bg-no-repeat py-[50px] md:py-[90px] lg:py-[100px] xl:py-[120px] `}
     >
       <div>
         <Image

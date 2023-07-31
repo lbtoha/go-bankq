@@ -3,7 +3,7 @@ import { SectionText } from "@/components/shared/SectionText";
 import Image from "next/image";
 import React from "react";
 import digitalPaymentImage from "@/public/images/digital_payments.png";
-import { Icon, IconDarkBg } from "@/components/shared/Icon";
+import { IconDarkBg } from "@/components/shared/Icon";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { MdCreditScore, MdLocalAtm } from "react-icons/md";
 

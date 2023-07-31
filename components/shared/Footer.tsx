@@ -21,8 +21,8 @@ export const Footer = () => {
           <div className="text-center max-lg:mb-10  md:text-left lg:max-w-[334px]">
             <SectionHeading title="Subscribe Our Newsletter" />
           </div>
-          <div>
-            <form className="flex flex-wrap items-stretch gap-3">
+          <div className="z-20">
+            <form className=" flex flex-wrap items-stretch gap-3">
               <input
                 type="email"
                 name="email"
@@ -160,7 +160,8 @@ export const Footer = () => {
             . All right reserved
           </p>
           <p className="max-sm:-order-1">
-            <span className="text-[#A0A2A7]">Designed by</span> Pixelaxis
+            <span className="text-[#A0A2A7]">Designed by</span>{" "}
+            <Link href="/">Pixelaxis</Link>
           </p>
         </div>
       </div>
