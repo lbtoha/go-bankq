@@ -8,7 +8,7 @@ type Props = {
 export const ButtonSmall = ({ url, text }: Props) => {
   return (
     <Link href={url}>
-      <button className="px-[32px] py-[12px] bg-primary-color-2  text-base group-hover:bg-slate-100 text-[#292C32]  font-medium">
+      <button className="bg-primary-color-2 px-[32px] py-[12px]  text-base font-medium text-neutral-color-neutral-800  group-hover:bg-slate-100">
         {text}
       </button>
     </Link>

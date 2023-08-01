@@ -15,7 +15,7 @@ export const CreditCardLimit = () => {
             <div className="mb-5 md:mb-7 lg:mb-10">
               <SectionText text="Each credit card has a predetermined credit limit, which represents the maximum amount you can borrow. If you carry a balance beyond the grace period (usually around 25-30 days), interest charges will apply on the outstanding amount." />
             </div>
-            <Button text="Apply Credit card" url="/" />
+            <Button btnType="btnPrimary" text="Apply Credit card" url="/" />
           </div>
           <div className="hidden md:block lg:col-span-12 lg:col-start-8">
             <Image src={easyUseImage} alt="Improve cost Image" />

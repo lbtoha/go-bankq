@@ -4,8 +4,6 @@ import Image from "next/image";
 import React from "react";
 import digitalPaymentImage from "@/public/images/digital_payments.png";
 import { IconDarkBg } from "@/components/shared/Icon";
-import { AiOutlineDollarCircle } from "react-icons/ai";
-import { MdCreditScore, MdLocalAtm } from "react-icons/md";
 
 export const DigitalPayment = () => {
   return (

@@ -1,11 +1,34 @@
 "use client";
-import { titleFont } from "@/utils/fonts";
 import Image from "next/image";
 import React from "react";
 import countdown from "@/public/images/countdown.png";
 import CountUp, { useCountUp } from "react-countup";
+import CountDown from "./CountDown";
 
 export const OurImpact = () => {
+  const impactCountDownData = [
+    {
+      id: 457001,
+      countStart: 0,
+      countEnd: 600,
+      itemTitle: "Customers",
+      symbol: "K",
+    },
+    {
+      id: 457002,
+      countStart: 0,
+      countEnd: 99,
+      itemTitle: "Customer satisfaction",
+      symbol: "%",
+    },
+    {
+      id: 457003,
+      countStart: 0,
+      countEnd: 260,
+      itemTitle: "Money managed",
+      symbol: "B",
+    },
+  ];
   useCountUp({
     ref: "counter",
     end: 1234567,
@@ -21,51 +44,17 @@ export const OurImpact = () => {
           Our impact in numbers
         </h3>
         <div className="items-center justify-evenly space-y-10 text-center md:flex md:space-y-0">
-          <div>
-            <h6
-              className={`font-montserrat text-[30px] font-semibold leading-[120%] text-[#055F5B] md:text-[45px] xl:text-[64px]`}
-            >
-              <CountUp start={0} end={90} enableScrollSpy>
-                {({ countUpRef }) => (
-                  <div>
-                    <span ref={countUpRef} />
-                    <span className="text-[#FFD584]">K</span>
-                  </div>
-                )}
-              </CountUp>
-            </h6>
-            <p className="text-lg leading-[150%]">Customers</p>
-          </div>
-          <div>
-            <h6
-              className={` font-montserrat text-[30px]  font-semibold leading-[120%] text-[#055F5B] md:text-[45px] xl:text-[64px]`}
-            >
-              <CountUp start={0} end={99} enableScrollSpy>
-                {({ countUpRef }) => (
-                  <div>
-                    <span ref={countUpRef} />
-                    <span className="text-[#FFD584]">%</span>
-                  </div>
-                )}
-              </CountUp>
-            </h6>
-            <p className="text-lg leading-[150%]">Customer satisfaction</p>
-          </div>
-          <div>
-            <h6
-              className={` font-montserrat text-[30px]  font-semibold leading-[120%] text-[#055F5B] md:text-[45px] xl:text-[64px]`}
-            >
-              <CountUp start={0} end={260} enableScrollSpy>
-                {({ countUpRef }) => (
-                  <div>
-                    <span ref={countUpRef} />
-                    <span className="text-[#FFD584]">B</span>
-                  </div>
-                )}
-              </CountUp>
-            </h6>
-            <p className="text-lg leading-[150%]">Money managed</p>
-          </div>
+          {impactCountDownData.map(
+            ({ id, countStart, countEnd, itemTitle, symbol }) => (
+              <CountDown
+                key={id}
+                countStart={countStart}
+                countEnd={countEnd}
+                itemTitle={itemTitle}
+                symbol={symbol}
+              />
+            ),
+          )}
         </div>
         <div className="mt-[60px] justify-center  justify-items-center max-md:hidden md:block lg:flex">
           <Image src={countdown} alt="countdown" />

@@ -7,8 +7,8 @@ type Props = {
 const ChooseCardSectionButton = ({ cardName, activeTab }: Props) => {
   return (
     <button
-      className={`custom-transition flex items-center gap-4 rounded-md bg-[#E7E9EE] px-[18px] py-[13px] text-[20px] hover:bg-primary-color-2.2 ${
-        activeTab ? "bg-primary-color-2.2" : ""
+      className={`custom-transition flex items-center gap-4 rounded-md bg-neutral-color-neutral-300 px-[18px] py-[13px] text-[20px] hover:bg-primary-color-2 hover:bg-opacity-20 ${
+        activeTab ? "bg-primary-color-2 bg-opacity-20" : ""
       }`}
     >
       <span className="material-symbols-outlined">credit_score</span>

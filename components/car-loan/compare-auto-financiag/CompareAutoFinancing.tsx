@@ -1,6 +1,3 @@
-import { Button } from "@/components/shared/Button";
-import { ButtonGreenSmall } from "@/components/shared/ButtonGreenSmall";
-import { ButtonSmall } from "@/components/shared/ButtonSmall";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
 import React from "react";
@@ -35,7 +32,7 @@ export const CompareAutoFinancing = () => {
     },
   ];
   return (
-    <section className="bg-[#FAFAFC]">
+    <section className="bg-neutral-color-neutral-200">
       <div className="section-gap container max-sm:px-2 max-sm:text-center">
         <div className="">
           <div className="md:max-w-[627px]">

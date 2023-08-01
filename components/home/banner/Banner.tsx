@@ -1,11 +1,9 @@
-import { titleFont } from "@/utils/fonts";
 import Image from "next/image";
 import RightCard from "@/public/images/banner/hero_img_after.png";
 import LeftCard from "@/public/images/banner/hero_img_before.png";
 import mobile from "@/public/images/banner/mobile.png";
 import leftArrow from "@/public/images/banner/arrow.png";
 import rightArrow from "@/public/images/banner/stars.png";
-import heroAnimation2 from "@/public/images/hero_animation2.png";
 
 import {
   LeftCardAnimation,
@@ -21,8 +19,8 @@ export const Banner = () => {
         <h1
           className={`main-heading text-center font-montserrat  text-2xl font-bold text-white sm:text-3xl md:text-5xl lg:text-7xl`}
         >
-          All <span className="custom text-[#E0F300]">Banking</span> Solution{" "}
-          <br /> In One Place{" "}
+          All <span className="custom text-main-heading-color">Banking</span>{" "}
+          Solution <br /> In One Place{" "}
         </h1>
         <div className="card relative z-50 flex items-end justify-center ">
           <LeftCardAnimation>

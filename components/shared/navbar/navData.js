@@ -78,7 +78,7 @@ export const navData = [
     dropdown: true,
     dropdownItems: [
       {
-        id: "card_credit",
+        id: "card_credit1",
         dropdown_title: "Card",
         parentUrl: "/card",
         sbu_dropdown: false,
@@ -86,7 +86,7 @@ export const navData = [
         sub_items: [],
       },
       {
-        id: "card_credit",
+        id: "card_credit2",
         dropdown_title: "Credit Card",
         parentUrl: "/card",
         sbu_dropdown: false,
@@ -94,7 +94,7 @@ export const navData = [
         sub_items: [],
       },
       {
-        id: "card_debit",
+        id: "card_debit3",
         dropdown_title: "Debit Card",
         parentUrl: "/card",
         sbu_dropdown: false,

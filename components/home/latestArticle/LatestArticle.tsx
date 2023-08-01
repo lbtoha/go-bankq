@@ -1,5 +1,3 @@
-import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SectionText } from "@/components/shared/SectionText";
 import React from "react";
 import block from "@/public/images/blog3.png";
 import block2 from "@/public/images/blog4.png";
@@ -18,7 +16,7 @@ export const LatestArticle = () => {
         <div className="pb-6 text-center text-white">
           <SectionHeadingWhite title="Our Latest article" />
         </div>
-        <div className="mx-auto max-w-[642px] pb-8 text-center text-[#E7E9EE] md:pb-10 lg:pb-[60px]">
+        <div className="mx-auto max-w-[642px] pb-8 text-center text-neutral-color-neutral-300 md:pb-10 lg:pb-[60px]">
           <p className="text-lg leading-[150%]  max-md:text-base">
             Banks have been around for centuries, and their role in the economy
             has evolved over time.
@@ -57,7 +55,7 @@ export const LatestArticle = () => {
           />
         </div>
         <div className="mt-8 text-center  md:mt-10 lg:mt-[60px]">
-          <Button text="See more" url="/" />
+          <Button btnType="btnPrimary" text="See more" url="/" />
         </div>
       </div>
     </section>

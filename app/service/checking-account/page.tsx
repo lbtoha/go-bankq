@@ -9,6 +9,11 @@ import { WorkStep } from "@/components/checkingAccount/workStep/WorkStep";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
 import { SaveWithUs } from "@/components/shared/SaveWithUs";
 
+export const metadata = {
+  title: "Checking Account | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function Checking() {
   return (
     <main>

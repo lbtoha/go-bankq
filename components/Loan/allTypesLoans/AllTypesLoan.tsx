@@ -1,8 +1,6 @@
 "use client";
 import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SectionText } from "@/components/shared/SectionText";
 import React, { useRef } from "react";
-import { BsFileText } from "react-icons/bs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -120,7 +118,7 @@ export const AllTypesLoan = () => {
     ],
   };
   return (
-    <section className="overflow-hidden bg-[#FAFAFC]">
+    <section className="overflow-hidden bg-neutral-color-neutral-200">
       <div className="section-gap horizontal-gap container ">
         <div>
           <SectionHeading title="Our all types of loans" />

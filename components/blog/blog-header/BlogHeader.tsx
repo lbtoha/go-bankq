@@ -9,7 +9,7 @@ export const BlogHeader = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <PageHeader title="Home" items={["Home", "Blog"]} />
+            <PageHeader title="Blog" items={["Home", "Blog"]} />
           </div>
           <div className="hidden lg:block">
             <Image src={blogImage} alt="Personal Loan banner" />

@@ -1,5 +1,4 @@
 import React from "react";
-import { titleFont } from "@/utils/fonts";
 
 type Props = {
   title: string;

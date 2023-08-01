@@ -52,12 +52,12 @@ export const OurClientSaySection = () => {
                   />
                 </div>
               </div>
-              <div className="max-lg:mt-10">
+              <div className="max-lg:mt-8">
                 <span className="material-symbols-outlined rotate-180 text-5xl text-[#055F5B] md:text-[60px]">
                   format_quote
                 </span>
                 <div className="md:mt-5">
-                  <p className=" text-lg leading-[150%] text-[#6F7278] ">
+                  <p className=" text-base leading-[150%] text-neutral-color-neutral-600 sm:text-lg ">
                     Capital One has a great website and mobile app that are easy
                     to use and provide a lot of helpful features. I also
                     appreciate their credit monitoring and fraud protection
@@ -65,11 +65,14 @@ export const OurClientSaySection = () => {
                   </p>
                 </div>
                 <div className="border-s border-primary-color-2 ps-5">
-                  <p className=" mt-8 text-lg text-[#292C32] md:mt-10 xl:mt-[60px]">
+                  <p className=" mt-8 text-base text-neutral-color-neutral-800 sm:text-lg md:mt-10 xl:mt-[60px]">
                     Jon Copper
                   </p>
-                  <p className=" text-[#6F7278]">
-                    Developer, <span className="text-[#292C32]">Joperki</span>
+                  <p className=" text-neutral-color-neutral-600">
+                    Developer,{" "}
+                    <span className="text-neutral-color-neutral-800">
+                      Joperki
+                    </span>
                   </p>
                 </div>
               </div>
@@ -87,12 +90,12 @@ export const OurClientSaySection = () => {
                   />
                 </div>
               </div>
-              <div className="max-lg:mt-10">
+              <div className="max-lg:mt-8">
                 <span className="material-symbols-outlined rotate-180 text-5xl text-[#055F5B] md:text-[60px]">
                   format_quote
                 </span>
                 <div className="md:mt-5">
-                  <p className=" text-lg leading-[150%] text-[#6F7278] ">
+                  <p className=" text-lg leading-[150%] text-neutral-color-neutral-600 ">
                     Capital One has a great website and mobile app that are easy
                     to use and provide a lot of helpful features. I also
                     appreciate their credit monitoring and fraud protection
@@ -100,11 +103,14 @@ export const OurClientSaySection = () => {
                   </p>
                 </div>
                 <div className="border-s border-primary-color-2 ps-5">
-                  <p className=" mt-8 text-lg text-[#292C32] md:mt-10 xl:mt-[60px]">
+                  <p className=" mt-8 text-lg text-neutral-color-neutral-800 md:mt-10 xl:mt-[60px]">
                     Jon Copper
                   </p>
-                  <p className=" text-[#6F7278]">
-                    Developer, <span className="text-[#292C32]">Joperki</span>
+                  <p className=" text-neutral-color-neutral-600">
+                    Developer,{" "}
+                    <span className="text-neutral-color-neutral-800">
+                      Joperki
+                    </span>
                   </p>
                 </div>
               </div>
@@ -115,22 +121,22 @@ export const OurClientSaySection = () => {
         <div className="mt-10 flex items-center  justify-center xl:mt-[60px]">
           <button
             onClick={previous}
-            className="card-arrow__left relative focus-visible:invisible"
+            className="card-arrow__left  relative focus-visible:outline-none"
           >
             <Image
               src={arrowLeft}
               alt="Arrow Left"
-              className="relative z-[2] focus-visible:invisible"
+              className=" relative z-[2] focus-visible:outline-none"
             />
           </button>
           <button
             onClick={next}
-            className="card-arrow__right relative focus-visible:invisible"
+            className="card-arrow__right relative focus-visible:outline-none"
           >
             <Image
               src={arrowRight}
               alt="Arrow Right"
-              className="relative z-[2] mx-10 focus-visible:invisible"
+              className="relative z-[2] mx-10 focus-visible:outline-none"
             />
           </button>
         </div>

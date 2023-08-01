@@ -8,6 +8,11 @@ import { MissionAndVision } from "@/components/about/missionAndVision/MissionAnd
 import { OurValues } from "@/components/about/ourValues/OurValues";
 import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 
+export const metadata = {
+  title: "About | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function About() {
   return (
     <main>

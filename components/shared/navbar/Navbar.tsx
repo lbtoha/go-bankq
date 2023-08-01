@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { navData } from "./navData";
 import Logo from "/public/images/logo.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Button } from "../Button";
 import "tw-elements/dist/css/tw-elements.min.css";
 import AnimateHeight from "react-animate-height";
 import { usePathname } from "next/navigation";
@@ -74,7 +73,7 @@ export const Navbar = ({ cls = "" }) => {
       <header
         className={`navbar navbar-banner   ${
           windowHeight > 50 && "header-active"
-        } relative  text-white`}
+        } text-white  relative`}
       >
         <div className="container max-sm:px-2">
           <div className="flex items-center justify-between xl:hidden">
@@ -92,7 +91,7 @@ export const Navbar = ({ cls = "" }) => {
             <div
               className={
                 `nav__items h-screen overflow-auto px-10 font-semibold lg:hidden` +
-                `invisible fixed bottom-0 left-0 top-0 z-[1045] flex w-full max-w-full -translate-x-full flex-col border-none bg-[url("/images/banner/bannerBg.png")] bg-cover bg-clip-padding bg-no-repeat text-white shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none`
+                `text-white dark:bg-neutral-800 dark:text-neutral-200 invisible fixed bottom-0 left-0 top-0 z-[1045] flex w-full max-w-full -translate-x-full flex-col border-none bg-[url("/images/banner/bannerBg.png")] bg-cover bg-clip-padding bg-no-repeat shadow-sm outline-none transition duration-300 ease-in-out [&[data-te-offcanvas-show]]:transform-none`
               }
               id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel"
@@ -129,7 +128,7 @@ export const Navbar = ({ cls = "" }) => {
                         aria-controls="example-panel"
                         // href={url}
                         href="URL:void(0)"
-                        className={` dropdown-icon  border-b-[0.3px] border-gray-400 py-4  hover:text-primary-color-2  ${
+                        className={` dropdown-icon  border-gray-400 border-b-[0.3px] py-4  hover:text-primary-color-2  ${
                           dropdownId === id && "Todo"
                         }`}
                       >
@@ -141,9 +140,9 @@ export const Navbar = ({ cls = "" }) => {
                         height={openDropDown == id ? "auto" : 0}
                       >
                         <ul
-                          className={`custom-class !dropdown-menu-sm !bg-transparent group-hover/nav-item:dropdown-menu  group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
+                          className={`dropdown-custom-class !bg-transparent !dropdown-menu-sm group-hover/nav-item:dropdown-menu  group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
                             dropdownId === id &&
-                            "  visible opacity-100 group-hover/nav-item:bg-transparent"
+                            "  group-hover/nav-item:bg-transparent visible opacity-100"
                           }`}
                         >
                           {dropdownItems?.map(
@@ -169,7 +168,7 @@ export const Navbar = ({ cls = "" }) => {
                                       // setHeight(height === 0 ? "auto" : 0);
                                       handleSubDropdown(id);
                                     }}
-                                    className="dropdown-icon  border-b-[0.3px] border-gray-400 px-3 py-5   hover:text-primary-color-2"
+                                    className="dropdown-icon  border-gray-400 border-b-[0.3px] px-3 py-5   hover:text-primary-color-2"
                                     href="URL:void(0)"
                                   >
                                     {dropdown_title}
@@ -181,7 +180,7 @@ export const Navbar = ({ cls = "" }) => {
                                     height={openSubDropDown == id ? "auto" : 0}
                                   >
                                     <ul
-                                      className={`custom-class-sub-item !dropdown-menu-sm min-w-[200px] !bg-transparent group-hover:dropdown-menu-sub-item group-hover:left-[109%] group-hover:block group-hover:space-y-6 group-hover:bg-primary-color-1 group-hover:px-4 ${
+                                      className={`dropdown-custom-class-sub-item !bg-transparent !dropdown-menu-sm min-w-[200px] group-hover:dropdown-menu-sub-item group-hover:left-[109%] group-hover:block group-hover:space-y-6 group-hover:bg-primary-color-1 group-hover:px-4 ${
                                         subDropdown === id &&
                                         "nav__dropdown-active"
                                       }`}
@@ -190,7 +189,7 @@ export const Navbar = ({ cls = "" }) => {
                                         ({ id, url, sub_itm }) => (
                                           <li key={id} className=" ">
                                             <Link
-                                              className="border-b-[0.3px] border-gray-400 py-5 "
+                                              className="border-gray-400 border-b-[0.3px] py-5 "
                                               href={url}
                                               onClick={handleActive}
                                             >
@@ -209,7 +208,7 @@ export const Navbar = ({ cls = "" }) => {
                                   className="last-of-type:border-none"
                                 >
                                   <Link
-                                    className="custom-transition border-b-[0.3px] border-gray-400 px-3 py-5 hover:text-primary-color-2"
+                                    className="border-gray-400 custom-transition border-b-[0.3px] px-3 py-5 hover:text-primary-color-2"
                                     href={`${dropdownUrl}`}
                                     onClick={() => {
                                       handleActive();
@@ -228,7 +227,7 @@ export const Navbar = ({ cls = "" }) => {
                     // This item do not have any dropdown
                     <li key={id} className=" " data-te-offcanvas-dismiss>
                       <Link
-                        className=" border-b-[0.3px] border-gray-400  py-5"
+                        className=" border-gray-400 border-b-[0.3px]  py-5"
                         href={`${url}`}
                       >
                         {title}
@@ -284,7 +283,7 @@ export const Navbar = ({ cls = "" }) => {
                       {title}
                     </Link>
                     <ul
-                      className={`custom-class group-hover/nav-item:active-nav  custom-transition absolute min-w-[200px] bg-primary-color-1 group-hover/nav-item:dropdown-menu group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
+                      className={`dropdown-custom-class group-hover/nav-item:active-nav  custom-transition absolute min-w-[200px] bg-primary-color-1 group-hover/nav-item:dropdown-menu group-hover/nav-item:block group-hover/nav-item:space-y-6 group-hover/nav-item:px-4 ${
                         dropdownId === id && "Todo"
                       }`}
                     >
@@ -314,7 +313,7 @@ export const Navbar = ({ cls = "" }) => {
                                 {dropdown_title}
                               </Link>
                               <ul
-                                className={`custom-class-sub-item absolute min-w-[200px] group-hover:dropdown-menu-sub-item group-hover:left-[109%] group-hover:block group-hover:space-y-6 group-hover:bg-primary-color-1 group-hover:px-4 ${
+                                className={`dropdown-custom-class-sub-item absolute min-w-[200px] group-hover:dropdown-menu-sub-item group-hover:left-[109%] group-hover:block group-hover:space-y-6 group-hover:bg-primary-color-1 group-hover:px-4 ${
                                   subDropdown === id && "nav__dropdown-active"
                                 }`}
                               >
@@ -368,7 +367,7 @@ export const Navbar = ({ cls = "" }) => {
               })}
             </ul>
             <div>
-              <button className="custom-transition border bg-primary-color-2 px-3 py-[15px] text-lg font-medium text-[#292C32] hover:bg-slate-200  xxl:px-10 xxl:text-lg">
+              <button className="hover:bg-slate-200 custom-transition border bg-primary-color-2 px-3 py-[15px] text-lg font-medium text-neutral-color-neutral-800 hover:bg-neutral-color-neutral-100  xxl:px-10 xxl:text-lg">
                 Register Now
               </button>
             </div>

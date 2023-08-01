@@ -10,9 +10,6 @@ export default function NotFound() {
         <p className="text-lg">
           Oops! The page you&apos;re looking for does not exist.
         </p>
-        <p className="mt-4 text-lg">
-          <a href="/">Go back to the homepage</a>
-        </p>
       </div>
     </div>
   );

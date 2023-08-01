@@ -18,10 +18,10 @@ export const ShopAndFinance = () => {
               <SectionHeading title="Shop and finance your next vehicle all in one place." />
             </div>
             <SectionText text="Similar to home loans, you can begin by getting preapproved for a car loan. This involves providing basic financial information to a lender, who will then give you an estimate of how much you can afford to borrow and what interest rate you may qualify for." />
-            <div className="mb-5 mt-5 flex gap-3 text-lg leading-[150%] text-[#292C32]  max-sm:flex-col sm:items-center sm:gap-[30px] md:text-[20px] lg:mb-10">
+            <div className="mb-5 mt-5 flex gap-3 text-lg leading-[150%] text-neutral-color-neutral-800  max-sm:flex-col sm:items-center sm:gap-[30px] md:text-[20px] lg:mb-10">
               <span>As low as 5.12% APR</span> <span>up to 12 months</span>
             </div>
-            <Button text="Apply now" url="/" />
+            <Button btnType="btnPrimary" text="Apply now" url="/" />
           </div>
         </div>
       </div>

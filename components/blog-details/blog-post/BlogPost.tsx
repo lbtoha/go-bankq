@@ -18,7 +18,7 @@ export const BlogPost = () => {
           />
           <div className="mb-6 flex items-center">
             <p className="text-lg">Bank</p>
-            <div className="flex items-center text-sm leading-[150%] text-[#6F7278]">
+            <div className="flex items-center text-sm leading-[150%] text-neutral-color-neutral-600">
               <div className="text-xl text-primary-color-2">
                 <GoDotFill />
               </div>

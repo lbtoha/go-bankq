@@ -6,7 +6,7 @@ import { MissionSlider } from "./MissionSlider";
 
 export const MissionAndVision = () => {
   return (
-    <section className="overflow-clip bg-[#FAFAFC]">
+    <section className="overflow-clip bg-neutral-color-neutral-200 max-sm:px-2">
       <div className="section-gap container">
         <div className="mb-7 grid-cols-12 gap-5 md:mb-10 lg:mb-[60px] lg:grid ">
           <div className="col-start-1 col-end-6 space-y-3 max-lg:mb-7  md:space-y-4 lg:space-y-6">

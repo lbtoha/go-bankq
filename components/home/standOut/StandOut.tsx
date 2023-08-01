@@ -3,8 +3,39 @@ import Image from "next/image";
 import feature from "@/public/images/feature.png";
 import { BsLaptop, BsLightbulb } from "react-icons/bs";
 import { RiCustomerService2Line, RiSecurePaymentLine } from "react-icons/ri";
+import StandOutCard from "./StandOutCard";
 
 export const StandOut = () => {
+  const standOutCardData = [
+    {
+      id: 11001001,
+      iconName: "lightbulb",
+      cardTitle: "Innovation",
+      cardBody:
+        "In today's digital age, customers have high expectations when it come.",
+    },
+    {
+      id: 11001002,
+      iconName: "arming_countdown",
+      cardTitle: "Security",
+      cardBody:
+        "In today's digital age, customers have high expectations when it come.",
+    },
+    {
+      id: 11001003,
+      iconName: "support_agent",
+      cardTitle: "Service",
+      cardBody:
+        "In today's digital age, customers have high expectations when it come.",
+    },
+    {
+      id: 11001004,
+      iconName: "devices",
+      cardTitle: "Technology",
+      cardBody:
+        "In today's digital age, customers have high expectations when it come.",
+    },
+  ];
   return (
     <section className=" relative bg-[#055F5B] text-white max-sm:px-2">
       <div className="section-gap container">
@@ -16,70 +47,14 @@ export const StandOut = () => {
               What makes us stand out from the rest?
             </h3>
             <div className="mt-8  grid-cols-2 max-md:space-y-7 md:grid md:gap-x-6 md:gap-y-5 lg:mt-[50px] xl:mt-[60px] ">
-              <div className="gap-6">
-                <div className="mb-[13px] flex items-center gap-4">
-                  <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <BsLightbulb className="text-xl text-primary-color-1" />
-                  </div>
-                  <span
-                    className={`font-montserrat text-xl font-semibold leading-[130%]`}
-                  >
-                    Innovation
-                  </span>
-                </div>
-                <p className="text-base font-normal leading-[150%] md:text-lg">
-                  In today&apos;s digital age, customers have high expectations
-                  when it come.
-                </p>
-              </div>
-              <div className="gap-6">
-                <div className="mb-[13px] flex items-center gap-4">
-                  <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <RiSecurePaymentLine className="text-xl text-primary-color-1" />
-                  </div>
-                  <span
-                    className={`font-montserrat text-xl font-semibold leading-[130%]`}
-                  >
-                    Security
-                  </span>
-                </div>
-                <p className="text-base font-normal leading-[150%] md:text-lg">
-                  In today&apos;s digital age, customers have high expectations
-                  when it come.
-                </p>
-              </div>
-              <div className="gap-6">
-                <div className="mb-[13px] flex items-center gap-4">
-                  <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <RiCustomerService2Line className="text-xl text-primary-color-1" />
-                  </div>
-                  <span
-                    className={`font-montserrat text-xl font-semibold leading-[130%]`}
-                  >
-                    Service
-                  </span>
-                </div>
-                <p className="text-base font-normal leading-[150%] md:text-lg">
-                  In today&apos;s digital age, customers have high expectations
-                  when it come.
-                </p>
-              </div>
-              <div className="gap-6">
-                <div className="mb-[13px] flex items-center gap-4">
-                  <div className="w-max rounded-full bg-primary-color-2 p-2">
-                    <BsLaptop className="text-xl text-primary-color-1" />
-                  </div>
-                  <span
-                    className={`font-montserrat text-xl font-semibold leading-[130%]`}
-                  >
-                    Technology
-                  </span>
-                </div>
-                <p className="text-base font-normal leading-[150%] md:text-lg">
-                  In today&apos;s digital age, customers have high expectations
-                  when it come.
-                </p>
-              </div>
+              {standOutCardData.map(({ id, iconName, cardTitle, cardBody }) => (
+                <StandOutCard
+                  key={id}
+                  iconName={iconName}
+                  cardTitle={cardTitle}
+                  cardBody={cardBody}
+                />
+              ))}
             </div>
           </div>
           <div className="  hidden  lg:block lg:grid-cols-1 xl:col-start-8 xl:col-end-13 ">

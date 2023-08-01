@@ -8,6 +8,11 @@ import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 import { OurImpact } from "@/components/shared/OurImpact";
 import { SaveWithUs } from "@/components/shared/SaveWithUs";
 
+export const metadata = {
+  title: "Debit Card | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function DebitCard() {
   return (
     <main>

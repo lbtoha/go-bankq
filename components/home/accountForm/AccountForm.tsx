@@ -18,7 +18,7 @@ export const AccountForm = () => {
             </div>
             <div className="account-section__card-container relative grid-cols-2 gap-[23px] max-md:space-y-5  md:grid">
               <div className=" card-content card-left h-[237px] w-full">
-                <p className="text-xl leading-[150%] text-[#292C32]">
+                <p className="text-xl leading-[150%] text-neutral-color-neutral-800">
                   Pay anywhere
                 </p>
                 <button className="pb-5 text-base text-[#055F5B] underline">
@@ -26,7 +26,7 @@ export const AccountForm = () => {
                 </button>
               </div>
               <div className=" card-content card-right h-[237px] w-full bg-[#ffd584] bg-opacity-20">
-                <p className="text-xl leading-[150%] text-[#292C32]">
+                <p className="text-xl leading-[150%] text-neutral-color-neutral-800">
                   Manage your assets
                 </p>
                 <button className="pb-5 text-base text-[#055F5B] underline">
@@ -35,7 +35,7 @@ export const AccountForm = () => {
               </div>
             </div>
           </div>
-          <div className=" h-full bg-[#FAFAFC] px-3 py-10 max-xl:mt-10 md:px-10  md:py-20  xl:col-start-8 xl:w-[526px]">
+          <div className=" h-full bg-neutral-color-neutral-200 px-3 py-10 max-xl:mt-10 md:px-10  md:py-20  xl:col-start-8 xl:w-[526px]">
             <Form></Form>
           </div>
         </div>

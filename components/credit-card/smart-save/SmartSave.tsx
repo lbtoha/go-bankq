@@ -21,7 +21,7 @@ export const SmartSave = () => {
             <div className="mb-7 md:mb-10">
               <SectionText text="the bank account that gives you more control over your money—with a direct customer support hotline if you ever need help. Choose a Mastercard in your choice of 5 colors and organize your finances with 10 Spaces sub-accounts" />
             </div>
-            <div className="mb-7 flex items-center justify-between rounded-md bg-primary-color-2.2 p-3 md:mb-10 md:p-5">
+            <div className="mb-7 flex items-center justify-between rounded-md bg-primary-color-2 bg-opacity-20 p-3 md:mb-10 md:p-5">
               <div className="flex items-center gap-6 md:gap-10">
                 <div className="tex-3xl w-fit rounded-md bg-primary-color-2 p-3 text-primary-color-1 md:p-5 md:text-[46px]">
                   <span className="material-symbols-outlined text-[35px] md:text-[46px] ">
@@ -32,7 +32,7 @@ export const SmartSave = () => {
               </div>
               <p className="text-base text-primary-color-1">Available</p>
             </div>
-            <Button text="Apply Credit card" url="/" />
+            <Button btnType="btnPrimary" text="Apply Credit card" url="/" />
           </div>
         </div>
       </div>

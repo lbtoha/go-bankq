@@ -17,7 +17,7 @@ export const ImproveCost = () => {
             <div className=" mb-5 lg:mb-10">
               <SectionText text="Earn 1% cashback from select merchants, stacked on top of FX gains from your multi-currency corporate card spend." />
             </div>
-            <Button text="Apply now" url="/" />
+            <Button btnType="btnPrimary" text="Apply now" url="/" />
           </div>
           <div className="hidden lg:block">
             <Image src={improveCost} alt="Improve cost Image" />

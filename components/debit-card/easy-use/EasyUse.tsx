@@ -21,7 +21,7 @@ export const EasyUse = () => {
               <SectionText text="A debit card is a plastic card that is linked to your bank account and allows you to access your funds electronically. When you use your debit card to make a purchase, the amount is deducted from your bank account balance immediately or shortly after the transaction is made." />
             </div>
             <div className="max-sm:text-center">
-              <Button text="Apply now" url="/" />
+              <Button btnType="btnPrimary" text="Apply now" url="/" />
             </div>
           </div>
         </div>

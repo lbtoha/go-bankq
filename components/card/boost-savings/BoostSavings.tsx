@@ -4,7 +4,6 @@ import Image from "next/image";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
 import { MdCreditScore } from "react-icons/md";
-import { BsCheckCircle } from "react-icons/bs";
 import { useState } from "react";
 import { Button } from "@/components/shared/Button";
 
@@ -24,7 +23,7 @@ export const BoostSavings = () => {
             <div className="mb-5 md:mb-10">
               <SectionText text="All your needs covered with a full range of credit and debit cards ." />
             </div>
-            <div className="mb-5 grid grid-cols-2 items-center justify-between gap-[18px] rounded-md bg-[#E7E9EE] md:mb-10">
+            <div className="mb-5 grid grid-cols-2 items-center justify-between gap-[18px] rounded-md bg-neutral-color-neutral-300 md:mb-10">
               <div
                 onClick={() => setToggle(!toggle)}
                 className={`${
@@ -54,7 +53,7 @@ export const BoostSavings = () => {
             </div>
             {toggle ? (
               <div className="mb-5 md:mb-10 xl:mb-10 ">
-                <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
+                <p className="mb-5 text-xl leading-[150%] text-neutral-color-neutral-800">
                   Lifestyle Benefits:
                 </p>
                 <div className="space-y-2 md:space-y-3">
@@ -63,7 +62,7 @@ export const BoostSavings = () => {
                       check_circle
                     </span>
                     <div>
-                      <p className="text-base text-[#6F7278] md:text-lg">
+                      <p className="text-base text-neutral-color-neutral-600 md:text-lg">
                         Get cash backs and rewards that help you spend more
                         without burning through your funds
                       </p>
@@ -74,7 +73,7 @@ export const BoostSavings = () => {
                       check_circle
                     </span>
                     <div>
-                      <p className="text-base text-[#6F7278] md:text-lg">
+                      <p className="text-base text-neutral-color-neutral-600 md:text-lg">
                         Travel better by earning unlimited 1.5x miles
                       </p>
                     </div>
@@ -83,7 +82,7 @@ export const BoostSavings = () => {
               </div>
             ) : (
               <div className=" mb-5 md:mb-10 xl:mb-10 ">
-                <p className="mb-5 text-xl leading-[150%] text-[#292C32]">
+                <p className="mb-5 text-xl leading-[150%] text-neutral-color-neutral-800">
                   Lifestyle Benefits:
                 </p>
                 <div className="space-y-4 md:space-y-3">
@@ -92,7 +91,7 @@ export const BoostSavings = () => {
                       check_circle
                     </span>
                     <div>
-                      <p className="text-base text-[#6F7278] md:text-lg">
+                      <p className="text-base text-neutral-color-neutral-600 md:text-lg">
                         Get cash backs and rewards that help you spend more
                         without burning through your funds
                       </p>
@@ -103,7 +102,7 @@ export const BoostSavings = () => {
                       check_circle
                     </span>
                     <div>
-                      <p className="text-base text-[#6F7278] md:text-lg">
+                      <p className="text-base text-neutral-color-neutral-600 md:text-lg">
                         Travel better by earning unlimited 1.5x miles
                       </p>
                     </div>
@@ -111,7 +110,7 @@ export const BoostSavings = () => {
                 </div>
               </div>
             )}
-            <Button text="Get started" url="/" />
+            <Button btnType="btnPrimary" text="Get started" url="/" />
           </div>
         </div>
       </div>

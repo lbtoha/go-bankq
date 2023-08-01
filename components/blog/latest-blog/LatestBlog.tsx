@@ -1,40 +1,16 @@
-"use client";
-import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SectionText } from "@/components/shared/SectionText";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
 import block from "@/public/images/blog.png";
 import block2 from "@/public/images/blog2.png";
 import block3 from "@/public/images/blog3.png";
 import block4 from "@/public/images/blog4.png";
-import block5 from "@/public/images/blog5.png";
 import { RiMessage2Line } from "react-icons/ri";
-import articleAuthor2 from "@/public/images/article_author2.png";
 import articleAuthor3 from "@/public/images/article_author3.png";
 import articleAuthor4 from "@/public/images/article_author4.png";
-
-import ReactPaginate from "react-paginate";
 import Link from "next/link";
 import ArticleCard from "@/components/shared/ArticleCard";
+import Pagination from "./Pagination";
 
 export const LatestBlog = () => {
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-  const [itemOffset, setItemOffset] = useState<number>(0);
-  const itemsPerPage: number = 3;
-  const endOffset: number = itemOffset + itemsPerPage;
-  const currentItems = items.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(items.length / itemsPerPage);
-
-  useEffect(() => {}, [itemOffset]);
-  const handlePageClick = (event: { selected: number }) => {
-    const newOffset = (event.selected * itemsPerPage) % items.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`,
-    );
-    setItemOffset(newOffset);
-    console.log(newOffset);
-  };
-
   return (
     <section>
       <div className="section-gap container max-sm:px-2">
@@ -51,31 +27,33 @@ export const LatestBlog = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2 text-primary-color-1">
                 <RiMessage2Line />
-                <span className="text-sm text-[#292C32]">06 comments</span>
+                <span className="text-sm text-neutral-color-neutral-800">
+                  06 comments
+                </span>
               </span>
             </div>
             <Link
               href="/"
-              className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
+              className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-neutral-color-neutral-800 `}
             >
               The Importance of Choosing the Right Bank for Your Financial Needs
             </Link>
 
-            <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
+            <p className="mb-[24px] mt-4 text-base leading-[150%] text-neutral-color-neutral-600">
               Banks have been around for centuries, and their role in evolved
               over time.
             </p>
-            <div className="flex items-center gap-4 border-t border-[#E7E9EE] pt-[18px]">
+            <div className="flex items-center gap-4 border-t border-neutral-color-neutral-300 pt-[18px]">
               <Image
                 src={articleAuthor3}
                 alt="article author"
                 className="rounded-full"
               />
               <div className="">
-                <p className="text-xl leading-[150%] text-[#292C32]">
+                <p className="text-xl leading-[150%] text-neutral-color-neutral-800">
                   Jon Haroson
                 </p>
-                <p className="text-sm leading-[150%] text-[#6F7278]">
+                <p className="text-sm leading-[150%] text-neutral-color-neutral-600">
                   21 April 2023 - 2 min read
                 </p>
               </div>
@@ -87,34 +65,37 @@ export const LatestBlog = () => {
               <span className="text-lg">Bank</span>
               <span className="flex items-center gap-2 text-primary-color-1">
                 <RiMessage2Line />
-                <Link href="/" className="text-sm text-[#292C32]">
+                <Link
+                  href="/"
+                  className="text-sm text-neutral-color-neutral-800"
+                >
                   06 comments
                 </Link>
               </span>
             </div>
             <Link
               href="/"
-              className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-[#292C32] `}
+              className={`mt-3 font-montserrat text-xl font-semibold leading-[130%] text-neutral-color-neutral-800 `}
             >
               Credit Scores Unveiled Understanding the Key to Financial
               Opportunities
             </Link>
 
-            <p className="mb-[24px] mt-4 text-base leading-[150%] text-[#6F7278]">
+            <p className="mb-[24px] mt-4 text-base leading-[150%] text-neutral-color-neutral-600">
               Banks have been around for centuries, and their role in evolved
               over time.
             </p>
-            <div className="flex items-center gap-4 border-t border-[#E7E9EE] pt-[18px]">
+            <div className="flex items-center gap-4 border-t border-neutral-color-neutral-300 pt-[18px]">
               <Image
                 src={articleAuthor4}
                 alt="article author"
                 className="rounded-full"
               />
               <div className="">
-                <p className="text-xl leading-[150%] text-[#292C32]">
+                <p className="text-xl leading-[150%] text-neutral-color-neutral-800">
                   Jon Haroson
                 </p>
-                <p className="text-sm leading-[150%] text-[#6F7278]">
+                <p className="text-sm leading-[150%] text-neutral-color-neutral-600">
                   21 April 2023 - 2 min read
                 </p>
               </div>
@@ -155,18 +136,7 @@ export const LatestBlog = () => {
         </div>
       </div>
       <div className="container flex justify-center overflow-hidden pt-2  max-sm:px-2 max-sm:ps-2 max-sm:pt-5">
-        <ReactPaginate
-          previousLabel={"<"}
-          nextLabel={">"}
-          breakLabel={"..."}
-          breakClassName={"break-me"}
-          pageCount={5}
-          marginPagesDisplayed={1}
-          pageRangeDisplayed={2}
-          onPageChange={handlePageClick}
-          containerClassName={"pagination pages pagination"}
-          activeClassName={"active"}
-        />
+        <Pagination />
       </div>
     </section>
   );

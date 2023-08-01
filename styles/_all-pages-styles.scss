@@ -1,6 +1,4 @@
-// ******************                         ******************
 // ****************** Home Page Styles Start  ******************
-// ******************                         ******************
 
 // ======= Navbar Section Styles Start ============
 
@@ -88,6 +86,44 @@ html {
       }
     }
   }
+}
+
+.dropdown-custom-class {
+  inset-inline-start: 0;
+  inset-block-start: calc(100% + 0.5rem);
+  pointer-events: none;
+  min-width: 230px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #055f5b;
+  margin: 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 0;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+}
+
+.dropdown-custom-class-sub-item {
+  inset-inline-start: 0;
+  inset-block-start: calc(100% + 0.5rem);
+  pointer-events: none;
+  min-width: 230px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #055f5b;
+  margin: 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 0;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
 }
 
 .navbar-banner {
@@ -233,20 +269,6 @@ html {
   }
 }
 
-// ======= Banner Section Styles End ============
-.loan-section {
-  &__sub-heading {
-    &::after {
-      content: "";
-      border-bottom: 1px solid #000;
-      width: 71px;
-    }
-  }
-}
-// ======= Loan Section Styles Start ============
-
-// ======= Loan Section Styles End ============
-
 @media only screen and (max-width: 1023px) {
   .banner-objects {
     &__right {
@@ -272,32 +294,94 @@ html {
   }
 }
 
-.swiper-wrapper {
-  display: flex;
-  justify-items: center;
-}
+// ======= Banner Section Styles End ============
 
-//  section top mark
-@media (min-width: 992px) {
-  .section-top-mark {
-    &::before {
+// ======= Loan Section Styles Start ============
+.loan-section {
+  &__sub-heading {
+    &::after {
       content: "";
-      position: absolute;
-      width: 40px;
-      background-color: #fff;
-      height: 1px;
+      border-bottom: 1px solid #000;
+      width: 71px;
     }
   }
 }
+
+@keyframes rotate360deg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.with-arrow::after {
+  display: none;
+  content: "";
+  background-image: url("../public/images/explore.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 13px solid transparent;
+  left: 0;
+  top: 0;
+  animation: rotate360deg 30s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 576px) {
+  .with-arrow::after {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .with-arrow::after {
+    content: "";
+    background-image: url("../public/images/explore.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 13px solid transparent;
+    left: 0;
+    top: 0;
+    animation: rotate360deg 30s linear infinite;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (min-width: 992px) {
-  .section-top-mark-black {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 40px;
-      background-color: #000;
-      height: 1px;
-    }
+  .with-arrow::after {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .with-arrow::after {
+    display: block;
+  }
+}
+
+@media (min-width: 1400px) {
+  .with-arrow::after {
+    display: block;
+  }
+}
+
+// ======= Loan Section Styles End ============
+
+@media (max-width: 768px) {
+  .countdown-section {
+    background-image: url("../public/images/countdown_bg.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -493,27 +577,27 @@ html {
 .footer-section {
   background: url("../public//images/feature_dot.png");
   background-color: #191b1a;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &::after {
     content: "";
     background: url("../public//images/footer_bg.png") repeat;
     position: absolute;
     right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
     bottom: 0;
     width: 100%;
     height: 100%;
-    animation: previewShapeY 25s linear infinite;
+    // animation: previewShapeY 25s linear infinite;
     z-index: -1;
   }
 }
 
-// ******************                       ******************
 // ****************** Home Page Styles End  ******************
-// ******************                       ******************
 
-// ******************                                    ******************
 // ****************** checking Account page style start  ******************
-// ******************                                    ******************
 
 @media (min-width: 1200px) {
   .paying-section {
@@ -549,6 +633,243 @@ html {
   }
 }
 
-// ******************                                  ******************
 // ****************** checking Account page style End  ******************
-// ******************                                  ******************
+
+// ****************** Home Loan page style start  ******************
+// range Slider yellow
+#range-slider-yellow .range-slider__range {
+  background: #ffd584;
+  transition: height 0.3s;
+}
+
+.single-thumb .range-slider__thumb[data-lower] {
+  width: 0;
+}
+
+.single-thumb .range-slider__thumb[data-upper] {
+  background: #ffd584;
+}
+
+// range Slider green
+#range-slider-green .range-slider__range {
+  background: var(--primary-color-1);
+  transition: height 0.3s;
+}
+
+.single-thumb-green .range-slider__thumb[data-upper] {
+  background: var(--primary-color-1);
+}
+
+.single-thumb-green .range-slider__thumb[data-lower] {
+  width: 0;
+}
+
+// Home Loan page
+.how-it-work-section {
+  .card-how-to-work {
+    .card-number::after {
+      content: "";
+      position: absolute;
+      background: #ffd584;
+      border-radius: 5px;
+      height: 50%;
+      width: 110%;
+      padding: 0 10px;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    .card-title {
+      font-family: ver(--head-font);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 130%;
+      margin-top: 32px;
+    }
+    .card-text {
+      font-size: 18px;
+      line-height: 150%;
+      margin-top: 12px;
+    }
+  }
+}
+
+// ****************** Home Loan page style End  ******************
+
+// ****************** Blog page style Start  ******************
+// blog page pagination
+.pagination {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0 3rem;
+  margin-bottom: 120px;
+}
+
+.pagination li a {
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
+  border: var(--primary-color-1) 1px solid;
+  color: var(--primary-color-1);
+  cursor: pointer;
+}
+
+.pagination li.active a {
+  border: var(--primary-color-1) 1px solid;
+  background-color: var(--primary-color-1);
+  color: #fff;
+}
+
+ul.pagination li.selected a {
+  background-color: #0366d6;
+  border-color: transparent;
+  color: white;
+  min-width: 30px;
+}
+
+ul.pagination li.disabled a {
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
+  border: var(--primary-color-1) 1px solid;
+  background: #caccd1;
+  border-color: transparent;
+}
+
+ul.pagination li.disable,
+ul.pagination li.disabled a {
+  cursor: default;
+}
+// ****************** Blog page style End  ******************
+
+// ****************** Share Component Style Start ***********************
+
+// <BankingService> component Style start
+
+.browse-set-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-between;
+  .browse-set-card:nth-child(1),
+  .browse-set-card:nth-child(2),
+  .browse-set-card:nth-child(3),
+  .browse-set-card:nth-child(4),
+  .browse-set-card:nth-child(5),
+  .browse-set-card:nth-child(6) {
+    grid-column: 1 / 13;
+  }
+
+  @media (min-width: 768px) {
+    .browse-set-card:nth-child(1) {
+      grid-column: 1 / 13;
+    }
+
+    .browse-set-card:nth-child(3),
+    .browse-set-card:nth-child(5) {
+      grid-column: 7 / 13;
+    }
+
+    .browse-set-card:nth-child(2),
+    .browse-set-card:nth-child(4),
+    .browse-set-card:nth-child(6) {
+      grid-column: 1/ 7;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .browse-set-card:nth-child(1),
+    .browse-set-card:nth-child(3),
+    .browse-set-card:nth-child(5) {
+      grid-column: 1 / 7;
+    }
+
+    .browse-set-card:nth-child(2),
+    .browse-set-card:nth-child(4),
+    .browse-set-card:nth-child(6) {
+      grid-column: 7 / 13;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .browse-set-card:nth-child(1) {
+      grid-column: 1 / 7;
+    }
+    .browse-set-card:nth-child(2),
+    .browse-set-card:nth-child(5) {
+      grid-column: 7 / 10;
+    }
+    .browse-set-card:nth-child(3),
+    .browse-set-card:nth-child(6) {
+      grid-column: 10 / 13;
+    }
+
+    .browse-set-card:nth-child(4) {
+      grid-column: 4/ 7;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .browse-set-card:nth-child(1) {
+      grid-column: 1 / 7;
+    }
+    .browse-set-card:nth-child(2),
+    .browse-set-card:nth-child(5) {
+      grid-column: 7 / 10;
+    }
+    .browse-set-card:nth-child(3),
+    .browse-set-card:nth-child(6) {
+      grid-column: 10 / 13;
+    }
+
+    .browse-set-card:nth-child(4) {
+      grid-column: 4/ 7;
+    }
+  }
+}
+
+// <BankingService> component Style end
+
+// =============(This style apply more then one component)=================
+
+//  section top mark style start
+@media (min-width: 992px) {
+  .section-top-mark {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      background-color: #fff;
+      height: 1px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .section-top-mark-black {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      background-color: #000;
+      height: 1px;
+    }
+  }
+}
+//  section top mark style end
+
+.full-width-image img {
+  min-width: max-content;
+}
+
+.slick-list .slick-track {
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: calc(1.3rem * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+
+//************************ Share Component Style End **********************

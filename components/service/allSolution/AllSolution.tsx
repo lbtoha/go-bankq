@@ -18,7 +18,7 @@ export const AllSolution = () => {
                 <IconLightBg iconName="arming_countdown" />
                 <div>
                   <p className="text-base md:text-lg">
-                    <span className="font-semibold text-[#292C32]">
+                    <span className="font-semibold text-neutral-color-neutral-800">
                       Loan Facilities{" "}
                     </span>
                     Beyond Banking Basics Exploring Specialized
@@ -29,7 +29,9 @@ export const AllSolution = () => {
                 <IconLightBg iconName="arming_countdown" />
                 <div>
                   <p className="text-base md:text-lg">
-                    <span className="font-semibold text-[#292C32]">Card </span>
+                    <span className="font-semibold text-neutral-color-neutral-800">
+                      Card{" "}
+                    </span>
                     Beyond Banking Basics Exploring Specialized
                   </p>
                 </div>
@@ -38,7 +40,7 @@ export const AllSolution = () => {
                 <IconLightBg iconName="arming_countdown" />
                 <div>
                   <p className="text-base md:text-lg">
-                    <span className="font-semibold text-[#292C32]">
+                    <span className="font-semibold text-neutral-color-neutral-800">
                       Finanace and banking{" "}
                     </span>
                     Beyond Banking Basics Exploring Specialized

@@ -21,7 +21,7 @@ export const PlanAction = () => {
 
   return (
     <section className="section-gap max-sm:px-2">
-      <div className=" container rounded-md border border-[#CACCD1] bg-[#FAFAFC] px-5  py-5 md:px-[110px] md:py-[80px]">
+      <div className=" container rounded-md border border-[#CACCD1] bg-neutral-color-neutral-200 px-5  py-5 md:px-[110px] md:py-[80px]">
         <div className="text-center">
           <div className="mb-6">
             <SectionHeading title="Put Your Plans into Action" />
@@ -49,39 +49,47 @@ export const PlanAction = () => {
         <div className="grid items-center justify-evenly gap-6 text-center text-primary-color-1 md:grid-cols-2 lg:grid-cols-4">
           <div
             onClick={() => setMonth(3)}
-            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
-              month === 3 && `bg-primary-color-2.2`
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2 hover:bg-opacity-20 ${
+              month === 3 && `bg-primary-color-2 bg-opacity-20`
             }`}
           >
             <p>03 Month</p>
-            <p className="mt-[10px] text-[#6F7278]">Av. APR is 7.99%</p>
+            <p className="mt-[10px] text-neutral-color-neutral-600">
+              Av. APR is 7.99%
+            </p>
           </div>
           <div
             onClick={() => setMonth(6)}
-            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
-              month === 6 && `bg-primary-color-2.2`
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2 hover:bg-opacity-20 ${
+              month === 6 && `bg-primary-color-2 bg-opacity-20`
             }`}
           >
             <p>06 Month</p>
-            <p className="mt-[10px] text-[#6F7278]">Av. APR is 7.99%</p>
+            <p className="mt-[10px] text-neutral-color-neutral-600">
+              Av. APR is 7.99%
+            </p>
           </div>
           <div
             onClick={() => setMonth(12)}
-            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
-              month === 12 && `bg-primary-color-2.2`
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2 hover:bg-opacity-20 ${
+              month === 12 && `bg-primary-color-2 bg-opacity-20`
             }`}
           >
             <p>12 Month</p>
-            <p className="mt-[10px] text-[#6F7278]">Av. APR is 7.99%</p>
+            <p className="mt-[10px] text-neutral-color-neutral-600">
+              Av. APR is 7.99%
+            </p>
           </div>
           <div
             onClick={() => setMonth(24)}
-            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2.2 ${
-              month === 24 && `bg-primary-color-2.2`
+            className={`  cursor-pointer rounded-md border border-border-color px-10 py-[30px] hover:bg-primary-color-2 hover:bg-opacity-20 ${
+              month === 24 && `bg-primary-color-2 bg-opacity-20`
             }`}
           >
             <p>24 Month</p>
-            <p className="mt-[10px] text-[#6F7278]">Av. APR is 7.99%</p>
+            <p className="mt-[10px] text-neutral-color-neutral-600">
+              Av. APR is 7.99%
+            </p>
           </div>
         </div>
         <div className="mt-[60px] flex items-center justify-between max-md:flex-col max-md:space-y-4">
@@ -89,7 +97,7 @@ export const PlanAction = () => {
             Monthly:{" "}
             <span className="text-primary-color-1">${monthlyAmount}</span>
           </p>
-          <Button text="Apply loan" url="/" />
+          <Button btnType="btnPrimary" text="Apply loan" url="/" />
         </div>
       </div>
     </section>

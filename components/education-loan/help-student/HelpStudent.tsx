@@ -4,7 +4,6 @@ import educationLoanImage from "@/public/images/education_loan.png";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
 import { IconLightBg } from "@/components/shared/Icon";
-import { MdOutlineSecurity } from "react-icons/md";
 
 export const HelpStudent = () => {
   return (
@@ -26,7 +25,7 @@ export const HelpStudent = () => {
                 <IconLightBg iconName="arming_countdown" />
               </div>
               <p>
-                <span className="font-semibold text-[#292C32]">
+                <span className="font-semibold text-neutral-color-neutral-800">
                   Finanace and banking{" "}
                 </span>
                 Beyond Banking Basics
@@ -37,7 +36,7 @@ export const HelpStudent = () => {
                 <IconLightBg iconName="arming_countdown" />
               </div>
               <p>
-                <span className="font-semibold text-[#292C32]">
+                <span className="font-semibold text-neutral-color-neutral-800">
                   Loans specifically{" "}
                 </span>
                 designed to support students pursuing
@@ -48,7 +47,7 @@ export const HelpStudent = () => {
                 <IconLightBg iconName="arming_countdown" />
               </div>
               <p>
-                <span className="font-semibold text-[#292C32]">
+                <span className="font-semibold text-neutral-color-neutral-800">
                   Loan Facilities{" "}
                 </span>
                 Beyond Banking Basics Exploring Specialized

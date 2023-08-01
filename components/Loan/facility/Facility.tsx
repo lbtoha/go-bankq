@@ -1,9 +1,5 @@
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
-import React from "react";
-import { BsBodyText, BsFileText } from "react-icons/bs";
-import facility from "@/public/images/facility.png";
-import Image from "next/image";
 import FacilityCard from "./FacilityCard";
 
 export const Facility = () => {
@@ -38,7 +34,7 @@ export const Facility = () => {
       <div className="section-gap horizontal-gap container">
         <div className="grid grid-cols-1 items-center justify-between  xl:grid-cols-12 ">
           <div className="max-xl:mb-10 lg:mb-0 xl:col-span-5">
-            <p className="hidden w-fit bg-primary-color-2.2 px-[14px] py-[11px] text-lg leading-[150%] text-primary-color-1 sm:block">
+            <p className="hidden w-fit bg-primary-color-2 bg-opacity-20 px-[14px] py-[11px] text-lg leading-[150%] text-primary-color-1 sm:block">
               Loan Facility
             </p>
 

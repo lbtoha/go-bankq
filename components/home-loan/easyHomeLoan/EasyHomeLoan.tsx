@@ -24,10 +24,10 @@ export const EasyHomeLoan = () => {
                   <div>
                     <AiOutlineBank className="text-[50px] text-primary-color-1" />
                   </div>
-                  <p className="mt-3 font-montserrat text-[20px] font-semibold leading-[130%] text-[#292C32]">
+                  <p className="mt-3 font-montserrat text-[20px] font-semibold leading-[130%] text-neutral-color-neutral-800">
                     Low interest amount{" "}
                   </p>
-                  <p className="mt-[18px] text-base leading-[150%] text-[#6F7278]">
+                  <p className="mt-[18px] text-base leading-[150%] text-neutral-color-neutral-600">
                     Interest rates: Home loan interest rates can be fixed or
                     adjustable, depending on the loan type. A fixed-rate
                     mortgage has an interest rate that remains the same over the

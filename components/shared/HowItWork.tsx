@@ -4,7 +4,7 @@ import React from "react";
 
 export const HowItWork = () => {
   return (
-    <section className="how-it-work-section horizontal-gap bg-section-bg">
+    <section className="how-it-work-section horizontal-gap bg-neutral-color-neutral-200">
       <div className="section-gap container ">
         <div className="mx-auto max-w-[597px] text-center">
           <SectionHeading title="How It Work?" />

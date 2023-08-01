@@ -2,7 +2,6 @@
 import React from "react";
 import { SectionHeading } from "./SectionHeading";
 import { Button } from "./Button";
-import { titleFont } from "@/utils/fonts";
 import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import { FiTwitter } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -13,7 +12,6 @@ import { usePathname } from "next/navigation";
 
 export const Footer = () => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <footer className="footer-section relative z-0 max-sm:px-2">
       <div className="container pt-[50px] md:pt-[60px] lg:pt-[70px] xl:pt-[120px]">
@@ -28,11 +26,11 @@ export const Footer = () => {
                 name="email"
                 id=""
                 placeholder="Email"
-                className="border border-[#191B1A] bg-transparent px-5 outline-none placeholder:text-[#191B1A] max-md:py-[15px]"
+                className="border border-dark bg-transparent px-5 outline-none placeholder:text-dark max-md:py-[15px]"
               />
 
               <button
-                className="custom-transition border border-primary-color-1 bg-[#055F5B] px-10 py-[15px] font-medium text-white hover:outline  hover:outline-4 hover:outline-primary-color-1"
+                className="custom-transition border border-primary-color-1 bg-[#055F5B] px-10 py-[15px] font-medium text-white outline-offset-2 hover:outline hover:outline-4 hover:outline-primary-color-1"
                 type="submit"
               >
                 Submit
@@ -70,7 +68,7 @@ export const Footer = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <Button text="Open Account" url="/" />
+            <Button btnType="btnPrimary" text="Open Account" url="/" />
           </div>
         </div>
         <div className="mt-8 grid grid-cols-1 items-center justify-between gap-7 border-b border-white border-opacity-10 pb-8 md:mt-10 md:grid-cols-2 md:gap-10 md:pb-[60px] lg:mt-[60px] lg:grid-cols-3 xl:gap-[137px]">
@@ -78,7 +76,7 @@ export const Footer = () => {
             <p className="mb-3 text-lg font-semibold leading-[130%] text-white md:mb-5 lg:mb-10">
               Page
             </p>
-            <ul className=" flex flex-wrap justify-start gap-4 text-[#A0A2A7] md:gap-5 xl:flex-row xl:items-center ">
+            <ul className=" flex flex-wrap justify-start gap-x-4 text-base text-neutral-color-neutral-500 max-sm:gap-y-2 sm:text-lg md:gap-5 xl:flex-row xl:items-center ">
               <li
                 className={`cursor-pointer ${
                   pathname == "/" && "text-primary-color-2"
@@ -127,22 +125,29 @@ export const Footer = () => {
             <p className="mb-3 text-lg font-semibold leading-[130%] text-white md:mb-5 lg:mb-10">
               Contact
             </p>
-            <p className="text-[#A0A2A7]">123 Main St, Anytown, USA 12345</p>
-            <p className="text-[#A0A2A7]">1010 Elm St, Anypla, USA 98765</p>
+            <p className="text-base text-neutral-color-neutral-500 sm:text-lg">
+              123 Main St, Anytown, USA 12345
+            </p>
+            <p className="text-base text-neutral-color-neutral-500 sm:text-lg">
+              1010 Elm St, Anypla, USA 98765
+            </p>
           </div>
           <div>
             <p className="mb-3 text-lg font-semibold leading-[130%] text-white md:mb-5 lg:mb-10">
               Address
             </p>
             <div>
-              <a href={"tel:555123-4567"} className="text-[#A0A2A7]">
+              <a
+                href={"tel:555123-4567"}
+                className="text-base text-neutral-color-neutral-500 sm:text-lg"
+              >
                 +(555) 123-4567
               </a>
             </div>
             <div>
               <Link
                 href="mailto:deanna.curtis@example.com"
-                className="text-[#A0A2A7]"
+                className="text-base text-neutral-color-neutral-500 sm:text-lg"
               >
                 deanna.curtis@example.com
               </Link>
@@ -150,9 +155,9 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between py-[30px] text-base text-white max-md:gap-4">
-          <p>
+          <p className="text-base  sm:text-lg">
             Copyright by
-            <span className={`uppercase text-primary-color-2`}>
+            <span className={` uppercase text-primary-color-2`}>
               <Link href="/">
                 <span className="text-white"> GO</span>BANK
               </Link>
@@ -160,7 +165,7 @@ export const Footer = () => {
             . All right reserved
           </p>
           <p className="max-sm:-order-1">
-            <span className="text-[#A0A2A7]">Designed by</span>{" "}
+            <span className="text-neutral-color-neutral-500">Designed by</span>{" "}
             <Link href="/">Pixelaxis</Link>
           </p>
         </div>

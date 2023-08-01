@@ -7,6 +7,10 @@ import { BrandSlider } from "@/components/shared/BrandSlider";
 import { Faq } from "@/components/shared/Faq";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
 import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
+export const metadata = {
+  title: "Credit Card | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
 
 export default function CreditCard() {
   return (

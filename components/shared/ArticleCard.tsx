@@ -24,11 +24,11 @@ const ArticleCard = ({
   background,
 }: ArticleCardProps) => {
   return (
-    <div className="text-[#FAFAFC]">
+    <div className="text-neutral-color-neutral-200">
       <Image src={imageThumb} alt="Image" className="w-full" />
       <div
         className={`mt-5 flex items-center justify-between ${
-          background == "dark" ? "text-[#FFD584]" : "text-primary-color-1"
+          background == "dark" ? "text-primary-color-2" : "text-primary-color-1"
         }`}
       >
         <span className="text-lg">Bank</span>
@@ -37,7 +37,9 @@ const ArticleCard = ({
           <Link
             href="/"
             className={`text-sm   ${
-              background == "dark" ? "text-white" : "text-[#6F7278]"
+              background == "dark"
+                ? "text-white"
+                : "text-neutral-color-neutral-600"
             }`}
           >
             06 comments
@@ -48,7 +50,9 @@ const ArticleCard = ({
         <Link
           href="/"
           className={` font-montserrat text-xl font-semibold leading-[130%] ${
-            background == "dark" ? "text-[#FAFAFC]" : "text-[#292C32]"
+            background == "dark"
+              ? "text-neutral-color-neutral-200"
+              : "text-neutral-color-neutral-800"
           }  `}
         >
           {title}
@@ -58,15 +62,17 @@ const ArticleCard = ({
       <p
         className={`mt-3 border-b pb-4 text-base  leading-[150%] md:mt-4 md:pb-6  ${
           background == "dark"
-            ? "border-[#292C32] text-[#FAFAFC]"
-            : "border-[#E7E9EE] text-[#6F7278]"
+            ? "border-neutral-color-neutral-800 text-neutral-color-neutral-200"
+            : "border-neutral-color-neutral-300 text-neutral-color-neutral-600"
         }`}
       >
         {body}
       </p>
       <div
         className={`flex items-center gap-4 pt-4 md:pt-6 ${
-          background == "dark" ? "text-[#FAFAFC]" : "text-[#6F7278]"
+          background == "dark"
+            ? "text-neutral-color-neutral-200"
+            : "text-neutral-color-neutral-600"
         }`}
       >
         <Image
@@ -77,14 +83,18 @@ const ArticleCard = ({
         <div className="">
           <p
             className={`text-xl leading-[150%]  ${
-              background == "dark" ? "tex-[#FAFAFC]" : "text-[#292C32]"
+              background == "dark"
+                ? "tex-neutral-color-neutral-200"
+                : "text-neutral-color-neutral-800"
             }   `}
           >
             {authorName}
           </p>
           <div
             className={`flex space-x-3 text-sm leading-[150%] ${
-              background == "dark" ? "text-[#FAFAFC]" : "text-[#6F7278]"
+              background == "dark"
+                ? "text-neutral-color-neutral-200"
+                : "text-neutral-color-neutral-600"
             }`}
           >
             <span></span>

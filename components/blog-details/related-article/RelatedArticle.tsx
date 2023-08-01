@@ -46,7 +46,7 @@ export const RelatedArticle = () => {
           />
         </div>
         <div className="mt-[60px] text-center">
-          <Button text="See More" url="/" />
+          <Button btnType="btnPrimary" text="See More" url="/" />
         </div>
       </div>
     </section>

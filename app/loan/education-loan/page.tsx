@@ -4,6 +4,11 @@ import { HelpStudent } from "@/components/education-loan/help-student/HelpStuden
 import { HowItWork } from "@/components/shared/HowItWork";
 import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 
+export const metadata = {
+  title: "Personal Loan | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function EducationLoan() {
   return (
     <main>

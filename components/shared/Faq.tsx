@@ -33,10 +33,10 @@ export const Faq = () => {
             <div className=" mb-5 lg:mb-[60px]">
               <SectionText text="Credit cards typically have a credit limit, which is the maximum amount ." />
             </div>
-            <div className="mb-8 flex  gap-4 text-xl leading-[150%] text-[#292C32] max-lg:flex-wrap md:max-w-[207px] md:flex-col lg:mb-0 lg:space-y-[11px]">
+            <div className="mb-8 flex  gap-4 text-xl leading-[150%] text-neutral-color-neutral-800 max-lg:flex-wrap md:max-w-[207px] md:flex-col lg:mb-0 lg:space-y-[11px]">
               <button
                 onClick={() => handleTabClick(0)}
-                className={`flex items-center gap-2 text-base md:gap-[17px] md:text-lg ${
+                className={`flex items-center gap-2 text-base hover:bg-primary-color-2 md:gap-[17px] md:text-lg ${
                   activeTab == 0 ? "bg-primary-color-2" : ""
                 } px-2 py-2 lg:px-4 lg:py-2`}
               >
@@ -51,7 +51,7 @@ export const Faq = () => {
               </button>
               <button
                 onClick={() => handleTabClick(1)}
-                className={`flex items-center gap-2 md:gap-[17px]  ${
+                className={`flex items-center gap-2 hover:bg-primary-color-2 md:gap-[17px]  ${
                   activeTab == 1 ? "bg-primary-color-2" : ""
                 }  px-2 py-2 lg:px-4 lg:py-2`}
               >
@@ -66,7 +66,7 @@ export const Faq = () => {
               </button>
               <button
                 onClick={() => handleTabClick(2)}
-                className={`flex items-center gap-2 md:gap-[17px]  ${
+                className={`flex items-center gap-2 hover:bg-primary-color-2 md:gap-[17px]  ${
                   activeTab == 2 ? "bg-primary-color-2" : ""
                 }  px-2 py-2 lg:px-4 lg:py-2`}
               >
@@ -81,7 +81,7 @@ export const Faq = () => {
               </button>
               <button
                 onClick={() => handleTabClick(3)}
-                className={`flex items-center gap-2 md:gap-[17px]  ${
+                className={`custom-transition flex items-center gap-2 hover:bg-primary-color-2 md:gap-[17px]  ${
                   activeTab == 3 ? "bg-primary-color-2" : ""
                 }  px-2 py-2 lg:px-4 lg:py-2`}
               >

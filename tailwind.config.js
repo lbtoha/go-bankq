@@ -29,23 +29,29 @@ module.exports = {
       "4xl": "1800px",
     },
 
+    colors: {
+      "primary-color-1": "#055f5b",
+      "primary-color-2": "#FFD584",
+      "neutral-color-neutral-100": "#Ffffff",
+      "neutral-color-neutral-200": "#FAFAFC",
+      "neutral-color-neutral-300": "#E7E9EE",
+      "neutral-color-neutral-500": "#A0A2A7",
+      "neutral-color-neutral-600": "#6F7278",
+      "neutral-color-neutral-700": "#494A4D",
+      "neutral-color-neutral-800": "#292C32",
+      "main-heading-color": "#E0F300",
+      "secondary-color-secondary-04": "#E9F8F7",
+      dark: "#191B1A",
+      "border-color": "#caccd1",
+    },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {
-        "primary-color-1": "var(--primary-color-1)",
-        "primary-color-2": "var(--primary-color-2)",
-        "primary-color-2.1": "var(--primary-color-2-1)",
-        "primary-color-2.2": "var(--primary-color-2-2)",
-        "primary-text-1": "var(--primary-text-1)",
-        "primary-text-2": "var(--primary-text-2)",
-        "sub-title-color": "var(--sub-title-color)",
-        "section-bg": "var(--section-bg)",
-        "border-color": "var(--border-color)",
-      },
+
       fontFamily: {
         inter: ["var(--body-font)"],
         montserrat: ["var(--head-font)"],

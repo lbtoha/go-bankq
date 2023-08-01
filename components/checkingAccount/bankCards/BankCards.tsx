@@ -2,16 +2,15 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SectionText } from "@/components/shared/SectionText";
 import Image from "next/image";
 import React from "react";
-import { BsCreditCard2Back } from "react-icons/bs";
 import bankCard from "@/public/images/bankCard.png";
 
 export const BankCards = () => {
   return (
-    <section className="section-gap bg-section-bg max-sm:px-2 ">
+    <section className="section-gap bg-neutral-color-neutral-200 max-sm:px-2 ">
       <div className=" container">
         <div className="items-center justify-between md:grid lg:grid-cols-12">
           <div className="col-span-5">
-            <span className="material-symbols-outlined mb-6 w-max bg-primary-color-2.2 p-5 text-4xl  text-primary-color-1 md:p-[25px] md:text-[50px] lg:mb-10 ">
+            <span className="material-symbols-outlined mb-6 w-max bg-primary-color-2 bg-opacity-20 p-5 text-4xl  text-primary-color-1 md:p-[25px] md:text-[50px] lg:mb-10 ">
               account_balance
             </span>
             <SectionHeading title="Bank cards often come with security features such as a PIN" />

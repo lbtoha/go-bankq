@@ -6,7 +6,7 @@ type Props = {
 
 export const SectionText = ({ text }: Props) => {
   return (
-    <p className="text-lg leading-[150%] text-[#6F7278] max-md:text-base ">
+    <p className="text-lg leading-[150%] text-neutral-color-neutral-600 max-md:text-base ">
       {text}
     </p>
   );

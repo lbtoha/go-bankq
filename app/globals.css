@@ -24,21 +24,16 @@
   }
 
   .container {
-    @apply mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px];
+    @apply mx-auto max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px];
   }
 }
 
 :root {
   --primary-color-1: #055f5b;
   --primary-color-2: #ffd584;
-  --primary-color-2-1: rgba(255 213 132 / 0.1);
   --primary-color-2-2: rgba(255 213 132 / 0.2);
-  --primary-text-1: #191b1a;
-  --primary-text-2: #6f7278;
-  --sub-title-color: #292c32;
-  --section-bg: #fafafc;
-  --border-color: #caccd1;
 }
+
 html {
   scroll-behavior: smooth;
 }

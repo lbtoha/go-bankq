@@ -5,6 +5,11 @@ import { LoanHeader } from "@/components/Loan/loanHeader/LoanHeader";
 import { OpenAccount } from "@/components/Loan/openAccount/OpenAccount";
 import { OpenBrandSlider } from "@/components/Loan/openBrankSlider/OpenBrandSlider";
 
+export const metadata = {
+  title: "Loan | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function Loan() {
   return (
     <main>

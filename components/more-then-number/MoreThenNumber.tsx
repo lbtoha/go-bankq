@@ -1,10 +1,34 @@
 import moreThanNumberImage from "@/public/images/countdown_bg2.png";
 import Image from "next/image";
 import { SectionHeading } from "../shared/SectionHeading";
+import CountDown from "../shared/CountDown";
 
 export const MoreThenNumber = () => {
+  const countDownData = [
+    {
+      id: 457001,
+      countStart: 0,
+      countEnd: 600,
+      itemTitle: "Customers",
+      symbol: "K",
+    },
+    {
+      id: 457002,
+      countStart: 0,
+      countEnd: 99,
+      itemTitle: "Customer satisfaction",
+      symbol: "%",
+    },
+    {
+      id: 457003,
+      countStart: 0,
+      countEnd: 260,
+      itemTitle: "Money managed",
+      symbol: "B",
+    },
+  ];
   return (
-    <section className="section-gap relative overflow-hidden bg-primary-color-2.2">
+    <section className="section-gap relative overflow-hidden bg-primary-color-2 bg-opacity-20">
       <div className="container ">
         <div className="grid grid-cols-12 items-center  max-xxl:justify-items-center ">
           <div className="col-span-12 xxl:col-span-7">
@@ -12,30 +36,17 @@ export const MoreThenNumber = () => {
               <SectionHeading title="We believe you are more than a number." />
             </div>
             <div className="mt-10 flex  flex-col items-center justify-between space-y-5 text-center md:mt-[60px] md:flex-row md:space-y-0">
-              <div>
-                <h6
-                  className={`font-montserrat text-3xl font-semibold leading-[120%] text-[#055F5B] md:text-[40px] lg:text-[50px] xl:text-[64px]`}
-                >
-                  600<span className="text-[#FFD584]">K</span>
-                </h6>
-                <p className="text-lg leading-[150%]">Customers</p>
-              </div>
-              <div>
-                <h6
-                  className={`font-montserrat text-3xl font-semibold leading-[120%] text-[#055F5B] md:text-[40px] lg:text-[50px] xl:text-[64px]`}
-                >
-                  99<span className="text-[#FFD584]">%</span>
-                </h6>
-                <p className="text-lg leading-[150%]">Customer satisfaction</p>
-              </div>
-              <div>
-                <h6
-                  className={`font-montserrat text-3xl font-semibold leading-[120%] text-[#055F5B] md:text-[40px] lg:text-[50px] xl:text-[64px]`}
-                >
-                  260<span className="text-[#FFD584]">B</span>
-                </h6>
-                <p className="text-lg leading-[150%]">Money managed</p>
-              </div>
+              {countDownData.map(
+                ({ id, countStart, countEnd, itemTitle, symbol }) => (
+                  <CountDown
+                    key={id}
+                    countStart={countStart}
+                    countEnd={countEnd}
+                    itemTitle={itemTitle}
+                    symbol={symbol}
+                  />
+                ),
+              )}
             </div>
           </div>
           <div className=" full-width-image col-start-9 col-end-13 hidden xxl:block">

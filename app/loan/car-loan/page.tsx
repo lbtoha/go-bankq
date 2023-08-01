@@ -6,6 +6,11 @@ import { Faq } from "@/components/shared/Faq";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
 import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 
+export const metadata = {
+  title: "Car Loan | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function CarLoan() {
   return (
     <main>

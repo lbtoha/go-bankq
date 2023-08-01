@@ -1,6 +1,3 @@
-import { Button } from "@/components/shared/Button";
-import { SectionHeading } from "@/components/shared/SectionHeading";
-import { SectionText } from "@/components/shared/SectionText";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +9,7 @@ export const SaveWithUs = () => {
           Save With Us
         </h3>
 
-        <p className="mx-auto mb-8 mt-6 max-w-[595px] text-base leading-[150%] text-[#E7E9EE] md:mb-10 md:text-lg lg:mb-10 xl:mb-[60px]">
+        <p className="mx-auto mb-8 mt-6 max-w-[595px] text-base leading-[150%] text-neutral-color-neutral-300 md:mb-10 md:text-lg lg:mb-10 xl:mb-[60px]">
           A checking account is a type of bank account that allows you to
           deposit and withdraw money
         </p>

@@ -1,6 +1,4 @@
 "use client";
-import { Button } from "@/components/shared/Button";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
@@ -22,24 +20,24 @@ export const GetCreditCard = () => {
   }, [value, month]);
 
   return (
-    <section className="dot-bg bg-primary-color-2.1 max-sm:px-2">
+    <section className="dot-bg bg-primary-color-2 bg-opacity-10 max-sm:px-2">
       <div className="section-gap container">
         <div className="mx-auto mb-10 max-w-[480px] md:mb-[60px]">
           <p className="text-center font-montserrat text-2xl font-semibold leading-[120%] md:text-[32px] ">
             Get your credit card
           </p>
-          <p className="mt-6 text-[#6F7278] max-sm:text-center max-sm:text-base">
+          <p className="mt-6 text-neutral-color-neutral-600 max-sm:text-center max-sm:text-base">
             Some debit cards may also offer additional benefits such as cashback
             rewards, purchase protection
           </p>
         </div>
-        <div className="grid items-center gap-6 rounded-md border border-[#E7E9EE] bg-[#FAFAFC] p-6 md:p-10 lg:grid-cols-10">
+        <div className="grid items-center gap-6 rounded-md border border-neutral-color-neutral-300 bg-neutral-color-neutral-200 p-6 md:p-10 lg:grid-cols-10">
           <div className="lg:col-span-6">
             <div>
               <p className="font-montserrat text-xl font-semibold leading-[130%]">
                 Custom pricing
               </p>
-              <p className="mb-5 mt-3 text-sm leading-[150%]  text-[#6F7278] md:mb-8 md:text-base lg:mb-[50px]">
+              <p className="mb-5 mt-3 text-sm leading-[150%]  text-neutral-color-neutral-600 md:mb-8 md:text-base lg:mb-[50px]">
                 The amount is deducted from your bank account balance
               </p>
               <div className="items-center justify-between max-sm:mb-5 max-sm:space-y-3 sm:flex">
@@ -63,25 +61,25 @@ export const GetCreditCard = () => {
               />
             </div>
             <div className=" mt-10 flex items-center gap-3 max-sm:text-sm sm:gap-6 lg:mt-[73px]">
-              <p className="rounded-lg border border-[#A0A2A7] px-2 py-[8px]">
+              <p className="rounded-lg border border-neutral-color-neutral-500 px-2 py-[8px]">
                 FAQs
               </p>
-              <p className="flex items-center gap-[10px] rounded-lg border border-[#A0A2A7] px-3 py-[8px]">
+              <p className="flex items-center gap-[10px] rounded-lg border border-neutral-color-neutral-500 px-3 py-[8px]">
                 <BsQuestionOctagon /> Additional info
               </p>
             </div>
           </div>
           <div className="rounded-md bg-primary-color-2 py-[30px] max-lg:-order-1 lg:col-start-7 lg:col-end-12">
-            <p className="Text-[20px] text-center leading-[150%] text-[#292C32]">
+            <p className="Text-[20px] text-center leading-[150%] text-neutral-color-neutral-800">
               Your Total Amount
             </p>
             <p className="mt-5 text-center font-montserrat font-semibold leading-[120%] text-primary-color-1 md:text-[40px] xl:text-[52px]">
               ${totalAmount}
             </p>
-            <div className="mx-[30px] my-[30px] border-b  border-t border-[#292C32] border-opacity-10 py-[18px]">
+            <div className="mx-[30px] my-[30px] border-b  border-t border-neutral-color-neutral-800 border-opacity-10 py-[18px]">
               <div className="flex items-center justify-evenly text-center">
                 <div>
-                  <p className="text-base leading-[150%] text-[#292C32]">
+                  <p className="text-base leading-[150%] text-neutral-color-neutral-800">
                     Rate
                   </p>
                   <span className="text-base font-semibold text-primary-color-1">
@@ -89,13 +87,17 @@ export const GetCreditCard = () => {
                   </span>
                 </div>
                 <div>
-                  <p className="text-base leading-[150%] text-[#292C32]">ARP</p>
+                  <p className="text-base leading-[150%] text-neutral-color-neutral-800">
+                    ARP
+                  </p>
                   <span className="text-base font-semibold text-primary-color-1">
                     4.162
                   </span>
                 </div>
                 <div>
-                  <p className="text-base leading-[150%] text-[#292C32]">EMI</p>
+                  <p className="text-base leading-[150%] text-neutral-color-neutral-800">
+                    EMI
+                  </p>
                   <span className="text-base font-semibold text-primary-color-1">
                     ${emi}
                   </span>

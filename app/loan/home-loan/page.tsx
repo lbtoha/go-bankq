@@ -7,6 +7,11 @@ import { HowItWork } from "@/components/shared/HowItWork";
 import { OpenAccountSection } from "@/components/shared/OpenAccountSection";
 import { OurClientSaySection } from "@/components/shared/OurClientSaySection";
 
+export const metadata = {
+  title: "Home Loan | GOBANKQ-Banking & Finance",
+  description: "NextJs Template",
+};
+
 export default function HomeLoan() {
   return (
     <main>

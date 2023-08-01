@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@types/react-paginate": "^7.1.1",
+    "@types/react-rangeslider": "^2.2.4",
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
-    "framer-motion": "^10.13.0",
+    "framer-motion": "^10.15.0",
     "material-symbols": "^0.10.1",
     "next": "13.4.8",
     "postcss": "8.4.24",
@@ -35,13 +35,12 @@
     "react-spring": "^9.7.2",
     "sass": "^1.63.6",
     "slick-carousel": "^1.8.1",
-    "swiper": "^10.0.4",
     "tailwindcss": "3.3.2",
     "tw-elements": "^1.0.0-beta2",
-    "typescript": "5.1.6",
-    "wow.js": "^1.2.2"
+    "typescript": "5.1.6"
   },
   "devDependencies": {
+    "depcheck": "^1.4.3",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1"
   }
